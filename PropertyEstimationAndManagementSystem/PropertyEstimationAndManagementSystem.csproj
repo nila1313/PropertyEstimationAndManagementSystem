@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
+    <Compile Include="Entites\Users.cs" />
     <Compile Include="GuiForms\EditProperty.cs">
       <SubType>Form</SubType>
     </Compile>

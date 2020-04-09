@@ -9,7 +9,7 @@ namespace PropertyEstimationAndManagementSystem.Entites
     class Users
     {
         public int id { get; set; }
-        public string UserName { get; set; };
-        public string UserPassword { get; set; };
+        public string UserName { get; set; }
+        public string UserPassword { get; set; }
     }
 }
