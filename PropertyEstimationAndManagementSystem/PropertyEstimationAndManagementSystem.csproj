@@ -47,7 +47,22 @@
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
+<<<<<<< HEAD
     <Compile Include="Entites\LoginInfo.cs" />
+=======
+    <Compile Include="GuiForms\EmployeeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\EmployeeEdit.Designer.cs">
+      <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+>>>>>>> f64a4bdb40675d50df80cb8211bb21d90e7e68de
     <Compile Include="GuiForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GuiForms\EmployeeEdit.resx">
+      <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
