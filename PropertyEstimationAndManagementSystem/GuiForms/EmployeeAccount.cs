@@ -20,13 +20,17 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             InitializeComponent();
             da = new DataAccess();
+            user = new Users();
         }
 
         private void Save_Click(object sender, EventArgs e)
         {
-            
-            //user.
-            //da.Insert<Users>();
+
+            user.Id = 3;
+            user.UserName = userName.Text;
+            user.UserPassword = password.Text;
+            da.Insert<Users>(user,false);
+            MessageBox.Show("Save Successful");
         }
     }
 }
