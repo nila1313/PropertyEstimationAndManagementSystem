@@ -19,7 +19,7 @@ namespace PropertyEstimationAndManagementSystem.Data
         }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TGOP\Desktop\UserInfoWithLogin\test2DB.mdf;Integrated Security=True;Connect Timeout=30";
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TGOP\Documents\GitHub\PropertyEstimationAndManagementSystem\MainDatabase.mdf;Integrated Security=True;Connect Timeout=30";
         }
 
         private SqlCommand GetCommand(string sqlQuery)
@@ -115,7 +115,7 @@ namespace PropertyEstimationAndManagementSystem.Data
 
         public T GetById<T, IdType>(IdType id) where T : BaseEntity
         {
-            DataTable dataTable = Execute(getSelectQuery<T>(" where Id='" + id + "';"));
+            DataTable dataTable = Execute(getSelectQuery<T>(" where Id=" + id + ";"));
             var t = getEntityListFromDataTable<T>(dataTable).FirstOrDefault<T>();
             return t;
         }

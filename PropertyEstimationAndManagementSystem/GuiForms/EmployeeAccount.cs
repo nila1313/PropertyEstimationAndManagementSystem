@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,8 +26,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void Save_Click(object sender, EventArgs e)
         {
-
-            user.Id = 3;
+            user.Id = 6;
             user.UserName = userName.Text;
             user.UserPassword = password.Text;
             da.Insert<Users>(user,false);
