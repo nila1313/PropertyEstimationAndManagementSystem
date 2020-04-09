@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PropertyEstimationAndManagementSystem.Entites
 {
-    class LoginInfo
+    class LoginInfo:BaseEntity
     {
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }

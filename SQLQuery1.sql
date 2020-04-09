@@ -1,0 +1,1 @@
+﻿DELETE FROM LoginInfo WHERE Id=1

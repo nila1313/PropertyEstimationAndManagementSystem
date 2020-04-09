@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
+    <Compile Include="Entites\LoginInfo.cs" />
     <Compile Include="GuiForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>

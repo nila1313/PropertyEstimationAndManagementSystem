@@ -7,19 +7,14 @@ using PropertyEstimationAndManagementSystem.Entites;
 /// <summary>
 /// by M. Abrar Fahad
 /// </summary>
-namespace PropertyEstimationAndManagementSystem.DataAccess
+namespace PropertyEstimationAndManagementSystem.Data
 {
     public class DataAccess
     {
         private string ConnectionString { get; set; }
-
-        public DataAccess(string connectionString)
-        {
-            ConnectionString = connectionString;
-        }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TGOP\Desktop\UserInfoWithLogin\test2DB.mdf;Integrated Security=True;Connect Timeout=30";
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TGOP\Documents\GitHub\PropertyEstimationAndManagementSystem\MainDatabase.mdf;Integrated Security=True;Connect Timeout=30";
         }
 
         private SqlCommand GetCommand(string sqlQuery)
@@ -121,11 +116,11 @@ namespace PropertyEstimationAndManagementSystem.DataAccess
         }
 
 
+
         public DataTable GetData<T>(string whereClause) where T : BaseEntity
         {
             return Execute(getSelectQuery<T>(whereClause));
         }
-
 
         private List<T> getEntityListFromDataTable<T>(DataTable dataTable) where T : BaseEntity
         {
@@ -174,9 +169,9 @@ namespace PropertyEstimationAndManagementSystem.DataAccess
             return dt;
         }
 
-        public int remove<T>(T entity) where T : BaseEntity
+        public int Remove<T>(T entity) where T : BaseEntity
         {
-            var sql = string.Format("DELETE FROM {0} WHERE Id={1}", entity.GetType().GetProperties(),entity.Id.ToString());
+            var sql = string.Format("DELETE FROM {0} WHERE Id={1}", entity.GetType().Name,entity.Id.ToString());
             SqlCommand sqlCommand = GetCommand(sql);
             sqlCommand.Connection.Open();
             var rowsAffected = sqlCommand.ExecuteNonQuery();
