@@ -34,7 +34,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.ShowAllAccount = new System.Windows.Forms.Button();
             this.DeleteAccount = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -89,14 +89,15 @@
             this.DeleteAccount.Text = "Delete Account";
             this.DeleteAccount.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Save
             // 
-            this.button3.Location = new System.Drawing.Point(151, 182);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Save.Location = new System.Drawing.Point(151, 182);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(97, 23);
+            this.Save.TabIndex = 6;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // dataGridView1
             // 
@@ -112,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.DeleteAccount);
             this.Controls.Add(this.ShowAllAccount);
             this.Controls.Add(this.textBox2);
@@ -135,7 +136,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button ShowAllAccount;
         private System.Windows.Forms.Button DeleteAccount;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Save;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
