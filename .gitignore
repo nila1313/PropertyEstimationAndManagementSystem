@@ -9,3 +9,6 @@
 PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 
 .sql
+*.mdf
+*.ldf
+*.cache
