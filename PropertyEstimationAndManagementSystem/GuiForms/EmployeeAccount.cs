@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PropertyEstimationAndManagementSystem.Data;
+using PropertyEstimationAndManagementSystem.Entites;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class EmployeeAccount : Form
     {
         DataAccess da;
-        //Users user;
+        Users user;
         public EmployeeAccount()
         {
             InitializeComponent();
@@ -24,8 +25,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void Save_Click(object sender, EventArgs e)
         {
             
-            /*user.
-            da.Insert<Users>();*/
+            //user.
+            //da.Insert<Users>();
         }
     }
 }
