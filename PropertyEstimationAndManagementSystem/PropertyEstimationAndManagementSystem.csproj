@@ -47,16 +47,34 @@
   <ItemGroup>
     <Compile Include="DataAccess\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
+    <Compile Include="GuiForms\EditProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\EditProperty.Designer.cs">
+      <DependentUpon>EditProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuiForms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\Reporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Reporter.Designer.cs">
+      <DependentUpon>Reporter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GuiForms\EditProperty.resx">
+      <DependentUpon>EditProperty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Reporter.resx">
+      <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

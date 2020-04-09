@@ -10,24 +10,11 @@ using System.Windows.Forms;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
-    public partial class Login : Form
+    public partial class EditProperty : Form
     {
-        public Login()
+        public EditProperty()
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnReporter_Click(object sender, EventArgs e)
-        {
-            Reporter repoter = new Reporter();
-
-        }
-
-        
     }
 }
