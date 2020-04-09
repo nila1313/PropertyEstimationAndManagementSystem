@@ -35,7 +35,7 @@
             // 
             // TotalEstimatedProfit
             // 
-            this.TotalEstimatedProfit.Location = new System.Drawing.Point(311, 32);
+            this.TotalEstimatedProfit.Location = new System.Drawing.Point(386, 32);
             this.TotalEstimatedProfit.Name = "TotalEstimatedProfit";
             this.TotalEstimatedProfit.Size = new System.Drawing.Size(127, 23);
             this.TotalEstimatedProfit.TabIndex = 4;
@@ -44,7 +44,7 @@
             // 
             // CheckProfit
             // 
-            this.CheckProfit.Location = new System.Drawing.Point(484, 32);
+            this.CheckProfit.Location = new System.Drawing.Point(519, 32);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;

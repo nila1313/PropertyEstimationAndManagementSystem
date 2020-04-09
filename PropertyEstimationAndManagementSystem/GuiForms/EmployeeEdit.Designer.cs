@@ -36,7 +36,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.RemoveEmployee = new System.Windows.Forms.Button();
             this.UpdateEmployee = new System.Windows.Forms.Button();
-            this.CreateEmployee = new System.Windows.Forms.Button();
+            this.InsertEmployee = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -51,6 +51,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CreateAccount = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,14 +127,15 @@
             this.UpdateEmployee.Text = "Update Employee";
             this.UpdateEmployee.UseVisualStyleBackColor = true;
             // 
-            // CreateEmployee
+            // InsertEmployee
             // 
-            this.CreateEmployee.Location = new System.Drawing.Point(102, 188);
-            this.CreateEmployee.Name = "CreateEmployee";
-            this.CreateEmployee.Size = new System.Drawing.Size(119, 23);
-            this.CreateEmployee.TabIndex = 6;
-            this.CreateEmployee.Text = "Create Employee";
-            this.CreateEmployee.UseVisualStyleBackColor = true;
+            this.InsertEmployee.CausesValidation = false;
+            this.InsertEmployee.Location = new System.Drawing.Point(111, 188);
+            this.InsertEmployee.Name = "InsertEmployee";
+            this.InsertEmployee.Size = new System.Drawing.Size(119, 23);
+            this.InsertEmployee.TabIndex = 6;
+            this.InsertEmployee.Text = "Insert Employee";
+            this.InsertEmployee.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -199,7 +202,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(111, 260);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(561, 220);
             this.dataGridView1.TabIndex = 17;
             // 
             // label8
@@ -253,11 +256,31 @@
             this.comboBox1.Size = new System.Drawing.Size(152, 21);
             this.comboBox1.TabIndex = 22;
             // 
+            // CreateAccount
+            // 
+            this.CreateAccount.Location = new System.Drawing.Point(654, 513);
+            this.CreateAccount.Name = "CreateAccount";
+            this.CreateAccount.Size = new System.Drawing.Size(97, 23);
+            this.CreateAccount.TabIndex = 23;
+            this.CreateAccount.Text = "Create Account";
+            this.CreateAccount.UseVisualStyleBackColor = true;
+            // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(548, 513);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.TabIndex = 24;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            // 
             // EmployeeEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 450);
+            this.ClientSize = new System.Drawing.Size(763, 548);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.CreateAccount);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label10);
@@ -274,7 +297,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.RemoveEmployee);
             this.Controls.Add(this.UpdateEmployee);
-            this.Controls.Add(this.CreateEmployee);
+            this.Controls.Add(this.InsertEmployee);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -299,7 +322,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button RemoveEmployee;
         private System.Windows.Forms.Button UpdateEmployee;
-        private System.Windows.Forms.Button CreateEmployee;
+        private System.Windows.Forms.Button InsertEmployee;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -314,5 +337,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button CreateAccount;
+        private System.Windows.Forms.Button Back;
     }
 }

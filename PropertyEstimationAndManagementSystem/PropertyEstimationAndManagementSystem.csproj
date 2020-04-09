@@ -53,6 +53,12 @@
     <Compile Include="GuiForms\EditProperty.Designer.cs">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\EmployeeAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\EmployeeAccount.Designer.cs">
+      <DependentUpon>EmployeeAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\EmployeeEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GuiForms\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\EmployeeAccount.resx">
+      <DependentUpon>EmployeeAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\EmployeeEdit.resx">
       <DependentUpon>EmployeeEdit.cs</DependentUpon>
