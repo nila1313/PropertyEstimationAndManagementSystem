@@ -7,7 +7,7 @@ using PropertyEstimationAndManagementSystem.Entites;
 /// <summary>
 /// by M. Abrar Fahad
 /// </summary>
-namespace UserInfoWithLogin.Data
+namespace PropertyEstimationAndManagementSystem.DataAccess
 {
     public class DataAccess
     {
