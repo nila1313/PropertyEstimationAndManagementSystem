@@ -4,3 +4,5 @@
 .vs/PropertyEstimationAndManagementSystem/v16/Server/sqlite3/storage.ide-shm
 
 .cache
+.mdf
+.ldf
