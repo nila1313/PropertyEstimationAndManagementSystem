@@ -17,6 +17,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             InitializeComponent();
         }
 
-        
+        private void CreateAccount_Click(object sender, EventArgs e)
+        {
+            EmployeeAccount acc = new EmployeeAccount();
+            acc.Show();
+        }
     }
 }

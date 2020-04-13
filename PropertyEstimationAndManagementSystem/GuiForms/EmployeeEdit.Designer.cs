@@ -264,6 +264,7 @@
             this.CreateAccount.TabIndex = 23;
             this.CreateAccount.Text = "Create Account";
             this.CreateAccount.UseVisualStyleBackColor = true;
+            this.CreateAccount.Click += new System.EventHandler(this.CreateAccount_Click);
             // 
             // Back
             // 
@@ -278,6 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(763, 548);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.CreateAccount);

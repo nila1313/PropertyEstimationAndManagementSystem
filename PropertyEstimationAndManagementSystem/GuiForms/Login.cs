@@ -28,6 +28,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         }
 
-        
+        private void userLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Manager m = new Manager();
+            m.Show();
+        }
     }
 }
