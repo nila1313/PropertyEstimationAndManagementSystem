@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyEstimationAndManagementSystem.Entites;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class Manager : Form
     {
-        public Manager()
+        Login login { get;}
+        Users user { get;}
+        public Manager(Login login, Users user)
         {
             InitializeComponent();
             CustomizeDesign();

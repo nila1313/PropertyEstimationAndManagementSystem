@@ -35,7 +35,6 @@
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
             this.Insert = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
-            this.Update = new System.Windows.Forms.Button();
             this.showUsers = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EmployeePanel = new System.Windows.Forms.Panel();
@@ -72,7 +71,17 @@
             this.EditEmployee.TabIndex = 6;
             this.EditEmployee.Text = "Edit Employee";
             this.EditEmployee.UseVisualStyleBackColor = true;
-            this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
+            //this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(692, 384);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+
             // 
             // panel1
             // 
@@ -90,7 +99,6 @@
             // EditEmployeePanel
             // 
             this.EditEmployeePanel.Controls.Add(this.showUsers);
-            this.EditEmployeePanel.Controls.Add(this.Update);
             this.EditEmployeePanel.Controls.Add(this.Delete);
             this.EditEmployeePanel.Controls.Add(this.Insert);
             this.EditEmployeePanel.Location = new System.Drawing.Point(0, 167);
@@ -126,20 +134,6 @@
             this.Delete.TabIndex = 1;
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
-            // 
-            // Update
-            // 
-            this.Update.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Update.FlatAppearance.BorderSize = 0;
-            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Update.Location = new System.Drawing.Point(0, 46);
-            this.Update.Name = "Update";
-            this.Update.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Update.Size = new System.Drawing.Size(200, 23);
-            this.Update.TabIndex = 2;
-            this.Update.Text = "Update";
-            this.Update.UseVisualStyleBackColor = true;
             // 
             // showUsers
             // 
@@ -197,7 +191,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel EditEmployeePanel;
         private System.Windows.Forms.Button showUsers;
-        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Panel panel2;

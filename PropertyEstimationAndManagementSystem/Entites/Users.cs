@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace PropertyEstimationAndManagementSystem.Entites
 {
-    class Users: BaseEntity
+    public class Users: BaseEntity
     {
         public string UserName { get; set; }
         public string UserPassword { get; set; }
+
+        public string UserType { get; set; }
     }
 }
