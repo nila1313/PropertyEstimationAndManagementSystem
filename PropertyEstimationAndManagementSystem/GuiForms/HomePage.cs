@@ -42,13 +42,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             }
         }
 
-
-        private void btnReporter_Click(object sender, EventArgs e)
-        {
-            Reporter repoter = new Reporter();
-
-        }
-
         
         private Form activeForm = null;
         private void OpenFormPanel(Form openform)
