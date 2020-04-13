@@ -56,5 +56,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 MessageBox.Show("Login Failed");
             }
         }
+        private void userLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Manager m = new Manager(this,users) ;
+            m.Show();
+        }
     }
 }

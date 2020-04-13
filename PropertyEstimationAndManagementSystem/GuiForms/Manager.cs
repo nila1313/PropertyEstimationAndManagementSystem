@@ -32,5 +32,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
 
         }
+
+        private void EditEmployee_Click(object sender, EventArgs e)
+        {
+            EmployeeEdit ee = new EmployeeEdit();
+            this.Hide();
+            ee.Show();
+        }
     }
 }
