@@ -70,7 +70,7 @@
             this.UserPanel.Controls.Add(this.Login);
             this.UserPanel.Location = new System.Drawing.Point(0, 130);
             this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(171, 56);
+            this.UserPanel.Size = new System.Drawing.Size(171, 65);
             this.UserPanel.TabIndex = 0;
             // 
             // button3

@@ -31,11 +31,12 @@
             this.TotalEstimatedProfit = new System.Windows.Forms.Button();
             this.CheckProfit = new System.Windows.Forms.Button();
             this.EditEmployee = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
-            this.Insert = new System.Windows.Forms.Button();
-            this.Delete = new System.Windows.Forms.Button();
             this.showUsers = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.Insert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EmployeePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -69,9 +70,9 @@
             this.EditEmployee.Name = "EditEmployee";
             this.EditEmployee.Size = new System.Drawing.Size(110, 23);
             this.EditEmployee.TabIndex = 6;
-            this.EditEmployee.Text = "Edit Employee";
+            this.EditEmployee.Text = "Employees";
             this.EditEmployee.UseVisualStyleBackColor = true;
-            //this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
+            this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
             // 
             // btnLogout
             // 
@@ -81,7 +82,6 @@
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
-
             // 
             // panel1
             // 
@@ -106,20 +106,19 @@
             this.EditEmployeePanel.Size = new System.Drawing.Size(200, 131);
             this.EditEmployeePanel.TabIndex = 7;
             // 
-            // Insert
+            // showUsers
             // 
-            this.Insert.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Insert.FlatAppearance.BorderSize = 0;
-            this.Insert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Insert.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Insert.Location = new System.Drawing.Point(0, 0);
-            this.Insert.Name = "Insert";
-            this.Insert.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Insert.Size = new System.Drawing.Size(200, 23);
-            this.Insert.TabIndex = 0;
-            this.Insert.Text = "Insert";
-            this.Insert.UseVisualStyleBackColor = true;
-            this.Insert.Click += new System.EventHandler(this.Insert_Click);
+            this.showUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.showUsers.FlatAppearance.BorderSize = 0;
+            this.showUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.showUsers.Location = new System.Drawing.Point(0, 46);
+            this.showUsers.Name = "showUsers";
+            this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.showUsers.Size = new System.Drawing.Size(200, 23);
+            this.showUsers.TabIndex = 3;
+            this.showUsers.Text = "Show Users";
+            this.showUsers.UseVisualStyleBackColor = true;
             // 
             // Delete
             // 
@@ -135,19 +134,20 @@
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
             // 
-            // showUsers
+            // Insert
             // 
-            this.showUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.showUsers.FlatAppearance.BorderSize = 0;
-            this.showUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.showUsers.Location = new System.Drawing.Point(0, 69);
-            this.showUsers.Name = "showUsers";
-            this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.showUsers.Size = new System.Drawing.Size(200, 23);
-            this.showUsers.TabIndex = 3;
-            this.showUsers.Text = "Show Users";
-            this.showUsers.UseVisualStyleBackColor = true;
+            this.Insert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Insert.FlatAppearance.BorderSize = 0;
+            this.Insert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Insert.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Insert.Location = new System.Drawing.Point(0, 0);
+            this.Insert.Name = "Insert";
+            this.Insert.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Insert.Size = new System.Drawing.Size(200, 23);
+            this.Insert.TabIndex = 0;
+            this.Insert.Text = "Edit Employee";
+            this.Insert.UseVisualStyleBackColor = true;
+            this.Insert.Click += new System.EventHandler(this.Insert_Click);
             // 
             // panel2
             // 
