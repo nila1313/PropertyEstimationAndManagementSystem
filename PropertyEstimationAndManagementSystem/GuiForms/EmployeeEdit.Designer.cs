@@ -202,7 +202,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(111, 260);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(561, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(561, 134);
             this.dataGridView1.TabIndex = 17;
             // 
             // label8
@@ -258,7 +258,7 @@
             // 
             // CreateAccount
             // 
-            this.CreateAccount.Location = new System.Drawing.Point(654, 513);
+            this.CreateAccount.Location = new System.Drawing.Point(532, 231);
             this.CreateAccount.Name = "CreateAccount";
             this.CreateAccount.Size = new System.Drawing.Size(97, 23);
             this.CreateAccount.TabIndex = 23;
@@ -268,19 +268,20 @@
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(548, 513);
+            this.Back.Location = new System.Drawing.Point(12, 22);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(75, 23);
             this.Back.TabIndex = 24;
-            this.Back.Text = "Back";
+            this.Back.Text = "<";
             this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // EmployeeEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(763, 548);
+            this.ClientSize = new System.Drawing.Size(778, 444);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.CreateAccount);
             this.Controls.Add(this.comboBox1);

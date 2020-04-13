@@ -31,11 +31,21 @@
             this.TotalEstimatedProfit = new System.Windows.Forms.Button();
             this.CheckProfit = new System.Windows.Forms.Button();
             this.EditEmployee = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.EditEmployeePanel = new System.Windows.Forms.Panel();
+            this.Insert = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.Button();
+            this.showUsers = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.EmployeePanel = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.EditEmployeePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TotalEstimatedProfit
             // 
-            this.TotalEstimatedProfit.Location = new System.Drawing.Point(331, 32);
+            this.TotalEstimatedProfit.Location = new System.Drawing.Point(33, 304);
             this.TotalEstimatedProfit.Name = "TotalEstimatedProfit";
             this.TotalEstimatedProfit.Size = new System.Drawing.Size(127, 23);
             this.TotalEstimatedProfit.TabIndex = 4;
@@ -44,7 +54,7 @@
             // 
             // CheckProfit
             // 
-            this.CheckProfit.Location = new System.Drawing.Point(519, 32);
+            this.CheckProfit.Location = new System.Drawing.Point(33, 342);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -53,25 +63,129 @@
             // 
             // EditEmployee
             // 
-            this.EditEmployee.Location = new System.Drawing.Point(135, 32);
+            this.EditEmployee.FlatAppearance.BorderSize = 0;
+            this.EditEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.EditEmployee.Location = new System.Drawing.Point(3, 138);
             this.EditEmployee.Name = "EditEmployee";
-            this.EditEmployee.Size = new System.Drawing.Size(120, 23);
+            this.EditEmployee.Size = new System.Drawing.Size(110, 23);
             this.EditEmployee.TabIndex = 6;
             this.EditEmployee.Text = "Edit Employee";
             this.EditEmployee.UseVisualStyleBackColor = true;
             this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.EditEmployeePanel);
+            this.panel1.Controls.Add(this.EditEmployee);
+            this.panel1.Controls.Add(this.CheckProfit);
+            this.panel1.Controls.Add(this.TotalEstimatedProfit);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 556);
+            this.panel1.TabIndex = 7;
+            // 
+            // EditEmployeePanel
+            // 
+            this.EditEmployeePanel.Controls.Add(this.showUsers);
+            this.EditEmployeePanel.Controls.Add(this.Update);
+            this.EditEmployeePanel.Controls.Add(this.Delete);
+            this.EditEmployeePanel.Controls.Add(this.Insert);
+            this.EditEmployeePanel.Location = new System.Drawing.Point(0, 167);
+            this.EditEmployeePanel.Name = "EditEmployeePanel";
+            this.EditEmployeePanel.Size = new System.Drawing.Size(200, 131);
+            this.EditEmployeePanel.TabIndex = 7;
+            // 
+            // Insert
+            // 
+            this.Insert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Insert.FlatAppearance.BorderSize = 0;
+            this.Insert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Insert.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Insert.Location = new System.Drawing.Point(0, 0);
+            this.Insert.Name = "Insert";
+            this.Insert.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Insert.Size = new System.Drawing.Size(200, 23);
+            this.Insert.TabIndex = 0;
+            this.Insert.Text = "Insert";
+            this.Insert.UseVisualStyleBackColor = true;
+            this.Insert.Click += new System.EventHandler(this.Insert_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Delete.FlatAppearance.BorderSize = 0;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Delete.Location = new System.Drawing.Point(0, 23);
+            this.Delete.Name = "Delete";
+            this.Delete.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Delete.Size = new System.Drawing.Size(200, 23);
+            this.Delete.TabIndex = 1;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = true;
+            // 
+            // Update
+            // 
+            this.Update.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Update.FlatAppearance.BorderSize = 0;
+            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Update.Location = new System.Drawing.Point(0, 46);
+            this.Update.Name = "Update";
+            this.Update.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Update.Size = new System.Drawing.Size(200, 23);
+            this.Update.TabIndex = 2;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            // 
+            // showUsers
+            // 
+            this.showUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.showUsers.FlatAppearance.BorderSize = 0;
+            this.showUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.showUsers.Location = new System.Drawing.Point(0, 69);
+            this.showUsers.Name = "showUsers";
+            this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.showUsers.Size = new System.Drawing.Size(200, 23);
+            this.showUsers.TabIndex = 3;
+            this.showUsers.Text = "Show Users";
+            this.showUsers.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(794, 73);
+            this.panel2.TabIndex = 8;
+            // 
+            // EmployeePanel
+            // 
+            this.EmployeePanel.BackColor = System.Drawing.Color.DimGray;
+            this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmployeePanel.Location = new System.Drawing.Point(200, 73);
+            this.EmployeePanel.Name = "EmployeePanel";
+            this.EmployeePanel.Size = new System.Drawing.Size(794, 483);
+            this.EmployeePanel.TabIndex = 9;
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.EditEmployee);
-            this.Controls.Add(this.CheckProfit);
-            this.Controls.Add(this.TotalEstimatedProfit);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(994, 556);
+            this.Controls.Add(this.EmployeePanel);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "Manager";
             this.Text = "Manager";
+            this.panel1.ResumeLayout(false);
+            this.EditEmployeePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -80,5 +194,13 @@
         private System.Windows.Forms.Button TotalEstimatedProfit;
         private System.Windows.Forms.Button CheckProfit;
         private System.Windows.Forms.Button EditEmployee;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel EditEmployeePanel;
+        private System.Windows.Forms.Button showUsers;
+        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button Insert;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel EmployeePanel;
     }
 }

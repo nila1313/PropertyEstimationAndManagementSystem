@@ -22,5 +22,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             EmployeeAccount acc = new EmployeeAccount();
             acc.Show();
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
