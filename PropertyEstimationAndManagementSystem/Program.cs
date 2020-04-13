@@ -17,7 +17,7 @@ namespace PropertyEstimationAndManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeAccount());
+            Application.Run(new Login());
         }
     }
 }

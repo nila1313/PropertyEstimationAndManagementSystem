@@ -31,6 +31,7 @@
             this.TotalEstimatedProfit = new System.Windows.Forms.Button();
             this.CheckProfit = new System.Windows.Forms.Button();
             this.EditEmployee = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TotalEstimatedProfit
@@ -59,12 +60,24 @@
             this.EditEmployee.TabIndex = 6;
             this.EditEmployee.Text = "Edit Employee";
             this.EditEmployee.UseVisualStyleBackColor = true;
+            this.EditEmployee.Click += new System.EventHandler(this.EditEmployee_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(692, 384);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.EditEmployee);
             this.Controls.Add(this.CheckProfit);
             this.Controls.Add(this.TotalEstimatedProfit);
@@ -78,5 +91,6 @@
         private System.Windows.Forms.Button TotalEstimatedProfit;
         private System.Windows.Forms.Button CheckProfit;
         private System.Windows.Forms.Button EditEmployee;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
