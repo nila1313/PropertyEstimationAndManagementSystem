@@ -12,28 +12,19 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class HomePage : Form
     {
+
+        
         public HomePage()
         {
             InitializeComponent();
-            CustomizeDesign();
-        }
-
-        private void CustomizeDesign()
-        {
             UserPanel.Visible = false;
         }
-        private void HideSubMenu()
-        {
-            if (UserPanel.Visible == true)
-                UserPanel.Visible = false;
-
-        }
+        
         private void ShowSubMenu(Panel subMenu)
         {
 
             if (subMenu.Visible == false)
             {
-                HideSubMenu();
                 subMenu.Visible = true;
             }
             else
@@ -42,12 +33,14 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             }
         }
 
-        
-        private Form activeForm = null;
+
+        private Form activeForm;
         private void OpenFormPanel(Form openform)
         {
             if (activeForm != null)
+            {
                 activeForm.Close();
+            }
             activeForm = openform;
             openform.TopLevel = false;
             openform.FormBorderStyle = FormBorderStyle.None;
