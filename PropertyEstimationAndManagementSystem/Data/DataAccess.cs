@@ -19,6 +19,7 @@ namespace PropertyEstimationAndManagementSystem.Data
         }
         public DataAccess()
         {
+
             ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chmaitra\Documents\GitHub\PropertyEstimationAndManagementSystem\MainDatabase.mdf;Integrated Security=True;Connect Timeout=30";
         }
 
