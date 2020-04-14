@@ -15,3 +15,9 @@ PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 *.cache
+PropertyEstimationAndManagementSystem/Data/DataAccess.cs
+*.cache
+*.ldf
+*.mdf
+*.pdb
+*.exe
