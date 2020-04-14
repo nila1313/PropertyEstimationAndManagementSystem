@@ -127,7 +127,6 @@ namespace PropertyEstimationAndManagementSystem.Data
             return Execute(getSelectQuery<T>(whereClause));
         }
 
-
         private List<T> getEntityListFromDataTable<T>(DataTable dataTable) where T : BaseEntity
         {
             List<T> entities = new List<T>();
