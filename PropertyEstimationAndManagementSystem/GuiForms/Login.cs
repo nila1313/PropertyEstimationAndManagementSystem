@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PropertyEstimationAndManagementSystem.GuiForms.Consultant;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -48,6 +49,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 {
                     Reporter rep = new Reporter(this, users);
                     rep.Show();
+                    this.Hide();
+                }
+                if (dt.Rows[0][2].ToString().ToUpper() == "CONSULTANT")
+                {
+                    Consultants con = new Consultants(this, users);
+                    con.Show();
                     this.Hide();
                 }
             }

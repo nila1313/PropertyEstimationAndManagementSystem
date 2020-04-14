@@ -34,6 +34,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
+            this.CreateEmployeeAccount = new System.Windows.Forms.Button();
             this.showUsers = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
@@ -93,11 +94,12 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 556);
+            this.panel1.Size = new System.Drawing.Size(180, 556);
             this.panel1.TabIndex = 7;
             // 
             // EditEmployeePanel
             // 
+            this.EditEmployeePanel.Controls.Add(this.CreateEmployeeAccount);
             this.EditEmployeePanel.Controls.Add(this.showUsers);
             this.EditEmployeePanel.Controls.Add(this.Delete);
             this.EditEmployeePanel.Controls.Add(this.Insert);
@@ -105,6 +107,21 @@
             this.EditEmployeePanel.Name = "EditEmployeePanel";
             this.EditEmployeePanel.Size = new System.Drawing.Size(200, 131);
             this.EditEmployeePanel.TabIndex = 7;
+            // 
+            // CreateEmployeeAccount
+            // 
+            this.CreateEmployeeAccount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CreateEmployeeAccount.FlatAppearance.BorderSize = 0;
+            this.CreateEmployeeAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CreateEmployeeAccount.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CreateEmployeeAccount.Location = new System.Drawing.Point(0, 69);
+            this.CreateEmployeeAccount.Name = "CreateEmployeeAccount";
+            this.CreateEmployeeAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.CreateEmployeeAccount.Size = new System.Drawing.Size(200, 23);
+            this.CreateEmployeeAccount.TabIndex = 4;
+            this.CreateEmployeeAccount.Text = "Create Employee  Account";
+            this.CreateEmployeeAccount.UseVisualStyleBackColor = true;
+            this.CreateEmployeeAccount.Click += new System.EventHandler(this.CreateEmployeeAccount_Click);
             // 
             // showUsers
             // 
@@ -119,6 +136,7 @@
             this.showUsers.TabIndex = 3;
             this.showUsers.Text = "Show Users";
             this.showUsers.UseVisualStyleBackColor = true;
+            this.showUsers.Click += new System.EventHandler(this.showUsers_Click);
             // 
             // Delete
             // 
@@ -133,6 +151,7 @@
             this.Delete.TabIndex = 1;
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Insert
             // 
@@ -153,18 +172,18 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Location = new System.Drawing.Point(180, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 73);
+            this.panel2.Size = new System.Drawing.Size(814, 73);
             this.panel2.TabIndex = 8;
             // 
             // EmployeePanel
             // 
             this.EmployeePanel.BackColor = System.Drawing.Color.DimGray;
             this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmployeePanel.Location = new System.Drawing.Point(200, 73);
+            this.EmployeePanel.Location = new System.Drawing.Point(180, 73);
             this.EmployeePanel.Name = "EmployeePanel";
-            this.EmployeePanel.Size = new System.Drawing.Size(794, 483);
+            this.EmployeePanel.Size = new System.Drawing.Size(814, 483);
             this.EmployeePanel.TabIndex = 9;
             // 
             // Manager
@@ -196,5 +215,6 @@
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel EmployeePanel;
+        private System.Windows.Forms.Button CreateEmployeeAccount;
     }
 }

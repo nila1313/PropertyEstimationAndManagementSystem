@@ -49,23 +49,17 @@
     <Compile Include="Entites\BaseEntity.cs" />
     <Compile Include="Entites\LoginInfo.cs" />
     <Compile Include="Entites\Users.cs" />
+    <Compile Include="GuiForms\Consultant\Consultants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\Consultants.Designer.cs">
+      <DependentUpon>Consultants.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\EditProperty.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuiForms\EditProperty.Designer.cs">
       <DependentUpon>EditProperty.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuiForms\EmployeeAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GuiForms\EmployeeAccount.Designer.cs">
-      <DependentUpon>EmployeeAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuiForms\EmployeeEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GuiForms\EmployeeEdit.Designer.cs">
-      <DependentUpon>EmployeeEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\HomePage.cs">
       <SubType>Form</SubType>
@@ -79,12 +73,26 @@
     <Compile Include="GuiForms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiForms\Manager.cs">
+    <Compile Include="GuiForms\ManagerGui\DeleteEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\Manager.Designer.cs">
-      <DependentUpon>Manager.cs</DependentUpon>
+    <Compile Include="GuiForms\ManagerGui\DeleteEmployee.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\EmployeeAccount.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GuiForms\ManagerGui\EmployeeAccount.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\EmployeeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\EmployeeEdit.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\InsertEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\InsertEmployee.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\Manager.Designer.cs" />
     <Compile Include="GuiForms\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,14 +101,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GuiForms\Consultant\Consultants.resx">
+      <DependentUpon>Consultants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\EmployeeAccount.resx">
-      <DependentUpon>EmployeeAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\EmployeeEdit.resx">
-      <DependentUpon>EmployeeEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -108,9 +113,11 @@
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\Manager.resx">
-      <DependentUpon>Manager.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\DeleteEmployee.resx" />
+    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeAccount.resx" />
+    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeEdit.resx" />
+    <EmbeddedResource Include="GuiForms\ManagerGui\InsertEmployee.resx" />
+    <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx" />
     <EmbeddedResource Include="GuiForms\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>

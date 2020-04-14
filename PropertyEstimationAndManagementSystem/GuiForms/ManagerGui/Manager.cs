@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PropertyEstimationAndManagementSystem.GuiForms.ManagerGui;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -72,6 +73,21 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             OpenFormPanel(new EmployeeEdit());
             //EmployeeEdit mm = new EmployeeEdit();
             //mm.Show();
+        }
+
+        private void showUsers_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new InsertEmployee());
+        }
+
+        private void CreateEmployeeAccount_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new EmployeeAccount());
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new DeleteEmployee());
         }
     }
 }
