@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PropertyEstimationAndManagementSystem.GuiForms.Consultant;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -38,7 +39,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             {
                 string where = string.Format("where UserName='{0}' and UserPassword='{1}'", users.UserName, users.UserPassword);
                 DataTable dt = da.GetData<Users>(where);
-                MessageBox.Show("Login Success");
                 if (dt.Rows[0][2].ToString().ToUpper() == "MANAGER")
                 {
                     Manager man = new Manager(this, users);
@@ -57,6 +57,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                     con.Show();
                     this.Hide();
                 }
+                if (dt.Rows[0][2].ToString().ToUpper() == "OWNER")
+                {
+                    Owner own = new Owner(this, users);
+                    own.Show();
+                    this.Hide();
+                }
+                MessageBox.Show("Login Success");
             }
             catch(Exception en)
             {

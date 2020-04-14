@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
-    <Compile Include="Entites\LoginInfo.cs" />
     <Compile Include="Entites\Users.cs" />
     <Compile Include="GuiForms\Consultant\Consultants.cs">
       <SubType>Form</SubType>
@@ -55,10 +54,16 @@
     <Compile Include="GuiForms\Consultant\Consultants.Designer.cs">
       <DependentUpon>Consultants.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiForms\EditProperty.cs">
+    <Compile Include="GuiForms\OwnerGui\Owner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\EditProperty.Designer.cs">
+    <Compile Include="GuiForms\OwnerGui\Owner.Designer.cs">
+      <DependentUpon>Owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\EditProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\EditProperty.Designer.cs">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\HomePage.cs">
@@ -103,10 +108,10 @@
     <Compile Include="GuiForms\ManagerGui\Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiForms\Reporter.cs">
+    <Compile Include="GuiForms\ReporterGui\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\Reporter.Designer.cs">
+    <Compile Include="GuiForms\ReporterGui\Reporter.Designer.cs">
       <DependentUpon>Reporter.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -114,7 +119,7 @@
     <EmbeddedResource Include="GuiForms\Consultant\Consultants.resx">
       <DependentUpon>Consultants.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\EditProperty.resx">
+    <EmbeddedResource Include="GuiForms\ReporterGui\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\HomePage.resx">
@@ -123,7 +128,7 @@
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\Reporter.resx">
+    <EmbeddedResource Include="GuiForms\ReporterGui\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
