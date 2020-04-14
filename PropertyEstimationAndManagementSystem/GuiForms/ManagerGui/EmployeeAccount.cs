@@ -29,7 +29,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             user.Id = 6;
             user.UserName = userName.Text;
             user.UserPassword = password.Text;
-            da.Insert<Users>(user,false);
+            da.Insert<Users>(user, false);
             MessageBox.Show("Save Successful");
         }
     }

@@ -14,8 +14,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class Manager : Form
     {
-        Login login { get;}
-        Users user { get;}
+        Login login { get; }
+        Users user { get; }
         public Manager(Login login, Users user)
         {
             InitializeComponent();
@@ -65,8 +65,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             EmployeePanel.Controls.Add(openform);
             EmployeePanel.BringToFront();
             openform.Show();
-        
-    }
+
+        }
 
         private void Insert_Click(object sender, EventArgs e)
         {

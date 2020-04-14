@@ -19,7 +19,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             InitializeComponent();
         }
 
-       
+
 
         private void Back_Click(object sender, EventArgs e)
         {

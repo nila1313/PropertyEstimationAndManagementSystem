@@ -18,13 +18,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
         Users users;
         Login login;
 
-    public InsertEmployee()
-    {
+        public InsertEmployee()
+        {
             //this.users = users;
             //this.login = login;
-        InitializeComponent();
-    }
-    private void button1_Click(object sender, EventArgs e)
+            InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

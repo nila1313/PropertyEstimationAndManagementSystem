@@ -76,23 +76,33 @@
     <Compile Include="GuiForms\ManagerGui\DeleteEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\ManagerGui\DeleteEmployee.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\DeleteEmployee.Designer.cs">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ManagerGui\EmployeeAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\ManagerGui\EmployeeAccount.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\EmployeeAccount.Designer.cs">
+      <DependentUpon>EmployeeAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ManagerGui\EmployeeEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\ManagerGui\EmployeeEdit.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\EmployeeEdit.Designer.cs">
+      <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ManagerGui\InsertEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\ManagerGui\InsertEmployee.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\InsertEmployee.Designer.cs">
+      <DependentUpon>InsertEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ManagerGui\Manager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\ManagerGui\Manager.Designer.cs" />
+    <Compile Include="GuiForms\ManagerGui\Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,11 +123,6 @@
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\ManagerGui\DeleteEmployee.resx" />
-    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeAccount.resx" />
-    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeEdit.resx" />
-    <EmbeddedResource Include="GuiForms\ManagerGui\InsertEmployee.resx" />
-    <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx" />
     <EmbeddedResource Include="GuiForms\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>
