@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using PropertyEstimationAndManagementSystem.GuiForms.ManagerGui;
+
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class EmployeeEdit : Form
@@ -17,11 +19,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             InitializeComponent();
         }
 
-        private void CreateAccount_Click(object sender, EventArgs e)
-        {
-            EmployeeAccount acc = new EmployeeAccount();
-            acc.Show();
-        }
+       
 
         private void Back_Click(object sender, EventArgs e)
         {

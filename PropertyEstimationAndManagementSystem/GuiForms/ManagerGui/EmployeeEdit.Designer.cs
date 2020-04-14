@@ -51,7 +51,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.CreateAccount = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -256,16 +255,6 @@
             this.comboBox1.Size = new System.Drawing.Size(152, 21);
             this.comboBox1.TabIndex = 22;
             // 
-            // CreateAccount
-            // 
-            this.CreateAccount.Location = new System.Drawing.Point(532, 231);
-            this.CreateAccount.Name = "CreateAccount";
-            this.CreateAccount.Size = new System.Drawing.Size(97, 23);
-            this.CreateAccount.TabIndex = 23;
-            this.CreateAccount.Text = "Create Account";
-            this.CreateAccount.UseVisualStyleBackColor = true;
-            this.CreateAccount.Click += new System.EventHandler(this.CreateAccount_Click);
-            // 
             // Back
             // 
             this.Back.Location = new System.Drawing.Point(12, 22);
@@ -283,7 +272,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(778, 444);
             this.Controls.Add(this.Back);
-            this.Controls.Add(this.CreateAccount);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label10);
@@ -340,7 +328,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button CreateAccount;
         private System.Windows.Forms.Button Back;
     }
 }
