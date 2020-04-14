@@ -22,3 +22,6 @@ PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 *.pdb
 *.exe
 PropertyEstimationAndManagementSystem/Data/DataAccess.cs
+MainDatabase.mdf
+*.ldf
+*.mdf
