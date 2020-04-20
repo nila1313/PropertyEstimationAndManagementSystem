@@ -112,7 +112,13 @@
     <Compile Include="GuiForms\EditProperty.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\EditProperty.Designer.cs">
+    <Compile Include="GuiForms\OwnerGui\Owner.Designer.cs">
+      <DependentUpon>Owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\EditProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\EditProperty.Designer.cs">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\HomePage.cs">
@@ -157,10 +163,10 @@
     <Compile Include="GuiForms\ManagerGui\Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuiForms\Reporter.cs">
+    <Compile Include="GuiForms\ReporterGui\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuiForms\Reporter.Designer.cs">
+    <Compile Include="GuiForms\ReporterGui\Reporter.Designer.cs">
       <DependentUpon>Reporter.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -201,7 +207,7 @@
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\Reporter.resx">
+    <EmbeddedResource Include="GuiForms\ReporterGui\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PropertyEstimationAndManagementSystem.GuiForms.Consultant;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -57,6 +58,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                     Consultants con = new Consultants(this, users);
                     con.Show();
                     home.Hide();
+                }
+                if (dt.Rows[0][2].ToString().ToUpper() == "OWNER")
+                {
+                    Owner own = new Owner(this, users);
+                    own.Show();
+                    this.Hide();
                 }
                 MessageBox.Show("Login Success");
             }
