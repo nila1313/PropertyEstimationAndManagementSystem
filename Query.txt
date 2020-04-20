@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[Customer]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [FirstName] NVARCHAR(50) NULL, 
     [LastName] NVARCHAR(50) NULL, 
     [Address] NVARCHAR(50) NULL, 
@@ -8,13 +8,31 @@ CREATE TABLE [dbo].[Customer]
     [Email] NVARCHAR(50) NULL, 
     [Nid] NVARCHAR(50) NULL
 )
+CREATE TABLE [dbo].[Employee]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [FristName] NVARCHAR(50) NULL, 
+    [LastName] NVARCHAR(50) NULL, 
+    [JoiningDate ] NVARCHAR(50) NULL, 
+    [Type] NVARCHAR(50) NULL, 
+    [Salary] NVARCHAR(50) NULL, 
+    [DateOfBirth] NVARCHAR(50) NULL, 
+    [BloodGroup] NVARCHAR(50) NULL
+)
 
+CREATE TABLE [dbo].[Property] (
+    [Id]     INT NOT NULL,
+    [Name]   NVARCHAR (50) NULL,
+    [Status] NVARCHAR (50) NULL,
+    [Area]   NVARCHAR (50) NULL,
+    [Price]  FLOAT (53)    NULL,
+    [Size] FLOAT NULL, 
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+)
 
-CREATE TABLE [dbo].[Property]
+CREATE TABLE [dbo].[FeedBack]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
-    [Name] NVARCHAR(50) NULL, 
-    [Status] NVARCHAR(50) NULL, 
-    [Area] NVARCHAR(50) NULL, 
-    [Price] FLOAT NULL
+    [EmployeeId] INT NULL, 
+    [Description] NVARCHAR(500) NULL
 )

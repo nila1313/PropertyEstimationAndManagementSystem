@@ -51,7 +51,6 @@
     <Compile Include="Entites\Customer.cs" />
     <Compile Include="Entites\Employee.cs" />
     <Compile Include="Entites\FeedBack.cs" />
-    <Compile Include="Entites\LoginInfo.cs" />
     <Compile Include="Entites\Property.cs" />
     <Compile Include="Entites\Transaction.cs" />
     <Compile Include="Entites\Users.cs" />
@@ -108,12 +107,6 @@
     </Compile>
     <Compile Include="GuiForms\Consultant\UnsoldPropertyList.Designer.cs">
       <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuiForms\EditProperty.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GuiForms\OwnerGui\Owner.Designer.cs">
-      <DependentUpon>Owner.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\ReporterGui\EditProperty.cs">
       <SubType>Form</SubType>
@@ -198,9 +191,6 @@
     <EmbeddedResource Include="GuiForms\Consultant\UnsoldPropertyList.resx">
       <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\EditProperty.resx">
-      <DependentUpon>EditProperty.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,7 +223,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GuiForms\OwnerGui\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Pictures\download.png" />
     <None Include="Resources\download1.png" />
