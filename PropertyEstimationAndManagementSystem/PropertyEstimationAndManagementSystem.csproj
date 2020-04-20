@@ -47,13 +47,67 @@
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Entites\BaseEntity.cs" />
+    <Compile Include="Entites\BookedProperty.cs" />
+    <Compile Include="Entites\Customer.cs" />
+    <Compile Include="Entites\Employee.cs" />
+    <Compile Include="Entites\FeedBack.cs" />
     <Compile Include="Entites\LoginInfo.cs" />
+    <Compile Include="Entites\Property.cs" />
+    <Compile Include="Entites\Transaction.cs" />
     <Compile Include="Entites\Users.cs" />
     <Compile Include="GuiForms\Consultant\Consultants.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuiForms\Consultant\Consultants.Designer.cs">
       <DependentUpon>Consultants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\CustomerInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\CustomerInformation.Designer.cs">
+      <DependentUpon>CustomerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\PriceAccordingArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\PriceAccordingArea.Designer.cs">
+      <DependentUpon>PriceAccordingArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\ShowBookedProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\ShowBookedProperty.Designer.cs">
+      <DependentUpon>ShowBookedProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\ShowCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\ShowCustomer.Designer.cs">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\UnsoldPropertyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\Consultant\UnsoldPropertyList.Designer.cs">
+      <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\EditProperty.cs">
       <SubType>Form</SubType>
@@ -114,6 +168,30 @@
     <EmbeddedResource Include="GuiForms\Consultant\Consultants.resx">
       <DependentUpon>Consultants.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\CustomerInformation.resx">
+      <DependentUpon>CustomerInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\PriceAccordingArea.resx">
+      <DependentUpon>PriceAccordingArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\ShowBookedProperty.resx">
+      <DependentUpon>ShowBookedProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\ShowCustomer.resx">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\Consultant\UnsoldPropertyList.resx">
+      <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +212,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,5 +228,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Pictures\download.png" />
+    <None Include="Resources\download1.png" />
+    <None Include="Resources\download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

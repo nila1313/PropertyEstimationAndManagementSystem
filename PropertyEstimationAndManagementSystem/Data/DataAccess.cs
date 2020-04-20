@@ -148,7 +148,7 @@ namespace PropertyEstimationAndManagementSystem.Data
         private string getSelectQuery<T>(string whereClause = "") where T : BaseEntity
         {
             string sql1 = "Select ";
-            var entity = (T)Activator.CreateInstance(typeof(T));
+            var entity = (T)Activator.CreateInstance(typeof(T));// new Property()
             foreach (var prop in entity.GetType().GetProperties())
             {
                 sql1 += string.Format("[{0}],", prop.Name);
@@ -177,6 +177,16 @@ namespace PropertyEstimationAndManagementSystem.Data
         public int remove<T>(T entity) where T : BaseEntity
         {
             var sql = string.Format("DELETE FROM {0} WHERE Id={1}", entity.GetType().Name,entity.Id.ToString());
+            SqlCommand sqlCommand = GetCommand(sql);
+            sqlCommand.Connection.Open();
+            var rowsAffected = sqlCommand.ExecuteNonQuery();
+            sqlCommand.Connection.Close();
+            return rowsAffected;
+        }
+        public int remove<T>(string whereClause) where T : BaseEntity
+        {
+            var entity = (T)Activator.CreateInstance(typeof(T));
+            var sql = string.Format("DELETE FROM {0} {1}", entity.GetType().Name,whereClause);
             SqlCommand sqlCommand = GetCommand(sql);
             sqlCommand.Connection.Open();
             var rowsAffected = sqlCommand.ExecuteNonQuery();

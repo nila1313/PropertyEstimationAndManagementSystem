@@ -20,16 +20,80 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             this.login = login;
             this.users = users;
             InitializeComponent();
+            CustomizeDesign();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CustomizeDesign()
         {
+            panelProperty.Visible = false;
+        }
+        private void HideSubMenu()
+        {
+            if (panelProperty.Visible == true)
+                panelProperty.Visible = false;
+
+        }
+        private void ShowSubMenu(Panel subMenu)
+        {
+
+            if (subMenu.Visible == false)
+            {
+                HideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+    
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new Search(users));
+        }
+
+        private Form activeForm = null;
+        public void OpenFormPanel(Form openform)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = openform;
+            openform.TopLevel = false;
+            openform.FormBorderStyle = FormBorderStyle.None;
+            openform.Dock = DockStyle.Fill;
+            panelConsultant.Controls.Add(openform);
+            panelConsultant.BringToFront();
+            openform.Show();
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnProperty_Click(object sender, EventArgs e)
         {
+            ShowSubMenu(panelProperty);
+        }
 
+        private void btnPrice_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new PriceAccordingArea());
+        }
+
+        private void btnShowCustomer_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new ShowCustomer(new Property()
+            {
+                Status = "NULL"
+            }, users, new Search(users)));
+        }
+
+        private void btnBookedProperty_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new ShowBookedProperty(users,this));
+        }
+
+        private void btnFeedBack_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new FeedBack(users, this));
         }
     }
 }

@@ -1,0 +1,81 @@
+Transaction Table
+Customer ID
+Property ID
+Employee ID
+Amount
+Cheque Number
+DateTime
+Transaction Type
+
+Employee
+
+Employee Id
+FirstName
+LastName
+JoiningDate
+Type
+Salary
+DateOfBirth
+BloodGroup
+
+
+
+
+
+Id
+JoinDate
+EmployeeType
+Salary
+DOB
+Blood Group
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string JoiningDate { get; set; }
+        public string Type { get; set; }
+        public double Salary { get; set; }
+        public string DateOfBirth { get; set; }
+        public string BloodGroup { get; set; }
+
+
+
+
+CREATE TABLE [dbo].[Employee]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [FristName] NVARCHAR(50) NULL, 
+    [LastName] NVARCHAR(50) NULL, 
+    [JoiningDate ] NVARCHAR(50) NULL, 
+    [Type] NVARCHAR(50) NULL, 
+    [Salary] NVARCHAR(50) NULL, 
+    [DateOfBirth] NVARCHAR(50) NULL, 
+    [BloodGroup] NVARCHAR(50) NULL
+)
+
+
+Customer
+
+  public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string MobileNumber { get; set; }
+        public string Email { get; set; }
+        public string Nid { get; set; }
+
+
+CREATE TABLE [dbo].[Property] (
+    [Id]     INT NOT NULL,
+    [Name]   NVARCHAR (50) NULL,
+    [Status] NVARCHAR (50) NULL,
+    [Area]   NVARCHAR (50) NULL,
+    [Price]  FLOAT (53)    NULL,
+    [Size] FLOAT NULL, 
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[FeedBack]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [EmployeeId] INT NULL, 
+    [Description] NVARCHAR(500) NULL
+)

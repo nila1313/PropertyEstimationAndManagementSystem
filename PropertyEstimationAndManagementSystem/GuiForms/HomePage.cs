@@ -61,7 +61,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void Login_Click(object sender, EventArgs e)
         {
-            OpenFormPanel(new Login());
+            OpenFormPanel(new Login(this));
         }
     }
 }

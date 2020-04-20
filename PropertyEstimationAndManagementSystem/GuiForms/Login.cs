@@ -17,12 +17,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
     {
         private DataAccess da;
         Users users;
-
-        public Login()
+        HomePage home;
+        public Login(HomePage home)
         {
             InitializeComponent();
             da = new DataAccess();
             users = new Users();
+            this.home = home;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -38,25 +39,26 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             {
                 string where = string.Format("where UserName='{0}' and UserPassword='{1}'", users.UserName, users.UserPassword);
                 DataTable dt = da.GetData<Users>(where);
-                MessageBox.Show("Login Success");
+                users.Id=Convert.ToInt32(dt.Rows[0][3].ToString());
                 if (dt.Rows[0][2].ToString().ToUpper() == "MANAGER")
                 {
                     Manager man = new Manager(this, users);
                     man.Show();
-                    this.Hide();
+                    home.Hide();
                 }
                 if (dt.Rows[0][2].ToString().ToUpper() == "REPORTER")
                 {
                     Reporter rep = new Reporter(this, users);
                     rep.Show();
-                    this.Hide();
+                    home.Hide();
                 }
                 if (dt.Rows[0][2].ToString().ToUpper() == "CONSULTANT")
                 {
                     Consultants con = new Consultants(this, users);
                     con.Show();
-                    this.Hide();
+                    home.Hide();
                 }
+                MessageBox.Show("Login Success");
             }
             catch(Exception en)
             {
@@ -82,7 +84,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void Back_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
         }
     }
 }
