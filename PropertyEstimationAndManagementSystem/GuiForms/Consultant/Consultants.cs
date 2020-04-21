@@ -50,7 +50,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            OpenFormPanel(new Search(users));
+            OpenFormPanel(new Search(users,this));
         }
 
         private Form activeForm = null;
@@ -83,7 +83,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             OpenFormPanel(new ShowCustomer(new Property()
             {
                 Status = "NULL"
-            }, users, new Search(users)));
+            }, users, this));
         }
 
         private void btnBookedProperty_Click(object sender, EventArgs e)
@@ -94,6 +94,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         private void btnFeedBack_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new FeedBack(users, this));
+        }
+
+        private void btnBuy_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new UnsoldPropertyList(users,this));
         }
     }
 }

@@ -15,6 +15,8 @@ namespace PropertyEstimationAndManagementSystem.Entites
         public string ChequeNumber { set; get; }
         public string TransactionDateTime { set; get; }
         public string TransactionType { set; get; }
+
+        public string Trade { set; get; }
         
     }
 

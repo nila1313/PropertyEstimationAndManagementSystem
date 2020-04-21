@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuy = new System.Windows.Forms.Button();
             this.btnProperty = new System.Windows.Forms.Button();
             this.btnFeedBack = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -63,6 +64,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 590);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBuy
+            // 
+            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuy.FlatAppearance.BorderSize = 0;
+            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuy.Location = new System.Drawing.Point(0, 46);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(202, 23);
+            this.btnBuy.TabIndex = 5;
+            this.btnBuy.Text = "Buy ";
+            this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // btnProperty
             // 
@@ -137,9 +151,9 @@
             this.btnCustomerInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomerInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerInformation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerInformation.Location = new System.Drawing.Point(3, 116);
+            this.btnCustomerInformation.Location = new System.Drawing.Point(3, 126);
             this.btnCustomerInformation.Name = "btnCustomerInformation";
-            this.btnCustomerInformation.Size = new System.Drawing.Size(193, 51);
+            this.btnCustomerInformation.Size = new System.Drawing.Size(193, 41);
             this.btnCustomerInformation.TabIndex = 1;
             this.btnCustomerInformation.Text = "Customer Information";
             this.btnCustomerInformation.UseVisualStyleBackColor = true;
@@ -158,11 +172,12 @@
             // 
             // panelProperty
             // 
+            this.panelProperty.Controls.Add(this.btnBuy);
             this.panelProperty.Controls.Add(this.btnPrice);
             this.panelProperty.Controls.Add(this.btnAvailablePropety);
             this.panelProperty.Location = new System.Drawing.Point(0, 34);
             this.panelProperty.Name = "panelProperty";
-            this.panelProperty.Size = new System.Drawing.Size(202, 53);
+            this.panelProperty.Size = new System.Drawing.Size(202, 86);
             this.panelProperty.TabIndex = 2;
             // 
             // btnPrice
@@ -187,7 +202,7 @@
             this.btnAvailablePropety.Name = "btnAvailablePropety";
             this.btnAvailablePropety.Size = new System.Drawing.Size(202, 23);
             this.btnAvailablePropety.TabIndex = 3;
-            this.btnAvailablePropety.Text = "Available Property";
+            this.btnAvailablePropety.Text = "Sell";
             this.btnAvailablePropety.UseVisualStyleBackColor = true;
             this.btnAvailablePropety.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -232,5 +247,6 @@
         private System.Windows.Forms.Button btnShowCustomer;
         private System.Windows.Forms.Panel panelConsultant;
         private System.Windows.Forms.Button btnBookedProperty;
+        private System.Windows.Forms.Button btnBuy;
     }
 }

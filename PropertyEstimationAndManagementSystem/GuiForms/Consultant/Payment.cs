@@ -40,6 +40,16 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             transaction.TransactionDateTime =DateTime.Now.ToString();
             transaction.TransactionType = "Cash";
             transaction.ChequeNumber = "0";
+            if (property.Status.ToUpper() == "AVAILABLE")
+            {
+                transaction.Trade = "BOUGHT";
+
+            }
+            if(property.Status.ToUpper()=="SOLD" || property.Status.ToUpper() == "BOOKED")
+            {
+                transaction.Trade = "SOLD";
+                property.Status = "SOLD";
+            }
         }
 
         private void btncheque_CheckedChanged(object sender, EventArgs e)
@@ -68,15 +78,15 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
 
             if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if(property.Status=="Booked")
+                if(property.Status.ToUpper()=="BOOKED")
                 {
                     da.remove<BookedProperty>(string.Format("where PropertyId={0}",property.Id));
                 }
                 
                 da.Insert<Transaction>(transaction,true);
-                property.Status = "Sold";
+                
                 da.Insert<Property>(property, true);
-
+                
 
 
                 MessageBox.Show("CONGRATULATIONS!!!!");

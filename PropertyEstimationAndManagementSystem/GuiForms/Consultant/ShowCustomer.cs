@@ -20,16 +20,16 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         DataAccess da;
         Payment payment;
         CustomerInformation customerInfo;
-        Search search;
+        Consultants previousForm;
         BookedProperty bookedProperty;
-        public ShowCustomer(Property property, Users user, Search search)
+        public ShowCustomer(Property property, Users user, Consultants previousForm)
         {
             InitializeComponent();
             this.property = property;
             customer = new Customer();
             this.user = user;
             da = new DataAccess();
-            this.search = search;
+            this.previousForm = previousForm;
 
         }
 
@@ -62,10 +62,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             {
                 if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    if (property.Status.ToUpper() == "SOLD")
+                    if (property.Status.ToUpper() == "SOLD" || property.Status.ToUpper() == "AVAILABLE")
                     {
                         payment = new Payment(property, customer, user);
-                        payment.Show();
+                        previousForm.OpenFormPanel(payment);
                         this.Dispose();
                     }
                     if (property.Status.ToUpper() == "BOOKED")
@@ -79,10 +79,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
                         da.Insert<Property>(property,true);
                         da.Insert<BookedProperty>(bookedProperty,true);
                         MessageBox.Show("Booked!");
-                        this.Dispose();
-                        search.showProperty();
-                        search.property.Id = 0;
-                        search.Show();
+                        this.Dispose();       
                     }
                 }
             }

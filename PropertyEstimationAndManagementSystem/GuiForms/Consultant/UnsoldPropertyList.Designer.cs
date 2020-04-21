@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridPropertyList = new System.Windows.Forms.DataGridView();
             this.lblPropertyList = new System.Windows.Forms.Label();
             this.btnBuy = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridPropertyList)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridPropertyList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(84, 98);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridPropertyList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridPropertyList.Location = new System.Drawing.Point(84, 98);
+            this.dataGridPropertyList.Name = "dataGridPropertyList";
+            this.dataGridPropertyList.Size = new System.Drawing.Size(425, 182);
+            this.dataGridPropertyList.TabIndex = 0;
+            this.dataGridPropertyList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPropertyList_CellClick);
             // 
             // lblPropertyList
             // 
@@ -69,10 +70,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.lblPropertyList);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridPropertyList);
             this.Name = "UnsoldPropertyList";
             this.Text = "UnsoldPropertyList";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.UnsoldPropertyList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridPropertyList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +82,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridPropertyList;
         private System.Windows.Forms.Label lblPropertyList;
         private System.Windows.Forms.Button btnBuy;
     }

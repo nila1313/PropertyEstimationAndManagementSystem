@@ -18,12 +18,14 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         ShowCustomer showCustomer;
         public Property property { get; set; }
         Users user;
-        public Search(Users user)
+        Consultants cons;
+        public Search(Users user, Consultants cons)
         {
             InitializeComponent();
             property = new Property();
             da = new DataAccess();
             this.user = user;
+            this.cons = cons;
         }
 
         private void BtnSell_Click(object sender, EventArgs e)
@@ -31,8 +33,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             if(property.Id!=0)
             {
                 property.Status = "Sold";
-                showCustomer = new ShowCustomer(property,user,this);
-                showCustomer.Show();
+                showCustomer = new ShowCustomer(property,user,cons);
+                cons.OpenFormPanel(showCustomer);
+                this.Dispose();
             }
             else
             {
@@ -45,8 +48,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             if (property.Id != 0)
             {
                 property.Status = "Booked";
-                showCustomer = new ShowCustomer(property, user, this);
-                showCustomer.Show();
+                showCustomer = new ShowCustomer(property, user, cons);
+                cons.OpenFormPanel(showCustomer);
+                this.Dispose();
             }
             else
             {
