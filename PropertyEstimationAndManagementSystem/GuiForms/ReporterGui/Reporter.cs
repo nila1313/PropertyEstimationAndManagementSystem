@@ -1,4 +1,5 @@
 ﻿using PropertyEstimationAndManagementSystem.Entites;
+using PropertyEstimationAndManagementSystem.GuiForms.ReporterGui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,19 +19,65 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         public Reporter(Login login,Users user)
         {
             InitializeComponent();
+            CustomizeDesign();
             this.login = login;
             this.user = user;
         }
 
         private void btnEditReporter_Click(object sender, EventArgs e)
         {
-            EditProperty property = new EditProperty();
+            ShowSubMenu(panelProperty);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             login.Show();
             this.Dispose();
+        }
+    
+
+        private void CustomizeDesign()
+        {
+           panelProperty.Visible = false;
+        }
+        private void HideSubMenu()
+        {
+            if (panelProperty.Visible == true)
+                panelProperty.Visible = false;
+
+        }
+        private void ShowSubMenu(Panel subMenu)
+        {
+
+            if (subMenu.Visible == false)
+            {
+                HideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        private Form activeForm = null;
+        public void OpenFormPanel(Form openform)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = openform;
+            openform.TopLevel = false;
+            openform.FormBorderStyle = FormBorderStyle.None;
+            openform.Dock = DockStyle.Fill;
+            ReporterMainPanel.Controls.Add(openform);
+            ReporterMainPanel.BringToFront();
+            openform.Show();
+
+        }
+
+        private void btnEditProperty_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new ShowPropertyList(this));
         }
     }
 }
