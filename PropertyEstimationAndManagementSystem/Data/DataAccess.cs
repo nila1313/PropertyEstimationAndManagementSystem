@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using PropertyEstimationAndManagementSystem.Entites;
 /// <summary>
@@ -13,14 +14,11 @@ namespace PropertyEstimationAndManagementSystem.Data
     {
         private string ConnectionString { get; set; }
 
-        public DataAccess(string connectionString)
-        {
-            ConnectionString = connectionString;
-        }
         public DataAccess()
         {
-
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chmaitra\Documents\GitHub\PropertyEstimationAndManagementSystem\MainDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            string currentLocation = Directory.GetCurrentDirectory();
+            string projectDir = Directory.GetParent(Directory.GetParent(Directory.GetParent(currentLocation).FullName).FullName).FullName;
+            ConnectionString = string.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={0}\MainDatabase.mdf;Integrated Security=True;Connect Timeout=30", projectDir);
         }
 
         private SqlCommand GetCommand(string sqlQuery)

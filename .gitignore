@@ -29,3 +29,6 @@ MainDatabase.mdf
 =======
 PropertyEstimationAndManagementSystem/Data/DataAccess.cs
 >>>>>>> a580b80b504a4d29e4d34f530f6973aa986f11de
+*.cache
+*.pdb
+*.exe
