@@ -1,6 +1,7 @@
 ﻿using PropertyEstimationAndManagementSystem.Entites;
 using PropertyEstimationAndManagementSystem.GuiForms;
 using PropertyEstimationAndManagementSystem.GuiForms.Consultant;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 using PropertyEstimationAndManagementSystem.GuiForms.ReporterGui;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,10 @@ namespace PropertyEstimationAndManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Consultants(new Login(new HomePage()),new Entites.Users()));
+            // Application.Run(new Consultants(new Login(new HomePage()),new Entites.Users()));
             Application.Run(new HomePage());
             //Application.Run(new Payment(new Property(),new Customer(),new Users()));
-           // Application.Run(new ShowPropertyList(new Form()));
+            // Application.Run(new ShowPropertyList(new Form()));
 
         }
     }
