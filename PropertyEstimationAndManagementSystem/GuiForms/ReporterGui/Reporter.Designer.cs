@@ -36,8 +36,12 @@
             this.btnEditProperty = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ReporterMainPanel = new System.Windows.Forms.Panel();
+            this.panelCustomer = new System.Windows.Forms.Panel();
+            this.btnCustomer = new System.Windows.Forms.Button();
+            this.btnCustomerEdit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelProperty.SuspendLayout();
+            this.panelCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEditReporter
@@ -68,6 +72,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnCustomer);
+            this.panel1.Controls.Add(this.panelCustomer);
             this.panel1.Controls.Add(this.panelProperty);
             this.panel1.Controls.Add(this.btnEditReporter);
             this.panel1.Controls.Add(this.btnLogout);
@@ -88,9 +94,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(30, 58);
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(0, 23);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(200, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -127,6 +137,41 @@
             this.ReporterMainPanel.Size = new System.Drawing.Size(681, 505);
             this.ReporterMainPanel.TabIndex = 4;
             // 
+            // panelCustomer
+            // 
+            this.panelCustomer.Controls.Add(this.btnCustomerEdit);
+            this.panelCustomer.Location = new System.Drawing.Point(0, 225);
+            this.panelCustomer.Name = "panelCustomer";
+            this.panelCustomer.Size = new System.Drawing.Size(200, 100);
+            this.panelCustomer.TabIndex = 3;
+            // 
+            // btnCustomer
+            // 
+            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCustomer.Location = new System.Drawing.Point(3, 186);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(200, 33);
+            this.btnCustomer.TabIndex = 4;
+            this.btnCustomer.Text = "Customer";
+            this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // btnCustomerEdit
+            // 
+            this.btnCustomerEdit.BackColor = System.Drawing.SystemColors.WindowText;
+            this.btnCustomerEdit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCustomerEdit.FlatAppearance.BorderSize = 0;
+            this.btnCustomerEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomerEdit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCustomerEdit.Location = new System.Drawing.Point(0, 0);
+            this.btnCustomerEdit.Name = "btnCustomerEdit";
+            this.btnCustomerEdit.Size = new System.Drawing.Size(200, 23);
+            this.btnCustomerEdit.TabIndex = 5;
+            this.btnCustomerEdit.Text = "Edit Customer";
+            this.btnCustomerEdit.UseVisualStyleBackColor = false;
+            // 
             // Reporter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,6 +185,7 @@
             this.Text = "Reporter";
             this.panel1.ResumeLayout(false);
             this.panelProperty.ResumeLayout(false);
+            this.panelCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -154,5 +200,8 @@
         private System.Windows.Forms.Panel panelProperty;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEditProperty;
+        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Panel panelCustomer;
+        private System.Windows.Forms.Button btnCustomerEdit;
     }
 }

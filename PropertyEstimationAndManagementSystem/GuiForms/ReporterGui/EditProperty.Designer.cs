@@ -42,6 +42,8 @@
             this.lblPropertyId = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,12 +51,12 @@
             // 
             this.lblPropertyName.AutoSize = true;
             this.lblPropertyName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPropertyName.Location = new System.Drawing.Point(26, 71);
+            this.lblPropertyName.Location = new System.Drawing.Point(24, 71);
             this.lblPropertyName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPropertyName.Name = "lblPropertyName";
-            this.lblPropertyName.Size = new System.Drawing.Size(100, 13);
+            this.lblPropertyName.Size = new System.Drawing.Size(77, 13);
             this.lblPropertyName.TabIndex = 0;
-            this.lblPropertyName.Text = "PROPERTY NAME";
+            this.lblPropertyName.Text = "Property Name";
             // 
             // txtPropertyName
             // 
@@ -68,12 +70,12 @@
             // 
             this.lblArea.AutoSize = true;
             this.lblArea.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblArea.Location = new System.Drawing.Point(26, 115);
+            this.lblArea.Location = new System.Drawing.Point(24, 115);
             this.lblArea.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(36, 13);
+            this.lblArea.Size = new System.Drawing.Size(29, 13);
             this.lblArea.TabIndex = 2;
-            this.lblArea.Text = "AREA";
+            this.lblArea.Text = "Area";
             // 
             // txtArea
             // 
@@ -87,23 +89,23 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPrice.Location = new System.Drawing.Point(26, 206);
+            this.lblPrice.Location = new System.Drawing.Point(24, 206);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(39, 13);
+            this.lblPrice.Size = new System.Drawing.Size(31, 13);
             this.lblPrice.TabIndex = 4;
-            this.lblPrice.Text = "PRICE";
+            this.lblPrice.Text = "Price";
             // 
             // lblSize
             // 
             this.lblSize.AutoSize = true;
             this.lblSize.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblSize.Location = new System.Drawing.Point(29, 162);
+            this.lblSize.Location = new System.Drawing.Point(24, 162);
             this.lblSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSize.Name = "lblSize";
-            this.lblSize.Size = new System.Drawing.Size(31, 13);
+            this.lblSize.Size = new System.Drawing.Size(27, 13);
             this.lblSize.TabIndex = 5;
-            this.lblSize.Text = "SIZE";
+            this.lblSize.Text = "Size";
             // 
             // txtPrice
             // 
@@ -126,20 +128,22 @@
             this.btnCreate.Location = new System.Drawing.Point(51, 312);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 19);
+            this.btnCreate.Size = new System.Drawing.Size(79, 25);
             this.btnCreate.TabIndex = 8;
-            this.btnCreate.Text = "CREATE";
+            this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(215, 312);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 19);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 25);
             this.btnUpdate.TabIndex = 9;
-            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtPropertyId
             // 
@@ -156,16 +160,18 @@
             // 
             this.lblPropertyId.AutoSize = true;
             this.lblPropertyId.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPropertyId.Location = new System.Drawing.Point(29, 27);
+            this.lblPropertyId.Location = new System.Drawing.Point(24, 27);
             this.lblPropertyId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPropertyId.Name = "lblPropertyId";
-            this.lblPropertyId.Size = new System.Drawing.Size(80, 13);
+            this.lblPropertyId.Size = new System.Drawing.Size(60, 13);
             this.lblPropertyId.TabIndex = 12;
-            this.lblPropertyId.Text = "PROPERTY ID";
+            this.lblPropertyId.Text = "Property ID";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.lblStatus);
+            this.panel1.Controls.Add(this.comboBoxStatus);
             this.panel1.Controls.Add(this.lblPropertyId);
             this.panel1.Controls.Add(this.lblPropertyName);
             this.panel1.Controls.Add(this.txtPropertyId);
@@ -192,6 +198,30 @@
             this.btnLogout.Text = "<";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // comboBoxStatus
+            // 
+            this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Items.AddRange(new object[] {
+            "Available",
+            "Sold",
+            "Unsold",
+            "Booked"});
+            this.comboBoxStatus.Location = new System.Drawing.Point(144, 244);
+            this.comboBoxStatus.Name = "comboBoxStatus";
+            this.comboBoxStatus.Size = new System.Drawing.Size(176, 21);
+            this.comboBoxStatus.TabIndex = 13;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblStatus.Location = new System.Drawing.Point(24, 245);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(41, 15);
+            this.lblStatus.TabIndex = 14;
+            this.lblStatus.Text = "Status";
             // 
             // EditProperty
             // 
@@ -227,5 +257,7 @@
         private System.Windows.Forms.Label lblPropertyId;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.ComboBox comboBoxStatus;
     }
 }

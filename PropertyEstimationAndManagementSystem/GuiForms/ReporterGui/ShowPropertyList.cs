@@ -28,6 +28,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
 
         private void ShowPropertyList_Load(object sender, EventArgs e)
         {
+            showProperty();
+        }
+
+        public void showProperty()
+        {
             dataGridPropertyList.DataSource = da.GetData<Property>("");
             dataGridPropertyList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
@@ -56,7 +61,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
             if(prevForm is Reporter)
             {
                 Reporter rep = prevForm as Reporter;
-                rep.OpenFormPanel(new EditProperty(property,prevForm,"Insert"));
+                rep.OpenFormPanel(new EditProperty(new Property(),prevForm,"Insert"));
             }
         }
 
@@ -72,7 +77,19 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
             }
             else
             {
-                MessageBox.Show("Please select a row dumbass!!");
+                MessageBox.Show("Please select a row!!");
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {    if (property.Id != 0)
+                {
+                    da.remove<Property>(property);
+                    showProperty();
+                    MessageBox.Show("Remove successful!!");
+                }
             }
         }
     }

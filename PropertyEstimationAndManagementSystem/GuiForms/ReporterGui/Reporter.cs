@@ -39,11 +39,15 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void CustomizeDesign()
         {
            panelProperty.Visible = false;
+            panelCustomer.Visible = false;
         }
         private void HideSubMenu()
         {
             if (panelProperty.Visible == true)
                 panelProperty.Visible = false;
+
+            if (panelCustomer.Visible == true)
+                panelCustomer.Visible = false;
 
         }
         private void ShowSubMenu(Panel subMenu)
@@ -78,6 +82,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void btnEditProperty_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new ShowPropertyList(this));
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panelCustomer);
         }
     }
 }
