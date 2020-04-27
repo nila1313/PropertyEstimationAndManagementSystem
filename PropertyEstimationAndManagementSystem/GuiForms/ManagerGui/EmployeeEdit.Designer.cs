@@ -45,14 +45,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridEmployee = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Back = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -196,13 +196,14 @@
             this.button1.Text = "View Employee List";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridEmployee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(111, 260);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(561, 134);
-            this.dataGridView1.TabIndex = 17;
+            this.dataGridEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridEmployee.Location = new System.Drawing.Point(111, 260);
+            this.dataGridEmployee.Name = "dataGridEmployee";
+            this.dataGridEmployee.Size = new System.Drawing.Size(561, 134);
+            this.dataGridEmployee.TabIndex = 17;
+            this.dataGridEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridEmployee_CellClick);
             // 
             // label8
             // 
@@ -277,7 +278,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridEmployee);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
@@ -297,7 +298,8 @@
             this.Controls.Add(this.label1);
             this.Name = "EmployeeEdit";
             this.Text = "EmployeeEdit";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.EmployeeEdit_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,7 +324,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridEmployee;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

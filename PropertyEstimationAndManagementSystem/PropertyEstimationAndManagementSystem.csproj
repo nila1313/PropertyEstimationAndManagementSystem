@@ -113,6 +113,11 @@
     </Compile>
     <Compile Include="GuiForms\OwnerGui\Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
+    <Compile Include="GuiForms\OwnerGui\Owners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\OwnerGui\Owners.Designer.cs">
+      <DependentUpon>Owners.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\OwnerGui\TransactionDetails.cs">
       <SubType>Form</SubType>
@@ -223,6 +228,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>
+    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeEdit.resx">
+      <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\OwnerGui\Owners.resx">
+      <DependentUpon>Owners.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\TransactionDetails.resx">
       <DependentUpon>TransactionDetails.cs</DependentUpon>

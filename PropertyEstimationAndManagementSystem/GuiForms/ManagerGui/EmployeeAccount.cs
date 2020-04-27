@@ -26,11 +26,19 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void Save_Click(object sender, EventArgs e)
         {
-            user.Id = 6;
-            user.UserName = userName.Text;
-            user.UserPassword = password.Text;
-            da.Insert<Users>(user, false);
-            MessageBox.Show("Save Successful");
+            try
+            {
+                //user.Id = 6;
+                user.UserName = userName.Text;
+                user.UserPassword = password.Text;
+                da.Insert<Users>(user, true);
+                MessageBox.Show("Save Successful");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There is a problem");
+            }
+        }
         }
     }
-}
+
