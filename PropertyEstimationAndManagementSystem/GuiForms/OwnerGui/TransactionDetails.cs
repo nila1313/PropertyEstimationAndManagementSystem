@@ -39,13 +39,14 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         private void btnToday_Click(object sender, EventArgs e)
         {
             string today = DateTime.Now.ToString("MM/dd/yyyy");
-            dataGrid.DataSource = da.GetData<Transaction>($"where Trade like'{"bought".ToUpper()}' and convert(varchar, TransactionDateTime,101)='{today}'");
+            dataGrid.DataSource = da.GetData<Transaction>($"where Trade like'{tradeType.ToUpper()}' and convert(varchar, TransactionDateTime,101)='{today}'");
         }
 
         private void btnThisWeek_Click(object sender, EventArgs e)
         {
-            string thisWeekFriday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Friday).ToString("MM/dd/yyyy");
-            dataGrid.DataSource = da.GetData<Transaction>($"where Trade like'{tradeType.ToUpper()}' and convert(varchar, TransactionDateTime,101)>='{thisWeekFriday}'");
+            string thisWeekSunday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Sunday).ToString("MM/dd/yyyy");
+            MessageBox.Show(thisWeekSunday);
+            dataGrid.DataSource = da.GetData<Transaction>($"where Trade like'{tradeType.ToUpper()}' and convert(varchar, TransactionDateTime,101)>='{thisWeekSunday}'");
 
         }
 
