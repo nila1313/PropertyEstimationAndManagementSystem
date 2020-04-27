@@ -22,9 +22,9 @@ namespace PropertyEstimationAndManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new Consultants(new Login(new HomePage()),new Entites.Users()));
-            Application.Run(new HomePage());
+            //Application.Run(new HomePage());
             //Application.Run(new Payment(new Property(),new Customer(),new Users()));
-            //Application.Run(new TransactionDetails());
+            Application.Run(new Sales());
 
         }
     }

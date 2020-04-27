@@ -45,7 +45,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         private void btnThisWeek_Click(object sender, EventArgs e)
         {
             string thisWeekSunday = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Sunday).ToString("MM/dd/yyyy");
-            MessageBox.Show(thisWeekSunday);
             dataGrid.DataSource = da.GetData<Transaction>($"where Trade like'{tradeType.ToUpper()}' and convert(varchar, TransactionDateTime,101)>='{thisWeekSunday}'");
 
         }
