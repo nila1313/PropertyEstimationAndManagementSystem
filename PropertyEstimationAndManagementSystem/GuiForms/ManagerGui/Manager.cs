@@ -70,7 +70,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void Insert_Click(object sender, EventArgs e)
         {
-            OpenFormPanel(new EmployeeEdit());
+            OpenFormPanel(new EmployeeEdit(user,this));
             //EmployeeEdit mm = new EmployeeEdit();
             //mm.Show();
         }

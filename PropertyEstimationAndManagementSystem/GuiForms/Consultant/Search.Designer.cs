@@ -81,6 +81,7 @@
             this.dataGridProperty.Size = new System.Drawing.Size(300, 159);
             this.dataGridProperty.TabIndex = 5;
             this.dataGridProperty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProperty_CellClick);
+          
             // 
             // lblArea
             // 

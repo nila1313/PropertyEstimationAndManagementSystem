@@ -108,6 +108,12 @@
     <Compile Include="GuiForms\Consultant\UnsoldPropertyList.Designer.cs">
       <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\OwnerGui\Owners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\OwnerGui\Owners.Designer.cs">
+      <DependentUpon>Owners.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\OwnerGui\TransactionDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeEdit.resx">
+      <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\OwnerGui\Owners.resx">
+      <DependentUpon>Owners.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\TransactionDetails.resx">
       <DependentUpon>TransactionDetails.cs</DependentUpon>

@@ -34,7 +34,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
-            this.CreateEmployeeAccount = new System.Windows.Forms.Button();
             this.showUsers = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
@@ -99,7 +98,6 @@
             // 
             // EditEmployeePanel
             // 
-            this.EditEmployeePanel.Controls.Add(this.CreateEmployeeAccount);
             this.EditEmployeePanel.Controls.Add(this.showUsers);
             this.EditEmployeePanel.Controls.Add(this.Delete);
             this.EditEmployeePanel.Controls.Add(this.Insert);
@@ -107,21 +105,6 @@
             this.EditEmployeePanel.Name = "EditEmployeePanel";
             this.EditEmployeePanel.Size = new System.Drawing.Size(200, 131);
             this.EditEmployeePanel.TabIndex = 7;
-            // 
-            // CreateEmployeeAccount
-            // 
-            this.CreateEmployeeAccount.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CreateEmployeeAccount.FlatAppearance.BorderSize = 0;
-            this.CreateEmployeeAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateEmployeeAccount.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CreateEmployeeAccount.Location = new System.Drawing.Point(0, 69);
-            this.CreateEmployeeAccount.Name = "CreateEmployeeAccount";
-            this.CreateEmployeeAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.CreateEmployeeAccount.Size = new System.Drawing.Size(200, 23);
-            this.CreateEmployeeAccount.TabIndex = 4;
-            this.CreateEmployeeAccount.Text = "Create Employee  Account";
-            this.CreateEmployeeAccount.UseVisualStyleBackColor = true;
-            this.CreateEmployeeAccount.Click += new System.EventHandler(this.CreateEmployeeAccount_Click);
             // 
             // showUsers
             // 
@@ -215,6 +198,5 @@
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel EmployeePanel;
-        private System.Windows.Forms.Button CreateEmployeeAccount;
     }
 }

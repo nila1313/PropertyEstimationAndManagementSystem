@@ -72,5 +72,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
             tradeType = "sold";
             showList();
         }
+
+        
     }
 }
