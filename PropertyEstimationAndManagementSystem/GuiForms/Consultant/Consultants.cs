@@ -72,12 +72,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         {
             ShowSubMenu(panelProperty);
         }
-
-        private void btnPrice_Click(object sender, EventArgs e)
-        {
-            OpenFormPanel(new PriceAccordingArea());
-        }
-
         private void btnShowCustomer_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new ShowCustomer(new Property()

@@ -88,5 +88,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             ShowSubMenu(panelCustomer);
         }
+
+        private void btnCustomerEdit_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new EditCustomer(this));
+        }
     }
 }

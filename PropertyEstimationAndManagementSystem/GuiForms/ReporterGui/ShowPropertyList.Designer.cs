@@ -32,13 +32,14 @@
             this.btnCreateNew = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.btnDescription = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPropertyList)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridPropertyList
             // 
             this.dataGridPropertyList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridPropertyList.Location = new System.Drawing.Point(84, 84);
+            this.dataGridPropertyList.Location = new System.Drawing.Point(93, 92);
             this.dataGridPropertyList.Name = "dataGridPropertyList";
             this.dataGridPropertyList.Size = new System.Drawing.Size(419, 271);
             this.dataGridPropertyList.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnCreateNew
             // 
-            this.btnCreateNew.Location = new System.Drawing.Point(553, 97);
+            this.btnCreateNew.Location = new System.Drawing.Point(535, 103);
             this.btnCreateNew.Name = "btnCreateNew";
             this.btnCreateNew.Size = new System.Drawing.Size(100, 28);
             this.btnCreateNew.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(553, 143);
+            this.btnUpdate.Location = new System.Drawing.Point(535, 151);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 28);
             this.btnUpdate.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(553, 188);
+            this.btnRemove.Location = new System.Drawing.Point(535, 200);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(100, 28);
             this.btnRemove.TabIndex = 3;
@@ -74,11 +75,22 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // btnDescription
+            // 
+            this.btnDescription.Location = new System.Drawing.Point(535, 264);
+            this.btnDescription.Name = "btnDescription";
+            this.btnDescription.Size = new System.Drawing.Size(100, 33);
+            this.btnDescription.TabIndex = 4;
+            this.btnDescription.Text = "Description";
+            this.btnDescription.UseVisualStyleBackColor = true;
+            this.btnDescription.Click += new System.EventHandler(this.btnDescription_Click);
+            // 
             // ShowPropertyList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 466);
+            this.Controls.Add(this.btnDescription);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCreateNew);
@@ -97,5 +109,6 @@
         private System.Windows.Forms.Button btnCreateNew;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnDescription;
     }
 }

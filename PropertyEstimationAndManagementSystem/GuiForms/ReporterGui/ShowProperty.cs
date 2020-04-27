@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyEstimationAndManagementSystem.Entites;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
 {
     public partial class ShowProperty : Form
     {
-        public ShowProperty()
+        Form prevForm;
+        Property property;
+        public ShowProperty(Form prevForm,Property property)
         {
             InitializeComponent();
+            this.prevForm = prevForm;
+            this.property = property;
         }
     }
 }

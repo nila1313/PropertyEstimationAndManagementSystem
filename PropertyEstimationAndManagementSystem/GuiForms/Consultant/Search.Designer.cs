@@ -75,13 +75,13 @@
             // 
             // dataGridProperty
             // 
+            this.dataGridProperty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridProperty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProperty.Location = new System.Drawing.Point(54, 169);
             this.dataGridProperty.Name = "dataGridProperty";
             this.dataGridProperty.Size = new System.Drawing.Size(300, 159);
             this.dataGridProperty.TabIndex = 5;
             this.dataGridProperty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProperty_CellClick);
-          
             // 
             // lblArea
             // 

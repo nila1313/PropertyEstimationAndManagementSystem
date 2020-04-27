@@ -26,6 +26,21 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             da = new DataAccess();
             this.property = property;
         }
+         public CustomerInformation(Customer customer)
+        {
+            InitializeComponent();
+            this.customer = customer;
+            this.showCustomer = null;
+            txtFirstName.Text = customer.FirstName;
+            txtLastName.Text = customer.LastName;
+            txtAddress.Text = customer.Address;
+            txtEmail.Text = customer.Email;
+            txtMobileNumber.Text = customer.MobileNumber;
+            txtNid.Text = customer.Nid;
+            da = new DataAccess();
+            this.property = new Property();
+            this.property.Status = "Null";
+        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -38,8 +53,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 da.Insert<Customer>(customer,true);
-                showCustomer.showList();
-                showCustomer.Show();
+                if(showCustomer!=null)
+                {
+                    showCustomer.showList();
+                    showCustomer.Show();
+                }
                 this.Dispose();
             }
 

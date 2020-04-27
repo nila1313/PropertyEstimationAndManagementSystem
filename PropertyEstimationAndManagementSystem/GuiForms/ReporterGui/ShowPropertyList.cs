@@ -92,5 +92,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
                 }
             }
         }
+
+        private void btnDescription_Click(object sender, EventArgs e)
+        {
+            if(property.Id!=0)
+            {
+                ((Reporter)prevForm).OpenFormPanel(new ShowProperty(prevForm, property));
+            }
+        }
     }
 }

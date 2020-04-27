@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBuy = new System.Windows.Forms.Button();
             this.btnProperty = new System.Windows.Forms.Button();
             this.btnFeedBack = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -39,7 +38,7 @@
             this.btnCustomerInformation = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panelProperty = new System.Windows.Forms.Panel();
-            this.btnPrice = new System.Windows.Forms.Button();
+            this.btnBuy = new System.Windows.Forms.Button();
             this.btnAvailablePropety = new System.Windows.Forms.Button();
             this.panelConsultant = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -64,19 +63,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 590);
             this.panel1.TabIndex = 0;
-            // 
-            // btnBuy
-            // 
-            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBuy.FlatAppearance.BorderSize = 0;
-            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuy.Location = new System.Drawing.Point(0, 46);
-            this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(202, 23);
-            this.btnBuy.TabIndex = 5;
-            this.btnBuy.Text = "Buy ";
-            this.btnBuy.UseVisualStyleBackColor = true;
-            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // btnProperty
             // 
@@ -173,25 +159,24 @@
             // panelProperty
             // 
             this.panelProperty.Controls.Add(this.btnBuy);
-            this.panelProperty.Controls.Add(this.btnPrice);
             this.panelProperty.Controls.Add(this.btnAvailablePropety);
             this.panelProperty.Location = new System.Drawing.Point(0, 34);
             this.panelProperty.Name = "panelProperty";
             this.panelProperty.Size = new System.Drawing.Size(202, 86);
             this.panelProperty.TabIndex = 2;
             // 
-            // btnPrice
+            // btnBuy
             // 
-            this.btnPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPrice.FlatAppearance.BorderSize = 0;
-            this.btnPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrice.Location = new System.Drawing.Point(0, 23);
-            this.btnPrice.Name = "btnPrice";
-            this.btnPrice.Size = new System.Drawing.Size(202, 23);
-            this.btnPrice.TabIndex = 4;
-            this.btnPrice.Text = "Price According Area";
-            this.btnPrice.UseVisualStyleBackColor = true;
-            this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
+            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuy.FlatAppearance.BorderSize = 0;
+            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuy.Location = new System.Drawing.Point(0, 23);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(202, 23);
+            this.btnBuy.TabIndex = 5;
+            this.btnBuy.Text = "Buy ";
+            this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // btnAvailablePropety
             // 
@@ -241,7 +226,6 @@
         private System.Windows.Forms.Button btnAvailablePropety;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnFeedBack;
-        private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnProperty;
         private System.Windows.Forms.Button btnShowCustomer;
