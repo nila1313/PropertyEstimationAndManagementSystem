@@ -14,6 +14,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
     public partial class Sales : Form
     {
         DataAccess da;
+        int estimatedSale, estimatedBuy;
         const double alpha = 0.5;
         public Sales()
         {
@@ -23,13 +24,25 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
 
         private void Sales_Load(object sender, EventArgs e)
         {
-            lblSaleEstimationTomorrowValue.Text=getSaleTomorrow("Sold").ToString();
+            setLabel();
+            estimatedSale = Convert.ToInt32(lblSaleEstimationTomorrowValue.Text);
+            estimatedBuy = Convert.ToInt32(lblEstimatedBuyTomorrowValue.Text);
+            setChart();
+        }       
+
+        public void setLabel()
+        {
+            lblSaleEstimationTomorrowValue.Text = getSaleTomorrow("Sold").ToString();
             lblEstimatedBuyTomorrowValue.Text = getSaleTomorrow("bought").ToString();
             lblTotalBuyTodayValue.Text = getSaleToday("bought").ToString();
             lblTotalSaleTodayValue.Text = getSaleToday("sold").ToString();
         }
-
-
+        public void setChart()
+        {
+            chartBuySell.Titles.Add("Buy-Sale Estimation Tomorrow");
+            chartBuySell.Series["s1"].Points.AddXY("#PERCENT SELL",estimatedSale);
+            chartBuySell.Series["s1"].Points.AddXY("#PERCENT Buy",estimatedBuy);
+        }
         public int getSaleToday(string type)
         {
             string prob = @"""Transaction""";

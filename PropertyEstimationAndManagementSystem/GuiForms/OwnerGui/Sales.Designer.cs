@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblSaleEstimationTomorrow = new System.Windows.Forms.Label();
             this.lblSaleEstimationTomorrowValue = new System.Windows.Forms.Label();
             this.lblEstimatedBuyTomorrow = new System.Windows.Forms.Label();
@@ -36,6 +39,8 @@
             this.lblTotalSaleTodayValue = new System.Windows.Forms.Label();
             this.lblTotalBuyToday = new System.Windows.Forms.Label();
             this.lblTotalBuyTodayValue = new System.Windows.Forms.Label();
+            this.chartBuySell = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBuySell)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSaleEstimationTomorrow
@@ -110,11 +115,30 @@
             this.lblTotalBuyTodayValue.TabIndex = 7;
             this.lblTotalBuyTodayValue.Text = "Total Sale Today";
             // 
+            // chartBuySell
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartBuySell.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartBuySell.Legends.Add(legend1);
+            this.chartBuySell.Location = new System.Drawing.Point(148, 146);
+            this.chartBuySell.Name = "chartBuySell";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "s1";
+            this.chartBuySell.Series.Add(series1);
+            this.chartBuySell.Size = new System.Drawing.Size(452, 292);
+            this.chartBuySell.TabIndex = 8;
+            this.chartBuySell.Text = "Buy-Sale";
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chartBuySell);
             this.Controls.Add(this.lblTotalBuyTodayValue);
             this.Controls.Add(this.lblTotalBuyToday);
             this.Controls.Add(this.lblTotalSaleTodayValue);
@@ -126,6 +150,7 @@
             this.Name = "Sales";
             this.Text = "Sales";
             this.Load += new System.EventHandler(this.Sales_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chartBuySell)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +166,6 @@
         private System.Windows.Forms.Label lblTotalSaleTodayValue;
         private System.Windows.Forms.Label lblTotalBuyToday;
         private System.Windows.Forms.Label lblTotalBuyTodayValue;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBuySell;
     }
 }

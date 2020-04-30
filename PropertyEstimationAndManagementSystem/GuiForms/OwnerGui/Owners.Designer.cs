@@ -34,6 +34,8 @@
             this.btnTransactionList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelOwner = new System.Windows.Forms.Panel();
+            this.btnSaleBuyEstimation = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +66,7 @@
             // 
             // panelTransaction
             // 
+            this.panelTransaction.Controls.Add(this.btnSaleBuyEstimation);
             this.panelTransaction.Controls.Add(this.btnTransactionList);
             this.panelTransaction.Location = new System.Drawing.Point(3, 55);
             this.panelTransaction.Name = "panelTransaction";
@@ -101,6 +104,18 @@
             this.panelOwner.Size = new System.Drawing.Size(1122, 602);
             this.panelOwner.TabIndex = 2;
             // 
+            // btnSaleBuyEstimation
+            // 
+            this.btnSaleBuyEstimation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSaleBuyEstimation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaleBuyEstimation.Location = new System.Drawing.Point(0, 23);
+            this.btnSaleBuyEstimation.Name = "btnSaleBuyEstimation";
+            this.btnSaleBuyEstimation.Size = new System.Drawing.Size(200, 23);
+            this.btnSaleBuyEstimation.TabIndex = 0;
+            this.btnSaleBuyEstimation.Text = "Buy-Sale Estimation";
+            this.btnSaleBuyEstimation.UseVisualStyleBackColor = false;
+            this.btnSaleBuyEstimation.Click += new System.EventHandler(this.btnSaleReport_Click);
+            // 
             // Owners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,5 +140,7 @@
         private System.Windows.Forms.Button btnTransactionList;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelOwner;
+        private System.Windows.Forms.Button btnSaleBuyEstimation;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
