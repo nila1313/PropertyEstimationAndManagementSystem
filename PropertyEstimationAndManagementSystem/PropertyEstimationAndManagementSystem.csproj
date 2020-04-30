@@ -103,6 +103,12 @@
     <Compile Include="GuiForms\Consultant\UnsoldPropertyList.Designer.cs">
       <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\OwnerGui\Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\OwnerGui\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\OwnerGui\Owners.cs">
       <SubType>Form</SubType>
     </Compile>

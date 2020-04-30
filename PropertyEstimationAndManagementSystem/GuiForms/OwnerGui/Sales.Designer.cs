@@ -40,6 +40,10 @@
             this.lblTotalBuyToday = new System.Windows.Forms.Label();
             this.lblTotalBuyTodayValue = new System.Windows.Forms.Label();
             this.chartBuySell = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblTotalBuyWeekValue = new System.Windows.Forms.Label();
+            this.lblTotalBuyWeek = new System.Windows.Forms.Label();
+            this.lblTotalSaleWeekValue = new System.Windows.Forms.Label();
+            this.lblTotalSaleWeek = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartBuySell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,7 +125,7 @@
             this.chartBuySell.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartBuySell.Legends.Add(legend1);
-            this.chartBuySell.Location = new System.Drawing.Point(148, 146);
+            this.chartBuySell.Location = new System.Drawing.Point(27, 125);
             this.chartBuySell.Name = "chartBuySell";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -129,15 +133,55 @@
             series1.Legend = "Legend1";
             series1.Name = "s1";
             this.chartBuySell.Series.Add(series1);
-            this.chartBuySell.Size = new System.Drawing.Size(452, 292);
+            this.chartBuySell.Size = new System.Drawing.Size(240, 292);
             this.chartBuySell.TabIndex = 8;
             this.chartBuySell.Text = "Buy-Sale";
+            // 
+            // lblTotalBuyWeekValue
+            // 
+            this.lblTotalBuyWeekValue.AutoSize = true;
+            this.lblTotalBuyWeekValue.Location = new System.Drawing.Point(630, 206);
+            this.lblTotalBuyWeekValue.Name = "lblTotalBuyWeekValue";
+            this.lblTotalBuyWeekValue.Size = new System.Drawing.Size(88, 13);
+            this.lblTotalBuyWeekValue.TabIndex = 12;
+            this.lblTotalBuyWeekValue.Text = "Total Sale Today";
+            // 
+            // lblTotalBuyWeek
+            // 
+            this.lblTotalBuyWeek.AutoSize = true;
+            this.lblTotalBuyWeek.Location = new System.Drawing.Point(435, 206);
+            this.lblTotalBuyWeek.Name = "lblTotalBuyWeek";
+            this.lblTotalBuyWeek.Size = new System.Drawing.Size(107, 13);
+            this.lblTotalBuyWeek.TabIndex = 11;
+            this.lblTotalBuyWeek.Text = "Total Buy This Week";
+            // 
+            // lblTotalSaleWeekValue
+            // 
+            this.lblTotalSaleWeekValue.AutoSize = true;
+            this.lblTotalSaleWeekValue.Location = new System.Drawing.Point(630, 152);
+            this.lblTotalSaleWeekValue.Name = "lblTotalSaleWeekValue";
+            this.lblTotalSaleWeekValue.Size = new System.Drawing.Size(88, 13);
+            this.lblTotalSaleWeekValue.TabIndex = 10;
+            this.lblTotalSaleWeekValue.Text = "Total Sale Today";
+            // 
+            // lblTotalSaleWeek
+            // 
+            this.lblTotalSaleWeek.AutoSize = true;
+            this.lblTotalSaleWeek.Location = new System.Drawing.Point(435, 152);
+            this.lblTotalSaleWeek.Name = "lblTotalSaleWeek";
+            this.lblTotalSaleWeek.Size = new System.Drawing.Size(110, 13);
+            this.lblTotalSaleWeek.TabIndex = 9;
+            this.lblTotalSaleWeek.Text = "Total Sale This Week";
             // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTotalBuyWeekValue);
+            this.Controls.Add(this.lblTotalBuyWeek);
+            this.Controls.Add(this.lblTotalSaleWeekValue);
+            this.Controls.Add(this.lblTotalSaleWeek);
             this.Controls.Add(this.chartBuySell);
             this.Controls.Add(this.lblTotalBuyTodayValue);
             this.Controls.Add(this.lblTotalBuyToday);
@@ -167,5 +211,9 @@
         private System.Windows.Forms.Label lblTotalBuyToday;
         private System.Windows.Forms.Label lblTotalBuyTodayValue;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartBuySell;
+        private System.Windows.Forms.Label lblTotalBuyWeekValue;
+        private System.Windows.Forms.Label lblTotalBuyWeek;
+        private System.Windows.Forms.Label lblTotalSaleWeekValue;
+        private System.Windows.Forms.Label lblTotalSaleWeek;
     }
 }

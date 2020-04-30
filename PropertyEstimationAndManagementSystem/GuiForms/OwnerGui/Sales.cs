@@ -34,8 +34,14 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         {
             lblSaleEstimationTomorrowValue.Text = getSaleTomorrow("Sold").ToString();
             lblEstimatedBuyTomorrowValue.Text = getSaleTomorrow("bought").ToString();
-            lblTotalBuyTodayValue.Text = getSaleToday("bought").ToString();
-            lblTotalSaleTodayValue.Text = getSaleToday("sold").ToString();
+
+            string today = DateTime.Now.ToString("MM/dd/yyyy");
+            lblTotalBuyTodayValue.Text = getSale("bought",today).ToString();
+            lblTotalSaleTodayValue.Text = getSale("sold",today).ToString();
+
+            string weekStart= DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + (int)DayOfWeek.Sunday).ToString("MM/dd/yyyy");
+            lblTotalSaleWeekValue.Text= getSale("sold", weekStart).ToString();
+            lblTotalBuyWeekValue.Text= getSale("bought", weekStart).ToString();
         }
         public void setChart()
         {
@@ -43,11 +49,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
             chartBuySell.Series["s1"].Points.AddXY("#PERCENT SELL",estimatedSale);
             chartBuySell.Series["s1"].Points.AddXY("#PERCENT Buy",estimatedBuy);
         }
-        public int getSaleToday(string type)
+        public int getSale(string type,string today)
         {
             string prob = @"""Transaction""";
-            string today = DateTime.Now.ToString("MM/dd/yyyy");
-            string sql = @"select count(*) from " + prob + $" where Trade like'{type.ToUpper()}' and convert(varchar, TransactionDateTime,101)='{today}'";
+            string sql = @"select count(*) from " + prob + $" where Trade like'{type.ToUpper()}' and convert(varchar, TransactionDateTime,101)>='{today}'";
             DataTable dt = da.Execute(sql);
             return Convert.ToInt32(dt.Rows[0][0].ToString());
         }
