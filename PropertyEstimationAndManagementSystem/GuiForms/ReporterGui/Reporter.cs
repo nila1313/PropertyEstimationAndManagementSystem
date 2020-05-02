@@ -93,5 +93,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             OpenFormPanel(new EditCustomer(this));
         }
+
+        private void btnAddDescription_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -187,17 +187,17 @@
     <Compile Include="GuiForms\ReporterGui\PriceAccordingArea.Designer.cs">
       <DependentUpon>PriceAccordingArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\ReporterGui\PropertyDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\PropertyDescription.Designer.cs">
+      <DependentUpon>PropertyDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ReporterGui\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuiForms\ReporterGui\Reporter.Designer.cs">
       <DependentUpon>Reporter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuiForms\ReporterGui\ShowProperty.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GuiForms\ReporterGui\ShowProperty.Designer.cs">
-      <DependentUpon>ShowProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="GuiForms\ReporterGui\ShowPropertyList.cs">
       <SubType>Form</SubType>
@@ -258,11 +258,11 @@
     <EmbeddedResource Include="GuiForms\ReporterGui\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ReporterGui\PropertyDescription.resx">
+      <DependentUpon>PropertyDescription.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ReporterGui\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GuiForms\ReporterGui\ShowProperty.resx">
-      <DependentUpon>ShowProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ReporterGui\ShowPropertyList.resx">
       <DependentUpon>ShowPropertyList.cs</DependentUpon>

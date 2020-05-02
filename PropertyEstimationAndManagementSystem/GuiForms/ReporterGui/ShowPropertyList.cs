@@ -97,7 +97,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
         {
             if(property.Id!=0)
             {
-                ((Reporter)prevForm).OpenFormPanel(new ShowProperty(prevForm, property));
+                ((Reporter)prevForm).OpenFormPanel(new PropertyDescription(this,property));
             }
         }
     }
