@@ -1,5 +1,6 @@
 ﻿using PropertyEstimationAndManagementSystem.Data;
 using PropertyEstimationAndManagementSystem.Entites;
+using PropertyEstimationAndManagementSystem.GuiForms.ReporterGui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,6 +82,22 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         private void dataGridBookedProperty_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnPayment.Hide();
+            try
+            {
+                var row = dataGridBookedProperty.SelectedRows[0] as DataGridViewRow;
+                property.Id = Convert.ToInt32(row.Cells[5].Value.ToString());
+                property.Name = row.Cells[0].Value.ToString();
+                property.Status = row.Cells[1].Value.ToString();
+                property.Area = row.Cells[2].Value.ToString();
+                property.Price = Convert.ToDouble(row.Cells[3].Value.ToString());
+                property.Size = Convert.ToDouble(row.Cells[4].Value.ToString());
+                PropertyHome ph = new PropertyHome(property);
+                ph.Show();
+            }
+            catch (Exception exe)
+            {
+                MessageBox.Show("NO DESCRIPTION AVAILABLE");
+            }
         }
 
         private void btnPayment_Click(object sender, EventArgs e)

@@ -35,7 +35,7 @@
             this.panelCustomer = new System.Windows.Forms.Panel();
             this.btnCustomerEdit = new System.Windows.Forms.Button();
             this.panelProperty = new System.Windows.Forms.Panel();
-            this.btnAddDescription = new System.Windows.Forms.Button();
+            this.btnAreaPrice = new System.Windows.Forms.Button();
             this.btnEditProperty = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ReporterMainPanel = new System.Windows.Forms.Panel();
@@ -121,26 +121,26 @@
             // 
             // panelProperty
             // 
-            this.panelProperty.Controls.Add(this.btnAddDescription);
+            this.panelProperty.Controls.Add(this.btnAreaPrice);
             this.panelProperty.Controls.Add(this.btnEditProperty);
             this.panelProperty.Location = new System.Drawing.Point(0, 58);
             this.panelProperty.Name = "panelProperty";
             this.panelProperty.Size = new System.Drawing.Size(200, 100);
             this.panelProperty.TabIndex = 2;
             // 
-            // btnAddDescription
+            // btnAreaPrice
             // 
-            this.btnAddDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddDescription.FlatAppearance.BorderSize = 0;
-            this.btnAddDescription.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDescription.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnAddDescription.Location = new System.Drawing.Point(0, 23);
-            this.btnAddDescription.Name = "btnAddDescription";
-            this.btnAddDescription.Size = new System.Drawing.Size(200, 23);
-            this.btnAddDescription.TabIndex = 1;
-            this.btnAddDescription.Text = "Add Description";
-            this.btnAddDescription.UseVisualStyleBackColor = true;
-            this.btnAddDescription.Click += new System.EventHandler(this.btnAddDescription_Click);
+            this.btnAreaPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAreaPrice.FlatAppearance.BorderSize = 0;
+            this.btnAreaPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAreaPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAreaPrice.Location = new System.Drawing.Point(0, 23);
+            this.btnAreaPrice.Name = "btnAreaPrice";
+            this.btnAreaPrice.Size = new System.Drawing.Size(200, 23);
+            this.btnAreaPrice.TabIndex = 1;
+            this.btnAreaPrice.Text = "Area Price";
+            this.btnAreaPrice.UseVisualStyleBackColor = true;
+            this.btnAreaPrice.Click += new System.EventHandler(this.btnAddDescription_Click);
             // 
             // btnEditProperty
             // 
@@ -200,7 +200,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel ReporterMainPanel;
         private System.Windows.Forms.Panel panelProperty;
-        private System.Windows.Forms.Button btnAddDescription;
+        private System.Windows.Forms.Button btnAreaPrice;
         private System.Windows.Forms.Button btnEditProperty;
         private System.Windows.Forms.Button btnCustomer;
         private System.Windows.Forms.Panel panelCustomer;

@@ -195,6 +195,12 @@
     <Compile Include="GuiForms\ReporterGui\PropertyDescription.Designer.cs">
       <DependentUpon>PropertyDescription.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\ReporterGui\PropertyHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ReporterGui\PropertyHome.Designer.cs">
+      <DependentUpon>PropertyHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\ReporterGui\Reporter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     <EmbeddedResource Include="GuiForms\ReporterGui\PropertyDescription.resx">
       <DependentUpon>PropertyDescription.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ReporterGui\PropertyHome.resx">
+      <DependentUpon>PropertyHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ReporterGui\Reporter.resx">
       <DependentUpon>Reporter.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,9 +301,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Pictures\download.png" />
+    <Folder Include="Pictures\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\download1.png" />
     <None Include="Resources\download.png" />
   </ItemGroup>

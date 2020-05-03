@@ -53,6 +53,16 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
             {
                 MessageBox.Show("Please select a row");
             }
+
+            try
+            {
+                PropertyHome ph = new PropertyHome(property);
+                ph.Show();
+            }
+            catch(Exception exe)
+            {
+                MessageBox.Show("NO DESCRIPTION AVAILABLE");
+            }
         }
 
         private void btnCreateNew_Click(object sender, EventArgs e)

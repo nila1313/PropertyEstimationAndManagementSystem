@@ -1,4 +1,5 @@
 ﻿using PropertyEstimationAndManagementSystem.Entites;
+using PropertyEstimationAndManagementSystem.GuiForms.Consultant;
 using PropertyEstimationAndManagementSystem.GuiForms.ReporterGui;
 using System;
 using System.Collections.Generic;
@@ -96,7 +97,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void btnAddDescription_Click(object sender, EventArgs e)
         {
-            
+            OpenFormPanel(new PriceAccordingArea());
         }
     }
 }

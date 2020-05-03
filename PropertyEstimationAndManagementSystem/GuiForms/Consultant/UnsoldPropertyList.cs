@@ -1,5 +1,6 @@
 ﻿using PropertyEstimationAndManagementSystem.Data;
 using PropertyEstimationAndManagementSystem.Entites;
+using PropertyEstimationAndManagementSystem.GuiForms.ReporterGui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,6 +64,15 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             catch (Exception eae)
             {
                 MessageBox.Show("Please select a row");
+            }
+            try
+            {
+                PropertyHome ph = new PropertyHome(property);
+                ph.Show();
+            }
+            catch (Exception exe)
+            {
+                MessageBox.Show("NO DESCRIPTION AVAILABLE");
             }
         }
     }
