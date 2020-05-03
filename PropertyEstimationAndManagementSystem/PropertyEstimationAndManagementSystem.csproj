@@ -53,6 +53,8 @@
     <Compile Include="Entites\Employee.cs" />
     <Compile Include="Entites\FeedBack.cs" />
     <Compile Include="Entites\Property.cs" />
+    <Compile Include="Entites\PropertyDescription.cs" />
+    <Compile Include="Entites\PropertyImage.cs" />
     <Compile Include="Entites\Transaction.cs" />
     <Compile Include="Entites\Users.cs" />
     <Compile Include="GuiForms\Consultant\Consultants.cs">
