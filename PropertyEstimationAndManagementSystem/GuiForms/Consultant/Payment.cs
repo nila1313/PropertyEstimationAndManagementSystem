@@ -82,7 +82,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
                 {
                     da.remove<BookedProperty>(string.Format("where PropertyId={0}",property.Id));
                 }
-                
+
+                property.Price = Convert.ToDouble(txtAmount.Text);
                 da.Insert<Transaction>(transaction,true);
                 
                 da.Insert<Property>(property, true);
