@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ShowUsers = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowUsers)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ShowUsers
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(657, 367);
-            this.dataGridView1.TabIndex = 0;
+            this.ShowUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ShowUsers.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ShowUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ShowUsers.Location = new System.Drawing.Point(66, 52);
+            this.ShowUsers.Name = "ShowUsers";
+            this.ShowUsers.Size = new System.Drawing.Size(657, 367);
+            this.ShowUsers.TabIndex = 0;
             // 
             // label1
             // 
@@ -58,10 +59,11 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(778, 444);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ShowUsers);
             this.Name = "InsertEmployee";
             this.Text = "Manager";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.InsertEmployee_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ShowUsers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +71,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ShowUsers;
         private System.Windows.Forms.Label label1;
     }
 }

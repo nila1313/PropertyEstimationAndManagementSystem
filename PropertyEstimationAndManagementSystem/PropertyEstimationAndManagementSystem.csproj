@@ -105,6 +105,18 @@
     <Compile Include="GuiForms\Consultant\UnsoldPropertyList.Designer.cs">
       <DependentUpon>UnsoldPropertyList.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\ManagerGui\CheckProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\CheckProfit.Designer.cs">
+      <DependentUpon>CheckProfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\CreateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\ManagerGui\CreateEmployee.Designer.cs">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\OwnerGui\Account.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,8 +257,20 @@
     <EmbeddedResource Include="GuiForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\CheckProfit.resx">
+      <DependentUpon>CheckProfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\CreateEmployee.resx">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeAccount.resx">
+      <DependentUpon>EmployeeAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeEdit.resx">
       <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\InsertEmployee.resx">
+      <DependentUpon>InsertEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>

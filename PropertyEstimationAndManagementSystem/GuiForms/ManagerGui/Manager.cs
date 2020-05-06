@@ -54,7 +54,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             //ee.Show();
         }
         private Form activeForm = null;
-        private void OpenFormPanel(Form openform)
+        public void OpenFormPanel(Form openform)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -80,14 +80,16 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             OpenFormPanel(new InsertEmployee());
         }
 
-        private void CreateEmployeeAccount_Click(object sender, EventArgs e)
-        {
-            OpenFormPanel(new EmployeeAccount());
-        }
+       
 
         private void Delete_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new DeleteEmployee());
+        }
+
+        private void CheckProfit_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new CheckProfit());
         }
     }
 }

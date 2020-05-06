@@ -35,7 +35,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
             this.showUsers = new System.Windows.Forms.Button();
-            this.Delete = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EmployeePanel = new System.Windows.Forms.Panel();
@@ -60,6 +59,7 @@
             this.CheckProfit.TabIndex = 5;
             this.CheckProfit.Text = "Check Profit";
             this.CheckProfit.UseVisualStyleBackColor = true;
+            this.CheckProfit.Click += new System.EventHandler(this.CheckProfit_Click);
             // 
             // EditEmployee
             // 
@@ -99,7 +99,6 @@
             // EditEmployeePanel
             // 
             this.EditEmployeePanel.Controls.Add(this.showUsers);
-            this.EditEmployeePanel.Controls.Add(this.Delete);
             this.EditEmployeePanel.Controls.Add(this.Insert);
             this.EditEmployeePanel.Location = new System.Drawing.Point(0, 167);
             this.EditEmployeePanel.Name = "EditEmployeePanel";
@@ -112,7 +111,7 @@
             this.showUsers.FlatAppearance.BorderSize = 0;
             this.showUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.showUsers.Location = new System.Drawing.Point(0, 46);
+            this.showUsers.Location = new System.Drawing.Point(0, 23);
             this.showUsers.Name = "showUsers";
             this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.showUsers.Size = new System.Drawing.Size(200, 23);
@@ -120,21 +119,6 @@
             this.showUsers.Text = "Show Users";
             this.showUsers.UseVisualStyleBackColor = true;
             this.showUsers.Click += new System.EventHandler(this.showUsers_Click);
-            // 
-            // Delete
-            // 
-            this.Delete.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Delete.FlatAppearance.BorderSize = 0;
-            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Delete.Location = new System.Drawing.Point(0, 23);
-            this.Delete.Name = "Delete";
-            this.Delete.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Delete.Size = new System.Drawing.Size(200, 23);
-            this.Delete.TabIndex = 1;
-            this.Delete.Text = "Delete";
-            this.Delete.UseVisualStyleBackColor = true;
-            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Insert
             // 
@@ -157,16 +141,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(180, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(814, 73);
+            this.panel2.Size = new System.Drawing.Size(814, 42);
             this.panel2.TabIndex = 8;
             // 
             // EmployeePanel
             // 
             this.EmployeePanel.BackColor = System.Drawing.Color.DimGray;
             this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmployeePanel.Location = new System.Drawing.Point(180, 73);
+            this.EmployeePanel.Location = new System.Drawing.Point(180, 42);
             this.EmployeePanel.Name = "EmployeePanel";
-            this.EmployeePanel.Size = new System.Drawing.Size(814, 483);
+            this.EmployeePanel.Size = new System.Drawing.Size(814, 514);
             this.EmployeePanel.TabIndex = 9;
             // 
             // Manager
@@ -194,7 +178,6 @@
         private System.Windows.Forms.Panel EditEmployeePanel;
         private System.Windows.Forms.Button showUsers;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel EmployeePanel;

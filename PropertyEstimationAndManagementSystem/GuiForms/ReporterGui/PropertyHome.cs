@@ -18,7 +18,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
     {
         Property property;
         DataAccess da;
-        const double alpha =0.8;
+        const double alpha =0.4;
         string imageLocation1, imageLocation2, imageLocation3;
         int count;
         public PropertyHome(Property property)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PropertyEstimationAndManagementSystem.Data;
 using PropertyEstimationAndManagementSystem.Entites;
 using PropertyEstimationAndManagementSystem.GuiForms;
 
@@ -15,18 +16,21 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
 {
     public partial class InsertEmployee : Form
     {
-        Users users;
-        Login login;
+
+        DataAccess da;
 
         public InsertEmployee()
         {
             //this.users = users;
             //this.login = login;
             InitializeComponent();
+            da = new DataAccess();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
+      
 
+        private void InsertEmployee_Load(object sender, EventArgs e)
+        {
+            ShowUsers.DataSource = da.Execute("select Employee.Id,FirstName,LastName,UserName,UserPassword from Employee inner join Users on Employee.Id=Users.Id;");
         }
     }
 }

@@ -20,19 +20,20 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         public Employee employee { get; set; }
         Users user;
         Manager man;
-        public EmployeeEdit(Users user, Manager man)
+        Form prevForm;
+        public EmployeeEdit(Users user, Form prevForm)
         {
             InitializeComponent();
             employee = new Employee();
             da = new DataAccess();
             this.user = user;
-            this.man = man;
+            this.prevForm = prevForm;
         }
         
         
         private void EmployeeEdit_Load(object sender, EventArgs e)
         {
-            showEmployeeList();
+            //showEmployeeList();
         }
         public void showEmployeeList()
         {
@@ -54,20 +55,87 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             try
             {
                 var row = dataGridEmployee.SelectedRows[0] as DataGridViewRow;
-                employee.Id = Convert.ToInt32(row.Cells[7].Value.ToString());
+                employee.Id = Convert.ToInt32(row.Cells[9].Value.ToString());
                 employee.FirstName = row.Cells[0].Value.ToString();
                 employee.LastName = row.Cells[1].Value.ToString();
                 employee.JoiningDate = row.Cells[2].Value.ToString();
-                employee.Type = row.Cells[3].Value.ToString();
+                employee.Designation = row.Cells[3].Value.ToString();
                 employee.Salary = Convert.ToDouble(row.Cells[4].Value.ToString());
-                employee.DateOfBirth =row.Cells[5].Value.ToString();
-                employee.BloodGroup = row.Cells[6].Value.ToString();
+                employee.PhoneNumber = row.Cells[5].Value.ToString();
+                employee.Address = row.Cells[6].Value.ToString();
+                employee.DateOfBirth =row.Cells[7].Value.ToString();
+                employee.BloodGroup = row.Cells[8].Value.ToString();
 
                
             }
             catch (Exception eae)
             {
                 MessageBox.Show("Please select a row");
+            }
+        }
+
+        private void InsertEmployee_Click(object sender, EventArgs e)
+        {
+            if(prevForm is Manager)
+            {
+                Manager man = prevForm as Manager;
+                man.OpenFormPanel(new CreateEmployee(new Employee(), prevForm, "Insert"));
+            }
+         
+        }
+
+        private void UpdateEmployee_Click(object sender, EventArgs e)
+        {
+            if (employee.Id != 0)
+            {
+                if (prevForm is Manager)
+                { 
+                 man= prevForm as Manager;
+                 man.OpenFormPanel(new CreateEmployee(employee, prevForm, "Update"));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row!!");
+            }
+        }
+
+        private void RemoveEmployee_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (employee.Id != 0)
+                {
+                    da.remove<Employee>(employee);
+                    da.remove<Users>(string.Format("where Id={0}",employee.Id));
+                    showEmployeeList();
+                    MessageBox.Show("Remove successful!!");
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showEmployeeList();
+        }
+
+        private void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            if (employee.Id != 0)
+            {
+                if (prevForm is Manager && (employee.Designation.ToUpper()=="CONSULTANT" || employee.Designation.ToUpper()=="REPORTER"))
+                {
+                    man = prevForm as Manager;
+                    man.OpenFormPanel(new EmployeeAccount(employee));
+                }
+                else
+                {
+                    MessageBox.Show("Invalid user type");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row!!");
             }
         }
     }
