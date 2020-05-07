@@ -19,6 +19,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         Customer customer;
         Users user;
         DataAccess da;
+        MainAccount mainAcc;
       public Payment(Property property,Customer customer,Users user)
         {
             InitializeComponent();
@@ -27,10 +28,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             this.user = user;
             this.transaction = new Transaction();
             this.da = new DataAccess();
+            this.mainAcc = new MainAccount();
         }
 
         private void Payment_Load(object sender, EventArgs e)
         {
+            setMainAcc();
             btnCash.Checked = true;
             txtChequeNumber.Hide();
             lblChequeNumber.Hide();
@@ -88,12 +91,28 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
                 
                 da.Insert<Property>(property, true);
                 
-
-
+                if(transaction.Trade.ToUpper()=="SOLD")
+                {
+                    mainAcc.Balance = mainAcc.Balance + Convert.ToDouble(txtAmount.Text);
+                }
+                if (transaction.Trade.ToUpper() == "BOUGHT")
+                {
+                    mainAcc.Balance = mainAcc.Balance - Convert.ToDouble(txtAmount.Text);
+                }
+                da.Insert<MainAccount>(mainAcc,false);
                 MessageBox.Show("CONGRATULATIONS!!!!");
 
                 this.Dispose();
             }
+        }
+        private void setMainAcc()
+        {
+            DataTable dt = da.GetData<MainAccount>("");
+            mainAcc.Id = 0;
+            mainAcc.Balance = Convert.ToDouble(dt.Rows[0][0].ToString());
+            mainAcc.SellProfitPercent = Convert.ToDouble(dt.Rows[0][1].ToString());
+            mainAcc.BuyProfitPercent = Convert.ToDouble(dt.Rows[0][2].ToString());
+            mainAcc.CompanyName = dt.Rows[0][3].ToString();
         }
     }
 }

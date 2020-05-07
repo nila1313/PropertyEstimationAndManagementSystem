@@ -91,7 +91,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
 
             try
             {
-                PropertyHome ph = new PropertyHome(property);
+                PropertyHome ph = new PropertyHome(property,"Sell");
                 ph.Show();
             }
             catch (Exception exe)

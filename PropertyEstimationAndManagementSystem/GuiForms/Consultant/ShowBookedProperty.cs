@@ -91,7 +91,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
                 property.Area = row.Cells[2].Value.ToString();
                 property.Price = Convert.ToDouble(row.Cells[3].Value.ToString());
                 property.Size = Convert.ToDouble(row.Cells[4].Value.ToString());
-                PropertyHome ph = new PropertyHome(property);
+                PropertyHome ph = new PropertyHome(property,"Sell");
                 ph.Show();
             }
             catch (Exception exe)

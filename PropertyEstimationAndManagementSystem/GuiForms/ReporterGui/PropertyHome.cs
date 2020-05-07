@@ -21,11 +21,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
         const double alpha =0.4;
         string imageLocation1, imageLocation2, imageLocation3;
         int count;
-        public PropertyHome(Property property)
+        string eventType;
+        public PropertyHome(Property property,String eventType)
         {
             InitializeComponent();
             this.property = property;
             this.da = new DataAccess();
+            this.eventType = eventType;
         }
 
         private void PropertyHome_Load(object sender, EventArgs e)
@@ -67,12 +69,25 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
         {
             string sql = string.Format("select area, round(sum(price) / sum(size), 2) as 'Average Price per Square Feet' from property where area like '%{0}%' group by area ", property.Area);
             DataTable dt = da.Execute(sql);
-            double perUnit=Convert.ToDouble(dt.Rows[0][1].ToString());
-            double AverageValue = perUnit * property.Size;
-            double difference = property.Price - AverageValue;
-            double totalPrice = difference * alpha + property.Price;
-            double estimatedValue = totalPrice + totalPrice * 0.15;
-            lblValue.Text = estimatedValue.ToString();
+            
+            if (eventType=="Sell" || eventType=="Null")
+            {
+                double perUnit = Convert.ToDouble(dt.Rows[0][1].ToString());
+                double AverageValue = perUnit * property.Size;
+                double difference = property.Price - AverageValue;
+                double totalPrice = difference * alpha + property.Price;
+                double estimatedValue = totalPrice + totalPrice * 0.15;
+                lblValue.Text = estimatedValue.ToString();
+            }
+            if(eventType=="Buy")
+            {
+                double perUnit = Convert.ToDouble(dt.Rows[0][1].ToString());
+                double AverageValue = perUnit * property.Size;
+                double difference = property.Price - AverageValue;
+                double totalPrice = difference * alpha + property.Price;
+                double estimatedValue = totalPrice - totalPrice * 0.15;
+                lblValue.Text = estimatedValue.ToString();
+            }
         }
 
         public void setImage()

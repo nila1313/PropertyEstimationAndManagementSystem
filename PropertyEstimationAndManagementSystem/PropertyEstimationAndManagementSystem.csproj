@@ -52,6 +52,7 @@
     <Compile Include="Entites\Customer.cs" />
     <Compile Include="Entites\Employee.cs" />
     <Compile Include="Entites\FeedBack.cs" />
+    <Compile Include="Entites\MainAccount.cs" />
     <Compile Include="Entites\Property.cs" />
     <Compile Include="Entites\PropertyDescription.cs" />
     <Compile Include="Entites\PropertyImage.cs" />
@@ -274,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ManagerGui\Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\OwnerGui\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\Owners.resx">
       <DependentUpon>Owners.cs</DependentUpon>

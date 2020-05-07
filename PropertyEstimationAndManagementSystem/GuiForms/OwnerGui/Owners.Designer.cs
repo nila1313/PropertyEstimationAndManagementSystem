@@ -37,6 +37,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelOwner = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnManager);
             this.panel1.Controls.Add(this.btnTransaction);
             this.panel1.Controls.Add(this.panelTransaction);
@@ -128,6 +130,16 @@
             this.panelOwner.Size = new System.Drawing.Size(1122, 602);
             this.panelOwner.TabIndex = 2;
             // 
+            // btnAccount
+            // 
+            this.btnAccount.Location = new System.Drawing.Point(41, 345);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnAccount.TabIndex = 2;
+            this.btnAccount.Text = "Account";
+            this.btnAccount.UseVisualStyleBackColor = true;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
             // Owners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Button btnSaleBuyEstimation;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnManager;
+        private System.Windows.Forms.Button btnAccount;
     }
 }

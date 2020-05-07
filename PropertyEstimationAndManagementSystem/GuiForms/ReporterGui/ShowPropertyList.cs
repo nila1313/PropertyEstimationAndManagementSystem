@@ -56,7 +56,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
 
             try
             {
-                PropertyHome ph = new PropertyHome(property);
+                PropertyHome ph = new PropertyHome(property,"Null");
                 ph.Show();
             }
             catch(Exception exe)
