@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnManager = new System.Windows.Forms.Button();
             this.btnTransaction = new System.Windows.Forms.Button();
             this.panelTransaction = new System.Windows.Forms.Panel();
+            this.btnSaleBuyEstimation = new System.Windows.Forms.Button();
             this.btnTransactionList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelOwner = new System.Windows.Forms.Panel();
-            this.btnSaleBuyEstimation = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnManager);
             this.panel1.Controls.Add(this.btnTransaction);
             this.panel1.Controls.Add(this.panelTransaction);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -51,6 +53,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 640);
             this.panel1.TabIndex = 0;
+            // 
+            // btnManager
+            // 
+            this.btnManager.Location = new System.Drawing.Point(41, 259);
+            this.btnManager.Name = "btnManager";
+            this.btnManager.Size = new System.Drawing.Size(75, 23);
+            this.btnManager.TabIndex = 0;
+            this.btnManager.Text = "Manager";
+            this.btnManager.UseVisualStyleBackColor = true;
+            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
             // 
             // btnTransaction
             // 
@@ -72,6 +84,18 @@
             this.panelTransaction.Name = "panelTransaction";
             this.panelTransaction.Size = new System.Drawing.Size(200, 100);
             this.panelTransaction.TabIndex = 0;
+            // 
+            // btnSaleBuyEstimation
+            // 
+            this.btnSaleBuyEstimation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSaleBuyEstimation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaleBuyEstimation.Location = new System.Drawing.Point(0, 23);
+            this.btnSaleBuyEstimation.Name = "btnSaleBuyEstimation";
+            this.btnSaleBuyEstimation.Size = new System.Drawing.Size(200, 23);
+            this.btnSaleBuyEstimation.TabIndex = 0;
+            this.btnSaleBuyEstimation.Text = "Buy-Sale Estimation";
+            this.btnSaleBuyEstimation.UseVisualStyleBackColor = false;
+            this.btnSaleBuyEstimation.Click += new System.EventHandler(this.btnSaleReport_Click);
             // 
             // btnTransactionList
             // 
@@ -104,18 +128,6 @@
             this.panelOwner.Size = new System.Drawing.Size(1122, 602);
             this.panelOwner.TabIndex = 2;
             // 
-            // btnSaleBuyEstimation
-            // 
-            this.btnSaleBuyEstimation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSaleBuyEstimation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleBuyEstimation.Location = new System.Drawing.Point(0, 23);
-            this.btnSaleBuyEstimation.Name = "btnSaleBuyEstimation";
-            this.btnSaleBuyEstimation.Size = new System.Drawing.Size(200, 23);
-            this.btnSaleBuyEstimation.TabIndex = 0;
-            this.btnSaleBuyEstimation.Text = "Buy-Sale Estimation";
-            this.btnSaleBuyEstimation.UseVisualStyleBackColor = false;
-            this.btnSaleBuyEstimation.Click += new System.EventHandler(this.btnSaleReport_Click);
-            // 
             // Owners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,5 +154,6 @@
         private System.Windows.Forms.Panel panelOwner;
         private System.Windows.Forms.Button btnSaleBuyEstimation;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnManager;
     }
 }

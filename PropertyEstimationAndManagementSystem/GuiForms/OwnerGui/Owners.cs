@@ -73,6 +73,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         {
             OpenFormPanel(new Sales());
         }
+
+        private void btnManager_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new EmployeeEdit(new Users(),this));
+        }
     }
  }
 

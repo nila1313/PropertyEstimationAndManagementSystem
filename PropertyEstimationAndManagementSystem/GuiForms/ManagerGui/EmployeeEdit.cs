@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using PropertyEstimationAndManagementSystem.GuiForms.ManagerGui;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -34,11 +35,23 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void EmployeeEdit_Load(object sender, EventArgs e)
         {
             //showEmployeeList();
+            if(prevForm is Owners)
+            {
+                showEmployeeList();
+            }
         }
         public void showEmployeeList()
         {
-            dataGridEmployee.DataSource = da.GetData<Employee>("");
-            dataGridEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            if(prevForm is Manager)
+            {
+                dataGridEmployee.DataSource = da.GetData<Employee>("where Designation!='MANAGER'");
+                dataGridEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            }
+            if (prevForm is Owners)
+            {
+                dataGridEmployee.DataSource = da.GetData<Employee>("where Designation ='MANAGER'");
+                dataGridEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            }
         }
 
 
@@ -81,7 +94,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 Manager man = prevForm as Manager;
                 man.OpenFormPanel(new CreateEmployee(new Employee(), prevForm, "Insert"));
             }
-         
+
+            if (prevForm is Owners)
+            {
+                Owners own = prevForm as Owners;
+                own.OpenFormPanel(new CreateEmployee(new Employee(), prevForm, "Insert"));
+            }
+
         }
 
         private void UpdateEmployee_Click(object sender, EventArgs e)
@@ -92,6 +111,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 { 
                  man= prevForm as Manager;
                  man.OpenFormPanel(new CreateEmployee(employee, prevForm, "Update"));
+                }
+                if (prevForm is Owners)
+                {
+                    Owners own = prevForm as Owners;
+                    own.OpenFormPanel(new CreateEmployee(employee, prevForm, "Update"));
                 }
             }
             else
@@ -127,6 +151,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 {
                     man = prevForm as Manager;
                     man.OpenFormPanel(new EmployeeAccount(employee));
+                }
+                else if(prevForm is Owners)
+                {
+                    Owners own = prevForm as Owners;
+                    own.OpenFormPanel(new EmployeeAccount(employee));
                 }
                 else
                 {

@@ -1,5 +1,6 @@
 ﻿using PropertyEstimationAndManagementSystem.Data;
 using PropertyEstimationAndManagementSystem.Entites;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,46 +59,67 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
 
                 }
             }
+            if(prevForm is Owners)
+            {
+                designation.Text = "MANAGER";
+                designation.ReadOnly = true;
+            }
 
 
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            if (designation.Text.ToUpper() != "MANAGER")
+            employee.FirstName = firstName.Text;
+            employee.LastName = lastName.Text;
+            employee.JoiningDate = joiningDate.Value.ToString();
+            employee.Designation = designation.Text;
+            employee.Salary = Convert.ToDouble(salary.Text);
+            employee.PhoneNumber = phoneNumber.Text;
+            employee.Address = Address.Text;
+            employee.DateOfBirth = dateOfBirth.Value.ToString();
+            employee.BloodGroup = bloodGroup.Text;
+            if (prevForm is Owners)
             {
-                employee.FirstName = firstName.Text;
-                employee.LastName = lastName.Text;
-                employee.JoiningDate = joiningDate.Value.ToString();
-                employee.Designation = designation.Text;
-                employee.Salary = Convert.ToDouble(salary.Text);
-                employee.PhoneNumber = phoneNumber.Text;
-                employee.Address = Address.Text;
-                employee.DateOfBirth = dateOfBirth.Value.ToString();
-                employee.BloodGroup = bloodGroup.Text;
                 da.Insert<Employee>(employee, true);
                 MessageBox.Show("Insert Successful!");
                 this.Dispose();
             }
             else
             {
-                MessageBox.Show("Manager Cannot be Inserted");
+                if (designation.Text.ToUpper() != "MANAGER")
+                {
+                    da.Insert<Employee>(employee, true);
+                    MessageBox.Show("Insert Successful!");
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Manager Cannot be Inserted");
+                }
             }
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(designation.Text.ToUpper()!="MANAGER")
+            employee.FirstName = firstName.Text;
+            employee.LastName = lastName.Text;
+            employee.JoiningDate = joiningDate.Value.ToString();
+            employee.Designation = designation.Text.ToString();
+            employee.Salary = Convert.ToDouble(salary.Text);
+            employee.PhoneNumber = phoneNumber.Text.ToString();
+            employee.Address = Address.Text.ToString();
+            employee.DateOfBirth = dateOfBirth.Value.ToString();
+            employee.BloodGroup = bloodGroup.Text;
+            if (designation.Text.ToUpper()!="MANAGER")
             {
-                employee.FirstName = firstName.Text;
-                employee.LastName = lastName.Text;
-                employee.JoiningDate = joiningDate.Value.ToString();
-                employee.Designation = designation.Text.ToString();
-                employee.Salary = Convert.ToDouble(salary.Text);
-                employee.PhoneNumber = phoneNumber.Text.ToString();
-                employee.Address = Address.Text.ToString();
-                employee.DateOfBirth = dateOfBirth.Value.ToString();
-                employee.BloodGroup = bloodGroup.Text;
+                da.Insert<Employee>(employee, true);
+                MessageBox.Show("Update Successful!");
+                this.Dispose();
+            }
+            else if(prevForm is Owners)
+            {
                 da.Insert<Employee>(employee, true);
                 MessageBox.Show("Update Successful!");
                 this.Dispose();
