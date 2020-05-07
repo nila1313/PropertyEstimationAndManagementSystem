@@ -294,6 +294,9 @@
     <EmbeddedResource Include="GuiForms\ReporterGui\EditProperty.resx">
       <DependentUpon>EditProperty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ReporterGui\PriceAccordingArea.resx">
+      <DependentUpon>PriceAccordingArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ReporterGui\PropertyDescription.resx">
       <DependentUpon>PropertyDescription.cs</DependentUpon>
     </EmbeddedResource>
