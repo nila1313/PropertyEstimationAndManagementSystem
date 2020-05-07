@@ -18,7 +18,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
     {
         Property property;
         DataAccess da;
-        const double alpha =0.4;
+        const double alpha = 0.4;
+        double buyProfit, sellProfit;
         string imageLocation1, imageLocation2, imageLocation3;
         int count;
         string eventType;
@@ -38,6 +39,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
             setDescription();
             setEstimatedValue();
             setImage();
+            SetProfit();
         }
 
         public void setDescription()
@@ -76,7 +78,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
                 double AverageValue = perUnit * property.Size;
                 double difference = property.Price - AverageValue;
                 double totalPrice = difference * alpha + property.Price;
-                double estimatedValue = totalPrice + totalPrice * 0.15;
+                double estimatedValue = totalPrice + totalPrice * (sellProfit/100);
                 lblValue.Text = estimatedValue.ToString();
             }
             if(eventType=="Buy")
@@ -85,7 +87,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
                 double AverageValue = perUnit * property.Size;
                 double difference = property.Price - AverageValue;
                 double totalPrice = difference * alpha + property.Price;
-                double estimatedValue = totalPrice - totalPrice * 0.15;
+                double estimatedValue = totalPrice - totalPrice * (buyProfit/100);
                 lblValue.Text = estimatedValue.ToString();
             }
         }
@@ -110,18 +112,31 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
         }
         public void selectPicture()
         {
-            if (count == 1 || count == -1)
+            try
             {
-                pictureBox1.Image = Image.FromFile(imageLocation1);
+                if (count == 1 || count == -1)
+                {
+                    pictureBox1.Image = Image.FromFile(imageLocation1);
+                }
+                if (count == 2 || count == -2)
+                {
+                    pictureBox1.Image = Image.FromFile(imageLocation2);
+                }
+                if (count == 0)
+                {
+                    pictureBox1.Image = Image.FromFile(imageLocation3);
+                }
             }
-            if (count == 2 || count == -2)
+            catch(Exception exe)
             {
-                pictureBox1.Image = Image.FromFile(imageLocation2);
+                MessageBox.Show("No Picture Available");
             }
-            if (count == 0)
-            {
-                pictureBox1.Image = Image.FromFile(imageLocation3);
-            }
+        }
+        public void SetProfit()
+        {
+            DataTable dt = da.GetData<MainAccount>("");
+            sellProfit = Convert.ToDouble(dt.Rows[0][1].ToString());
+            buyProfit = Convert.ToDouble(dt.Rows[0][2].ToString());
         }
     }
 
