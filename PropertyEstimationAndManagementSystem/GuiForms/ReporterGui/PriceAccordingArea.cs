@@ -45,7 +45,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             chartArea.Titles.Add("Area Highest Price");
             for(int i=0;i<dt.Rows.Count;i++)
             {
-                chartArea.Series["s1"].Points.AddXY("#PERCENT " + dt.Rows[i][0].ToString(), Convert.ToDouble(dt.Rows[i][1]));
+                chartArea.Series["s1"].Points.AddXY("#PERCENT", Convert.ToDouble(dt.Rows[i][1]));
+                chartArea.Series["s1"].Points[i].LegendText = dt.Rows[i][0].ToString();
             }
         }
     }

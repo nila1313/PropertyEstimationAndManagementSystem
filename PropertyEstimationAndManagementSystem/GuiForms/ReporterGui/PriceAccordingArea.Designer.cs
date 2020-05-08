@@ -46,19 +46,17 @@
             // 
             this.dataGridArea.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridArea.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridArea.Location = new System.Drawing.Point(44, 176);
-            this.dataGridArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridArea.Location = new System.Drawing.Point(33, 143);
             this.dataGridArea.Name = "dataGridArea";
             this.dataGridArea.RowHeadersWidth = 51;
-            this.dataGridArea.Size = new System.Drawing.Size(456, 370);
+            this.dataGridArea.Size = new System.Drawing.Size(342, 301);
             this.dataGridArea.TabIndex = 0;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(16, 15);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(59, 28);
+            this.btnBack.Size = new System.Drawing.Size(44, 23);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -68,10 +66,9 @@
             // 
             this.lblPriceAccordingArea.AutoSize = true;
             this.lblPriceAccordingArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceAccordingArea.Location = new System.Drawing.Point(37, 69);
-            this.lblPriceAccordingArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceAccordingArea.Location = new System.Drawing.Point(28, 56);
             this.lblPriceAccordingArea.Name = "lblPriceAccordingArea";
-            this.lblPriceAccordingArea.Size = new System.Drawing.Size(268, 31);
+            this.lblPriceAccordingArea.Size = new System.Drawing.Size(214, 25);
             this.lblPriceAccordingArea.TabIndex = 3;
             this.lblPriceAccordingArea.Text = "Price According Area";
             // 
@@ -79,30 +76,27 @@
             // 
             this.lblAreaName.AutoSize = true;
             this.lblAreaName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAreaName.Location = new System.Drawing.Point(39, 107);
-            this.lblAreaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAreaName.Location = new System.Drawing.Point(29, 87);
             this.lblAreaName.Name = "lblAreaName";
-            this.lblAreaName.Size = new System.Drawing.Size(111, 25);
+            this.lblAreaName.Size = new System.Drawing.Size(89, 20);
             this.lblAreaName.TabIndex = 4;
             this.lblAreaName.Text = "Area Name";
             // 
             // txtAreaName
             // 
             this.txtAreaName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAreaName.Location = new System.Drawing.Point(165, 103);
-            this.txtAreaName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAreaName.Location = new System.Drawing.Point(124, 84);
             this.txtAreaName.Name = "txtAreaName";
-            this.txtAreaName.Size = new System.Drawing.Size(215, 30);
+            this.txtAreaName.Size = new System.Drawing.Size(162, 26);
             this.txtAreaName.TabIndex = 6;
             // 
             // btnSearch
             // 
             this.btnSearch.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.download1;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.Location = new System.Drawing.Point(389, 95);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(292, 77);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(52, 41);
+            this.btnSearch.Size = new System.Drawing.Size(39, 33);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -113,24 +107,25 @@
             this.chartArea.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartArea.Legends.Add(legend1);
-            this.chartArea.Location = new System.Drawing.Point(549, 164);
+            this.chartArea.Location = new System.Drawing.Point(412, 133);
+            this.chartArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartArea.Name = "chartArea";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "s1";
             series1.YValuesPerPoint = 3;
             this.chartArea.Series.Add(series1);
-            this.chartArea.Size = new System.Drawing.Size(349, 312);
+            this.chartArea.Size = new System.Drawing.Size(262, 254);
             this.chartArea.TabIndex = 7;
             this.chartArea.Text = "chartBar";
             // 
             // PriceAccordingArea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1023, 606);
+            this.ClientSize = new System.Drawing.Size(767, 492);
             this.Controls.Add(this.chartArea);
             this.Controls.Add(this.txtAreaName);
             this.Controls.Add(this.btnSearch);
@@ -138,7 +133,6 @@
             this.Controls.Add(this.lblPriceAccordingArea);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dataGridArea);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PriceAccordingArea";
             this.Text = "PriceAccordingArea";
             this.Load += new System.EventHandler(this.PriceAccordingArea_Load);

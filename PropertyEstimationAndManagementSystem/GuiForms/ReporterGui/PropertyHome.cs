@@ -36,10 +36,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ReporterGui
             lblPropertyName.Text = property.Name;
             lblArea.Text = property.Area;
             lblSize.Text = property.Size.ToString()+ "  Square Feet";
+            SetProfit();
             setDescription();
             setEstimatedValue();
             setImage();
-            SetProfit();
         }
 
         public void setDescription()
