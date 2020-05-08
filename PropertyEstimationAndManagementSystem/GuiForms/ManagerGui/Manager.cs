@@ -91,5 +91,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             OpenFormPanel(new CheckProfit());
         }
+
+        private void ShowProperty_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new ShowProperty());
+        }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TotalEstimatedProfit = new System.Windows.Forms.Button();
+            this.ShowProperty = new System.Windows.Forms.Button();
             this.CheckProfit = new System.Windows.Forms.Button();
             this.EditEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -42,14 +42,15 @@
             this.EditEmployeePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TotalEstimatedProfit
+            // ShowProperty
             // 
-            this.TotalEstimatedProfit.Location = new System.Drawing.Point(33, 304);
-            this.TotalEstimatedProfit.Name = "TotalEstimatedProfit";
-            this.TotalEstimatedProfit.Size = new System.Drawing.Size(127, 23);
-            this.TotalEstimatedProfit.TabIndex = 4;
-            this.TotalEstimatedProfit.Text = "Total Estimated Profit";
-            this.TotalEstimatedProfit.UseVisualStyleBackColor = true;
+            this.ShowProperty.Location = new System.Drawing.Point(33, 304);
+            this.ShowProperty.Name = "ShowProperty";
+            this.ShowProperty.Size = new System.Drawing.Size(127, 23);
+            this.ShowProperty.TabIndex = 4;
+            this.ShowProperty.Text = "Show Property";
+            this.ShowProperty.UseVisualStyleBackColor = true;
+            this.ShowProperty.Click += new System.EventHandler(this.ShowProperty_Click);
             // 
             // CheckProfit
             // 
@@ -89,7 +90,7 @@
             this.panel1.Controls.Add(this.EditEmployeePanel);
             this.panel1.Controls.Add(this.EditEmployee);
             this.panel1.Controls.Add(this.CheckProfit);
-            this.panel1.Controls.Add(this.TotalEstimatedProfit);
+            this.panel1.Controls.Add(this.ShowProperty);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -171,7 +172,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button TotalEstimatedProfit;
+        private System.Windows.Forms.Button ShowProperty;
         private System.Windows.Forms.Button CheckProfit;
         private System.Windows.Forms.Button EditEmployee;
         private System.Windows.Forms.Panel panel1;
