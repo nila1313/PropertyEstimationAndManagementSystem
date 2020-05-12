@@ -83,6 +83,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         {
             OpenFormPanel(new OwnerGui.Account());
         }
+
+        private void btnFeedBack_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new CheckFeedBack());
+        }
     }
  }
 

@@ -130,6 +130,12 @@
     <Compile Include="GuiForms\OwnerGui\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuiForms\OwnerGui\CheckFeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiForms\OwnerGui\CheckFeedBack.Designer.cs">
+      <DependentUpon>CheckFeedBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuiForms\OwnerGui\Owners.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\OwnerGui\CheckFeedBack.resx">
+      <DependentUpon>CheckFeedBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\OwnerGui\Owners.resx">
       <DependentUpon>Owners.cs</DependentUpon>

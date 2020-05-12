@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnTransaction = new System.Windows.Forms.Button();
             this.panelTransaction = new System.Windows.Forms.Panel();
@@ -36,8 +37,7 @@
             this.btnTransactionList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelOwner = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnFeedBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnFeedBack);
             this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnManager);
             this.panel1.Controls.Add(this.btnTransaction);
@@ -55,6 +56,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 640);
             this.panel1.TabIndex = 0;
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.Location = new System.Drawing.Point(41, 345);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnAccount.TabIndex = 2;
+            this.btnAccount.Text = "Account";
+            this.btnAccount.UseVisualStyleBackColor = true;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnManager
             // 
@@ -130,15 +141,15 @@
             this.panelOwner.Size = new System.Drawing.Size(1122, 602);
             this.panelOwner.TabIndex = 2;
             // 
-            // btnAccount
+            // btnFeedBack
             // 
-            this.btnAccount.Location = new System.Drawing.Point(41, 345);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(75, 23);
-            this.btnAccount.TabIndex = 2;
-            this.btnAccount.Text = "Account";
-            this.btnAccount.UseVisualStyleBackColor = true;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            this.btnFeedBack.Location = new System.Drawing.Point(41, 422);
+            this.btnFeedBack.Name = "btnFeedBack";
+            this.btnFeedBack.Size = new System.Drawing.Size(75, 23);
+            this.btnFeedBack.TabIndex = 3;
+            this.btnFeedBack.Text = "Check FeedBack";
+            this.btnFeedBack.UseVisualStyleBackColor = true;
+            this.btnFeedBack.Click += new System.EventHandler(this.btnFeedBack_Click);
             // 
             // Owners
             // 
@@ -165,8 +176,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelOwner;
         private System.Windows.Forms.Button btnSaleBuyEstimation;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnManager;
         private System.Windows.Forms.Button btnAccount;
+        private System.Windows.Forms.Button btnFeedBack;
     }
 }
