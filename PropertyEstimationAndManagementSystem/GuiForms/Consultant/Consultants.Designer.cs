@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnProperty = new System.Windows.Forms.Button();
             this.btnFeedBack = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -41,7 +42,6 @@
             this.btnBuy = new System.Windows.Forms.Button();
             this.btnAvailablePropety = new System.Windows.Forms.Button();
             this.panelConsultant = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -68,6 +68,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 590);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 130);
+            this.panel2.TabIndex = 6;
             // 
             // btnProperty
             // 
@@ -204,20 +212,13 @@
             // panelConsultant
             // 
             this.panelConsultant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.panelConsultant.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConsultant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelConsultant.ForeColor = System.Drawing.Color.Coral;
-            this.panelConsultant.Location = new System.Drawing.Point(202, 53);
+            this.panelConsultant.Location = new System.Drawing.Point(202, 0);
             this.panelConsultant.Name = "panelConsultant";
-            this.panelConsultant.Size = new System.Drawing.Size(785, 541);
+            this.panelConsultant.Size = new System.Drawing.Size(783, 590);
             this.panelConsultant.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 130);
-            this.panel2.TabIndex = 6;
             // 
             // btnLogout
             // 

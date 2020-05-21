@@ -55,11 +55,11 @@
             this.RemoveEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.RemoveEmployee.Location = new System.Drawing.Point(388, 72);
+            this.RemoveEmployee.Location = new System.Drawing.Point(378, 34);
             this.RemoveEmployee.Name = "RemoveEmployee";
             this.RemoveEmployee.Size = new System.Drawing.Size(148, 32);
             this.RemoveEmployee.TabIndex = 8;
-            this.RemoveEmployee.Text = "Remove Employee";
+            this.RemoveEmployee.Text = "Remove ";
             this.RemoveEmployee.UseVisualStyleBackColor = false;
             this.RemoveEmployee.Click += new System.EventHandler(this.RemoveEmployee_Click);
             // 
@@ -70,11 +70,11 @@
             this.UpdateEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.UpdateEmployee.Location = new System.Drawing.Point(236, 72);
+            this.UpdateEmployee.Location = new System.Drawing.Point(214, 34);
             this.UpdateEmployee.Name = "UpdateEmployee";
             this.UpdateEmployee.Size = new System.Drawing.Size(146, 32);
             this.UpdateEmployee.TabIndex = 7;
-            this.UpdateEmployee.Text = "Update Employee";
+            this.UpdateEmployee.Text = "Update ";
             this.UpdateEmployee.UseVisualStyleBackColor = false;
             this.UpdateEmployee.Click += new System.EventHandler(this.UpdateEmployee_Click);
             // 
@@ -86,11 +86,11 @@
             this.InsertEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InsertEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InsertEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.InsertEmployee.Location = new System.Drawing.Point(97, 72);
+            this.InsertEmployee.Location = new System.Drawing.Point(58, 28);
             this.InsertEmployee.Name = "InsertEmployee";
             this.InsertEmployee.Size = new System.Drawing.Size(133, 32);
             this.InsertEmployee.TabIndex = 6;
-            this.InsertEmployee.Text = "Insert Employee";
+            this.InsertEmployee.Text = "Insert ";
             this.InsertEmployee.UseVisualStyleBackColor = false;
             this.InsertEmployee.Click += new System.EventHandler(this.InsertEmployee_Click);
             // 
@@ -101,11 +101,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(561, 72);
+            this.button1.Location = new System.Drawing.Point(550, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 32);
             this.button1.TabIndex = 16;
-            this.button1.Text = "View Employee List";
+            this.button1.Text = "View ";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -114,9 +114,9 @@
             this.dataGridEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridEmployee.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.dataGridEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridEmployee.Location = new System.Drawing.Point(12, 158);
+            this.dataGridEmployee.Location = new System.Drawing.Point(12, 96);
             this.dataGridEmployee.Name = "dataGridEmployee";
-            this.dataGridEmployee.Size = new System.Drawing.Size(754, 222);
+            this.dataGridEmployee.Size = new System.Drawing.Size(763, 284);
             this.dataGridEmployee.TabIndex = 17;
             this.dataGridEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridEmployee_CellClick);
             // 
@@ -125,7 +125,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(307, 131);
+            this.label8.Location = new System.Drawing.Point(295, 69);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 24);
             this.label8.TabIndex = 18;

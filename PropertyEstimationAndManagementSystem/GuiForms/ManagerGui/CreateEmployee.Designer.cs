@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bloodGroup = new System.Windows.Forms.ComboBox();
             this.salary = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -50,7 +51,9 @@
             this.joiningDate = new System.Windows.Forms.DateTimePicker();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bloodGroup
@@ -72,6 +75,7 @@
             this.bloodGroup.Name = "bloodGroup";
             this.bloodGroup.Size = new System.Drawing.Size(247, 26);
             this.bloodGroup.TabIndex = 38;
+           
             // 
             // salary
             // 
@@ -82,6 +86,7 @@
             this.salary.Name = "salary";
             this.salary.Size = new System.Drawing.Size(243, 24);
             this.salary.TabIndex = 37;
+            this.salary.Validating += new System.ComponentModel.CancelEventHandler(this.salary_Validating);
             // 
             // label10
             // 
@@ -133,6 +138,7 @@
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(243, 24);
             this.Address.TabIndex = 32;
+            this.Address.Validating += new System.ComponentModel.CancelEventHandler(this.Address_Validating);
             // 
             // phoneNumber
             // 
@@ -143,6 +149,7 @@
             this.phoneNumber.Name = "phoneNumber";
             this.phoneNumber.Size = new System.Drawing.Size(243, 24);
             this.phoneNumber.TabIndex = 31;
+            this.phoneNumber.Validating += new System.ComponentModel.CancelEventHandler(this.phoneNumber_Validating);
             // 
             // designation
             // 
@@ -153,6 +160,7 @@
             this.designation.Name = "designation";
             this.designation.Size = new System.Drawing.Size(243, 24);
             this.designation.TabIndex = 30;
+            this.designation.Validating += new System.ComponentModel.CancelEventHandler(this.designation_Validating);
             // 
             // firstName
             // 
@@ -163,6 +171,7 @@
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(243, 24);
             this.firstName.TabIndex = 29;
+            this.firstName.Validating += new System.ComponentModel.CancelEventHandler(this.firstName_Validating);
             // 
             // label6
             // 
@@ -215,7 +224,7 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInsert.Location = new System.Drawing.Point(55, 391);
+            this.btnInsert.Location = new System.Drawing.Point(89, 391);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 32);
             this.btnInsert.TabIndex = 39;
@@ -230,7 +239,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpdate.Location = new System.Drawing.Point(197, 391);
+            this.btnUpdate.Location = new System.Drawing.Point(231, 391);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 32);
             this.btnUpdate.TabIndex = 40;
@@ -258,6 +267,7 @@
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(243, 24);
             this.lastName.TabIndex = 42;
+            this.lastName.Validating += new System.ComponentModel.CancelEventHandler(this.lastName_Validating);
             // 
             // label8
             // 
@@ -294,7 +304,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.lastName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -320,6 +330,10 @@
             this.panel1.Size = new System.Drawing.Size(426, 436);
             this.panel1.TabIndex = 46;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // CreateEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +347,7 @@
             this.Load += new System.EventHandler(this.CreateEmployee_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -361,5 +376,6 @@
         private System.Windows.Forms.DateTimePicker joiningDate;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

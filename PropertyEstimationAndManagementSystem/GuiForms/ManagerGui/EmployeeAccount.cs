@@ -61,6 +61,54 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             em.Show();
             this.Dispose();
         }
+
+        private void userName_Validating(object sender, CancelEventArgs e)
+        {
+            var txtUserName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtUserName))
+            {
+                e.Cancel = true;
+                userName.Focus();
+                errorProvider1.SetError(userName, "$User Name must be required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(userName, "");
+            }
+        }
+
+        private void password_Validating(object sender, CancelEventArgs e)
+        {
+            var txtPassword = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtPassword))
+            {
+                e.Cancel = true;
+                password.Focus();
+                errorProvider1.SetError(password, "$Password must be required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(password, "");
+            }
+        }
+
+        private void txttype_Validating(object sender, CancelEventArgs e)
+        {
+            var txtType = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtType))
+            {
+                e.Cancel = true;
+                txttype.Focus();
+                errorProvider1.SetError(txttype, "$Employee Type must be required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txttype, "");
+            }
+        }
     }
 
 }

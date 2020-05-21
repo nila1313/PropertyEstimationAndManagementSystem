@@ -130,5 +130,117 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
             }
             
         }
+
+        private void firstName_Validating(object sender, CancelEventArgs e)
+        {
+            var txtFirstName = (sender as TextBox).Text;
+            if(string.IsNullOrWhiteSpace(txtFirstName))
+            {
+                e.Cancel = true;
+                firstName.Focus();
+                errorProvider1.SetError(firstName, "$First Name should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(firstName, "");
+           }
+        }
+
+        private void lastName_Validating(object sender, CancelEventArgs e)
+        {
+            var txtLastName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtLastName))
+            {
+                e.Cancel = true;
+                lastName.Focus();
+                errorProvider1.SetError(lastName, "$Last Name should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(lastName, "");
+            }
+        }
+
+        private void designation_Validating(object sender, CancelEventArgs e)
+        {
+            var txtDesignation = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtDesignation))
+            {
+                e.Cancel = true;
+                designation.Focus();
+                errorProvider1.SetError(designation, "$Employee Designation should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(designation, "");
+            }
+        }
+
+        private void salary_Validating(object sender, CancelEventArgs e)
+        {
+            var txtSalary = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtSalary))
+            {
+                e.Cancel = true;
+                salary.Focus();
+                errorProvider1.SetError(salary, "$Salary should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(salary, "");
+            }
+        }
+
+        private void phoneNumber_Validating(object sender, CancelEventArgs e)
+        {
+            var txtPhoneNumber = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtPhoneNumber))
+            {
+                e.Cancel = true;
+                phoneNumber.Focus();
+                errorProvider1.SetError(phoneNumber, "$Phone Number should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(phoneNumber, "");
+            }
+        }
+
+        private void Address_Validating(object sender, CancelEventArgs e)
+        {
+            var txtAddress = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtAddress))
+            {
+                e.Cancel = true;
+                Address.Focus();
+                errorProvider1.SetError(Address, "$Address must be required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(Address, "");
+            }
+        }
+
+        /*private void bloodGroup_Validating(object sender, CancelEventArgs e)
+        {
+            var txtBloodGroup = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(txtBloodGroup))
+            {
+                e.Cancel = true;
+                bloodGroup.Focus();
+                errorProvider1.SetError(bloodGroup, "$Blood Group should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(bloodGroup, "");
+            }
+        }*/
     }
 }

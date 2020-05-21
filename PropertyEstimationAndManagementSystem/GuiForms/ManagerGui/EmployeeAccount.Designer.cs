@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.TextBox();
@@ -37,7 +38,9 @@
             this.txttype = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,6 +74,7 @@
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(186, 26);
             this.userName.TabIndex = 2;
+            this.userName.Validating += new System.ComponentModel.CancelEventHandler(this.userName_Validating);
             // 
             // password
             // 
@@ -81,6 +85,7 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(186, 26);
             this.password.TabIndex = 3;
+            this.password.Validating += new System.ComponentModel.CancelEventHandler(this.password_Validating);
             // 
             // Save
             // 
@@ -118,6 +123,7 @@
             this.txttype.ReadOnly = true;
             this.txttype.Size = new System.Drawing.Size(186, 26);
             this.txttype.TabIndex = 9;
+            this.txttype.Validating += new System.ComponentModel.CancelEventHandler(this.txttype_Validating);
             // 
             // panel1
             // 
@@ -149,6 +155,10 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // EmployeeAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +171,7 @@
             this.Load += new System.EventHandler(this.EmployeeAccount_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +187,6 @@
         private System.Windows.Forms.TextBox txttype;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

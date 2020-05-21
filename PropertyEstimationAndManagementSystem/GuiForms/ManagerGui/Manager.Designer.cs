@@ -42,6 +42,8 @@
             this.EmployeePanel = new System.Windows.Forms.Panel();
             this.panelProperty = new System.Windows.Forms.Panel();
             this.btnPropertyInfo = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.EditEmployeePanel.SuspendLayout();
             this.panelProperty.SuspendLayout();
@@ -52,6 +54,7 @@
             this.ShowProperty.Dock = System.Windows.Forms.DockStyle.Top;
             this.ShowProperty.FlatAppearance.BorderSize = 0;
             this.ShowProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShowProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowProperty.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ShowProperty.Location = new System.Drawing.Point(0, 0);
             this.ShowProperty.Name = "ShowProperty";
@@ -65,8 +68,9 @@
             // 
             this.CheckProfit.FlatAppearance.BorderSize = 0;
             this.CheckProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CheckProfit.Location = new System.Drawing.Point(33, 328);
+            this.CheckProfit.Location = new System.Drawing.Point(27, 341);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -78,7 +82,7 @@
             // 
             this.EditEmployee.FlatAppearance.BorderSize = 0;
             this.EditEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.EditEmployee.Location = new System.Drawing.Point(3, 138);
             this.EditEmployee.Name = "EditEmployee";
@@ -100,6 +104,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnPropertyInfo);
             this.panel1.Controls.Add(this.panelProperty);
             this.panel1.Controls.Add(this.Logout);
@@ -110,17 +116,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 590);
+            this.panel1.Size = new System.Drawing.Size(186, 590);
             this.panel1.TabIndex = 7;
             // 
             // Logout
             // 
             this.Logout.FlatAppearance.BorderSize = 0;
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Logout.Location = new System.Drawing.Point(57, 357);
+            this.Logout.Location = new System.Drawing.Point(56, 383);
             this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(75, 23);
+            this.Logout.Size = new System.Drawing.Size(75, 35);
             this.Logout.TabIndex = 9;
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = true;
@@ -142,7 +149,7 @@
             this.EditEmployeePanel.Controls.Add(this.Insert);
             this.EditEmployeePanel.Location = new System.Drawing.Point(0, 167);
             this.EditEmployeePanel.Name = "EditEmployeePanel";
-            this.EditEmployeePanel.Size = new System.Drawing.Size(180, 66);
+            this.EditEmployeePanel.Size = new System.Drawing.Size(186, 66);
             this.EditEmployeePanel.TabIndex = 7;
             // 
             // showUsers
@@ -150,11 +157,12 @@
             this.showUsers.Dock = System.Windows.Forms.DockStyle.Top;
             this.showUsers.FlatAppearance.BorderSize = 0;
             this.showUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.showUsers.Location = new System.Drawing.Point(0, 23);
             this.showUsers.Name = "showUsers";
             this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.showUsers.Size = new System.Drawing.Size(180, 23);
+            this.showUsers.Size = new System.Drawing.Size(186, 23);
             this.showUsers.TabIndex = 3;
             this.showUsers.Text = "Show Users";
             this.showUsers.UseVisualStyleBackColor = true;
@@ -165,11 +173,12 @@
             this.Insert.Dock = System.Windows.Forms.DockStyle.Top;
             this.Insert.FlatAppearance.BorderSize = 0;
             this.Insert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Insert.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Insert.Location = new System.Drawing.Point(0, 0);
             this.Insert.Name = "Insert";
             this.Insert.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Insert.Size = new System.Drawing.Size(180, 23);
+            this.Insert.Size = new System.Drawing.Size(186, 23);
             this.Insert.TabIndex = 0;
             this.Insert.Text = "Edit Employee";
             this.Insert.UseVisualStyleBackColor = true;
@@ -179,18 +188,18 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(180, 0);
+            this.panel2.Location = new System.Drawing.Point(186, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(805, 42);
+            this.panel2.Size = new System.Drawing.Size(799, 42);
             this.panel2.TabIndex = 8;
             // 
             // EmployeePanel
             // 
             this.EmployeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmployeePanel.Location = new System.Drawing.Point(180, 42);
+            this.EmployeePanel.Location = new System.Drawing.Point(186, 42);
             this.EmployeePanel.Name = "EmployeePanel";
-            this.EmployeePanel.Size = new System.Drawing.Size(805, 548);
+            this.EmployeePanel.Size = new System.Drawing.Size(799, 548);
             this.EmployeePanel.TabIndex = 9;
             // 
             // panelProperty
@@ -207,13 +216,33 @@
             this.btnPropertyInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPropertyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPropertyInfo.Location = new System.Drawing.Point(15, 239);
+            this.btnPropertyInfo.Location = new System.Drawing.Point(27, 239);
             this.btnPropertyInfo.Name = "btnPropertyInfo";
             this.btnPropertyInfo.Size = new System.Drawing.Size(159, 27);
             this.btnPropertyInfo.TabIndex = 11;
             this.btnPropertyInfo.Text = "Property Information";
             this.btnPropertyInfo.UseVisualStyleBackColor = true;
             this.btnPropertyInfo.Click += new System.EventHandler(this.btnPropertyInfo_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Property_logo_2;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(3, 239);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(29, 26);
+            this.panel4.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(27, 387);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 28);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Manager
             // 
@@ -248,5 +277,7 @@
         private System.Windows.Forms.Button btnImage;
         private System.Windows.Forms.Button btnPropertyInfo;
         private System.Windows.Forms.Panel panelProperty;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
     }
 }
