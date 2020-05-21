@@ -193,8 +193,9 @@
             // 
             // panelConsultant
             // 
-            this.panelConsultant.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelConsultant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.panelConsultant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelConsultant.ForeColor = System.Drawing.Color.Coral;
             this.panelConsultant.Location = new System.Drawing.Point(202, 0);
             this.panelConsultant.Name = "panelConsultant";
             this.panelConsultant.Size = new System.Drawing.Size(783, 590);
