@@ -68,6 +68,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
             setChart();
         }
 
+      
         public void setChart()
         {
             Profit.Titles.Add("Total Transaction,salary,Profit estimation");

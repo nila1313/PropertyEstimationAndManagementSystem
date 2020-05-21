@@ -55,6 +55,7 @@
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.TotalTransaction);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Location = new System.Drawing.Point(45, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(154, 78);
@@ -74,16 +75,19 @@
             // 
             this.TotalTransaction.AutoSize = true;
             this.TotalTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTransaction.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.TotalTransaction.Location = new System.Drawing.Point(23, 28);
             this.TotalTransaction.Name = "TotalTransaction";
             this.TotalTransaction.Size = new System.Drawing.Size(131, 20);
             this.TotalTransaction.TabIndex = 0;
             this.TotalTransaction.Text = "Total Transaction";
+           
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblTotalProfit);
             this.panel2.Controls.Add(this.TotalProfit);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel2.Location = new System.Drawing.Point(284, 39);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(148, 78);
@@ -103,6 +107,7 @@
             // 
             this.TotalProfit.AutoSize = true;
             this.TotalProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalProfit.ForeColor = System.Drawing.Color.Orange;
             this.TotalProfit.Location = new System.Drawing.Point(49, 35);
             this.TotalProfit.Name = "TotalProfit";
             this.TotalProfit.Size = new System.Drawing.Size(85, 20);
@@ -113,9 +118,10 @@
             // 
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.TotalSalary);
-            this.panel3.Location = new System.Drawing.Point(45, 160);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.Location = new System.Drawing.Point(41, 213);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(158, 60);
+            this.panel3.Size = new System.Drawing.Size(158, 70);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -132,6 +138,7 @@
             // 
             this.TotalSalary.AutoSize = true;
             this.TotalSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalSalary.ForeColor = System.Drawing.Color.Red;
             this.TotalSalary.Location = new System.Drawing.Point(43, 24);
             this.TotalSalary.Name = "TotalSalary";
             this.TotalSalary.Size = new System.Drawing.Size(92, 20);
@@ -142,7 +149,8 @@
             // 
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.NetProfit);
-            this.panel4.Location = new System.Drawing.Point(284, 160);
+            this.panel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel4.Location = new System.Drawing.Point(291, 214);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(148, 69);
             this.panel4.TabIndex = 3;
@@ -161,6 +169,7 @@
             // 
             this.NetProfit.AutoSize = true;
             this.NetProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NetProfit.ForeColor = System.Drawing.Color.SteelBlue;
             this.NetProfit.Location = new System.Drawing.Point(49, 24);
             this.NetProfit.Name = "NetProfit";
             this.NetProfit.Size = new System.Drawing.Size(75, 20);
@@ -171,6 +180,7 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.Profit.ChartAreas.Add(chartArea1);
+            this.Profit.IsSoftShadows = false;
             legend1.Name = "Legend1";
             this.Profit.Legends.Add(legend1);
             this.Profit.Location = new System.Drawing.Point(513, 39);
@@ -187,6 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(853, 407);
             this.Controls.Add(this.Profit);
             this.Controls.Add(this.panel4);
