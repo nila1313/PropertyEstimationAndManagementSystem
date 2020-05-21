@@ -47,9 +47,9 @@
             this.dataGridProperty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridProperty.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.dataGridProperty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridProperty.Location = new System.Drawing.Point(232, 64);
+            this.dataGridProperty.Location = new System.Drawing.Point(215, 64);
             this.dataGridProperty.Name = "dataGridProperty";
-            this.dataGridProperty.Size = new System.Drawing.Size(556, 326);
+            this.dataGridProperty.Size = new System.Drawing.Size(573, 326);
             this.dataGridProperty.TabIndex = 0;
             this.dataGridProperty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProperty_CellClick);
             // 
@@ -57,7 +57,8 @@
             // 
             this.lblShowProperty.AutoSize = true;
             this.lblShowProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowProperty.Location = new System.Drawing.Point(25, 31);
+            this.lblShowProperty.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblShowProperty.Location = new System.Drawing.Point(416, 28);
             this.lblShowProperty.Name = "lblShowProperty";
             this.lblShowProperty.Size = new System.Drawing.Size(133, 20);
             this.lblShowProperty.TabIndex = 1;
@@ -65,6 +66,8 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtPrice.Location = new System.Drawing.Point(28, 206);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(181, 20);
@@ -72,9 +75,9 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(713, 31);
+            this.btnSearch.Location = new System.Drawing.Point(139, 59);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(57, 20);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -82,6 +85,8 @@
             // 
             // txtArea
             // 
+            this.txtArea.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtArea.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtArea.Location = new System.Drawing.Point(28, 80);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(181, 20);
@@ -89,6 +94,8 @@
             // 
             // txtSize
             // 
+            this.txtSize.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtSize.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtSize.Location = new System.Drawing.Point(28, 143);
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(181, 20);
@@ -96,6 +103,10 @@
             // 
             // btnShowAll
             // 
+            this.btnShowAll.FlatAppearance.BorderSize = 0;
+            this.btnShowAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAll.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnShowAll.Location = new System.Drawing.Point(420, 396);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(75, 23);
@@ -116,6 +127,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(26, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 18);
@@ -126,6 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(26, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 18);
@@ -136,6 +149,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(25, 59);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 18);
@@ -146,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
