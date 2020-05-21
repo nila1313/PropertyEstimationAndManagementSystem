@@ -38,48 +38,61 @@
             // dataGridCustomer
             // 
             this.dataGridCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.dataGridCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridCustomer.Location = new System.Drawing.Point(67, 106);
+            this.dataGridCustomer.Location = new System.Drawing.Point(47, 107);
             this.dataGridCustomer.Name = "dataGridCustomer";
-            this.dataGridCustomer.Size = new System.Drawing.Size(247, 184);
+            this.dataGridCustomer.Size = new System.Drawing.Size(687, 259);
             this.dataGridCustomer.TabIndex = 0;
             this.dataGridCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridCustomer_CellClick);
             // 
             // lblCustomerList
             // 
             this.lblCustomerList.AutoSize = true;
-            this.lblCustomerList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerList.Location = new System.Drawing.Point(63, 64);
+            this.lblCustomerList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerList.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblCustomerList.Location = new System.Drawing.Point(292, 46);
             this.lblCustomerList.Name = "lblCustomerList";
-            this.lblCustomerList.Size = new System.Drawing.Size(107, 20);
+            this.lblCustomerList.Size = new System.Drawing.Size(144, 25);
             this.lblCustomerList.TabIndex = 1;
             this.lblCustomerList.Text = "Customer List";
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(127, 364);
+            this.btnSelect.BackColor = System.Drawing.Color.Black;
+            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSelect.Location = new System.Drawing.Point(177, 391);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnSelect.Size = new System.Drawing.Size(95, 30);
             this.btnSelect.TabIndex = 2;
             this.btnSelect.Text = "Select";
-            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // btnCreateNew
             // 
-            this.btnCreateNew.Location = new System.Drawing.Point(324, 364);
+            this.btnCreateNew.BackColor = System.Drawing.Color.Black;
+            this.btnCreateNew.FlatAppearance.BorderSize = 0;
+            this.btnCreateNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateNew.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCreateNew.Location = new System.Drawing.Point(429, 391);
             this.btnCreateNew.Name = "btnCreateNew";
-            this.btnCreateNew.Size = new System.Drawing.Size(75, 23);
+            this.btnCreateNew.Size = new System.Drawing.Size(95, 30);
             this.btnCreateNew.TabIndex = 3;
             this.btnCreateNew.Text = "Create New";
-            this.btnCreateNew.UseVisualStyleBackColor = true;
+            this.btnCreateNew.UseVisualStyleBackColor = false;
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
             // 
             // ShowCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 441);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.ClientSize = new System.Drawing.Size(769, 502);
             this.Controls.Add(this.btnCreateNew);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.lblCustomerList);

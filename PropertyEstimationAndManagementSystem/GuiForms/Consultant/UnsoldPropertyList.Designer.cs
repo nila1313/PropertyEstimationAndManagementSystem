@@ -36,38 +36,47 @@
             // 
             // dataGridPropertyList
             // 
+            this.dataGridPropertyList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.dataGridPropertyList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridPropertyList.Location = new System.Drawing.Point(84, 98);
+            this.dataGridPropertyList.Location = new System.Drawing.Point(32, 98);
             this.dataGridPropertyList.Name = "dataGridPropertyList";
-            this.dataGridPropertyList.Size = new System.Drawing.Size(425, 182);
+            this.dataGridPropertyList.Size = new System.Drawing.Size(686, 273);
             this.dataGridPropertyList.TabIndex = 0;
             this.dataGridPropertyList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPropertyList_CellClick);
             // 
             // lblPropertyList
             // 
             this.lblPropertyList.AutoSize = true;
-            this.lblPropertyList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPropertyList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPropertyList.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPropertyList.Location = new System.Drawing.Point(98, 49);
             this.lblPropertyList.Name = "lblPropertyList";
-            this.lblPropertyList.Size = new System.Drawing.Size(128, 20);
+            this.lblPropertyList.Size = new System.Drawing.Size(147, 24);
             this.lblPropertyList.TabIndex = 1;
             this.lblPropertyList.Text = "List of Properties";
+           
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(111, 305);
+            this.btnBuy.BackColor = System.Drawing.Color.Black;
+            this.btnBuy.FlatAppearance.BorderSize = 0;
+            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuy.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuy.Location = new System.Drawing.Point(311, 410);
             this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(75, 23);
+            this.btnBuy.Size = new System.Drawing.Size(93, 36);
             this.btnBuy.TabIndex = 2;
             this.btnBuy.Text = "Buy";
-            this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.UseVisualStyleBackColor = false;
             this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // UnsoldPropertyList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.ClientSize = new System.Drawing.Size(769, 502);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.lblPropertyList);
             this.Controls.Add(this.dataGridPropertyList);
