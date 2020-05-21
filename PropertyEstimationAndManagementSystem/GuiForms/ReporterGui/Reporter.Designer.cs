@@ -161,7 +161,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(681, 58);
+            this.panel2.Size = new System.Drawing.Size(689, 58);
             this.panel2.TabIndex = 3;
             // 
             // ReporterMainPanel
@@ -171,14 +171,14 @@
             this.ReporterMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ReporterMainPanel.Location = new System.Drawing.Point(200, 58);
             this.ReporterMainPanel.Name = "ReporterMainPanel";
-            this.ReporterMainPanel.Size = new System.Drawing.Size(681, 505);
+            this.ReporterMainPanel.Size = new System.Drawing.Size(689, 505);
             this.ReporterMainPanel.TabIndex = 4;
             // 
             // Reporter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 563);
+            this.ClientSize = new System.Drawing.Size(889, 563);
             this.Controls.Add(this.ReporterMainPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

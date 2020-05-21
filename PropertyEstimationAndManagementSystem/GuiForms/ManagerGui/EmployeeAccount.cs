@@ -18,6 +18,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         DataAccess da;
         Users user;
         Employee employee;
+        EmployeeEdit em;
         public EmployeeAccount(Employee employee)
         {
             InitializeComponent();
@@ -55,9 +56,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         }
 
-        
-
-       
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            em.Show();
+            this.Dispose();
+        }
     }
 
 }

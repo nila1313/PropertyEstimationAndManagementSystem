@@ -40,7 +40,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 users.Id=Convert.ToInt32(dt.Rows[0][3].ToString());
                 if (dt.Rows[0][2].ToString().ToUpper() == "MANAGER")
                 {
-                    Manager man = new Manager(this, users);
+                    Manager man = new Manager(home, users);
                     man.Show();
                     home.Hide();
                 }
@@ -68,12 +68,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             {
                 MessageBox.Show("Login Failed");
             }
-        }
-        private void userLogin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Manager m = new Manager(this,users) ;
-            m.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
