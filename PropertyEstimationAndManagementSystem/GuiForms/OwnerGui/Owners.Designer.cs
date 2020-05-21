@@ -38,9 +38,11 @@
             this.btnTransactionList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelOwner = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -148,6 +150,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panel3.Controls.Add(this.btnLogout);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
@@ -162,6 +165,18 @@
             this.panelOwner.Name = "panelOwner";
             this.panelOwner.Size = new System.Drawing.Size(785, 541);
             this.panelOwner.TabIndex = 2;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Location = new System.Drawing.Point(731, 7);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(42, 36);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panel2
             // 
@@ -181,8 +196,10 @@
             this.Controls.Add(this.panel1);
             this.Name = "Owners";
             this.Text = "Owners";
+           
             this.panel1.ResumeLayout(false);
             this.panelTransaction.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -200,5 +217,6 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnFeedBack;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
