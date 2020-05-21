@@ -58,9 +58,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.Size = new System.Drawing.Size(152, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Property Description";
             // 
@@ -93,93 +95,124 @@
             // 
             // btnUpload1
             // 
+            this.btnUpload1.BackColor = System.Drawing.Color.Black;
+            this.btnUpload1.FlatAppearance.BorderSize = 0;
+            this.btnUpload1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnUpload1.Location = new System.Drawing.Point(39, 431);
             this.btnUpload1.Name = "btnUpload1";
-            this.btnUpload1.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload1.Size = new System.Drawing.Size(85, 28);
             this.btnUpload1.TabIndex = 5;
             this.btnUpload1.Text = "Upload";
-            this.btnUpload1.UseVisualStyleBackColor = true;
+            this.btnUpload1.UseVisualStyleBackColor = false;
             this.btnUpload1.Click += new System.EventHandler(this.btnUpload1_Click);
             // 
             // btnUpload2
             // 
+            this.btnUpload2.BackColor = System.Drawing.Color.Black;
+            this.btnUpload2.FlatAppearance.BorderSize = 0;
+            this.btnUpload2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnUpload2.Location = new System.Drawing.Point(232, 433);
             this.btnUpload2.Name = "btnUpload2";
-            this.btnUpload2.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload2.Size = new System.Drawing.Size(85, 28);
             this.btnUpload2.TabIndex = 6;
             this.btnUpload2.Text = "Upload";
-            this.btnUpload2.UseVisualStyleBackColor = true;
+            this.btnUpload2.UseVisualStyleBackColor = false;
             this.btnUpload2.Click += new System.EventHandler(this.btnUpload2_Click);
             // 
             // btnUpload3
             // 
+            this.btnUpload3.BackColor = System.Drawing.Color.Black;
+            this.btnUpload3.FlatAppearance.BorderSize = 0;
+            this.btnUpload3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnUpload3.Location = new System.Drawing.Point(431, 431);
             this.btnUpload3.Name = "btnUpload3";
-            this.btnUpload3.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload3.Size = new System.Drawing.Size(85, 28);
             this.btnUpload3.TabIndex = 7;
             this.btnUpload3.Text = "Upload";
-            this.btnUpload3.UseVisualStyleBackColor = true;
+            this.btnUpload3.UseVisualStyleBackColor = false;
             this.btnUpload3.Click += new System.EventHandler(this.btnUpload3_Click);
             // 
             // lblPicture1
             // 
             this.lblPicture1.AutoSize = true;
-            this.lblPicture1.Location = new System.Drawing.Point(65, 290);
+            this.lblPicture1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPicture1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPicture1.Location = new System.Drawing.Point(43, 275);
             this.lblPicture1.Name = "lblPicture1";
-            this.lblPicture1.Size = new System.Drawing.Size(49, 13);
+            this.lblPicture1.Size = new System.Drawing.Size(71, 20);
             this.lblPicture1.TabIndex = 8;
             this.lblPicture1.Text = "Picture 1";
             // 
             // lblPicture2
             // 
             this.lblPicture2.AutoSize = true;
-            this.lblPicture2.Location = new System.Drawing.Point(258, 290);
+            this.lblPicture2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPicture2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPicture2.Location = new System.Drawing.Point(245, 275);
             this.lblPicture2.Name = "lblPicture2";
-            this.lblPicture2.Size = new System.Drawing.Size(49, 13);
+            this.lblPicture2.Size = new System.Drawing.Size(71, 20);
             this.lblPicture2.TabIndex = 9;
             this.lblPicture2.Text = "Picture 2";
             // 
             // lblPicture3
             // 
             this.lblPicture3.AutoSize = true;
-            this.lblPicture3.Location = new System.Drawing.Point(457, 290);
+            this.lblPicture3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPicture3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPicture3.Location = new System.Drawing.Point(427, 275);
             this.lblPicture3.Name = "lblPicture3";
-            this.lblPicture3.Size = new System.Drawing.Size(49, 13);
+            this.lblPicture3.Size = new System.Drawing.Size(71, 20);
             this.lblPicture3.TabIndex = 10;
             this.lblPicture3.Text = "Picture 3";
             // 
             // lblPropertyId
             // 
             this.lblPropertyId.AutoSize = true;
-            this.lblPropertyId.Location = new System.Drawing.Point(183, 24);
+            this.lblPropertyId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPropertyId.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPropertyId.Location = new System.Drawing.Point(218, 9);
             this.lblPropertyId.Name = "lblPropertyId";
-            this.lblPropertyId.Size = new System.Drawing.Size(60, 13);
+            this.lblPropertyId.Size = new System.Drawing.Size(89, 20);
             this.lblPropertyId.TabIndex = 11;
             this.lblPropertyId.Text = "Property ID";
             // 
             // lblPropertyIDValue
             // 
             this.lblPropertyIDValue.AutoSize = true;
-            this.lblPropertyIDValue.Location = new System.Drawing.Point(322, 24);
+            this.lblPropertyIDValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPropertyIDValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPropertyIDValue.Location = new System.Drawing.Point(362, 9);
             this.lblPropertyIDValue.Name = "lblPropertyIDValue";
-            this.lblPropertyIDValue.Size = new System.Drawing.Size(60, 13);
+            this.lblPropertyIDValue.Size = new System.Drawing.Size(102, 24);
             this.lblPropertyIDValue.TabIndex = 12;
             this.lblPropertyIDValue.Text = "Property ID";
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Black;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnConfirm.Location = new System.Drawing.Point(568, 364);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(85, 28);
             this.btnConfirm.TabIndex = 13;
             this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // PropertyDescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(665, 466);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblPropertyIDValue);

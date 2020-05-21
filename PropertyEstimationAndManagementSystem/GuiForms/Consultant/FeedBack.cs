@@ -17,9 +17,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         DataAccess da;
         Entites.FeedBack feedBack;
         Users user;
-        Consultants consultant;
+        Form consultant;
 
-        public FeedBack(Users user,Consultants consultant)
+        public FeedBack(Users user,Form consultant)
         {
             InitializeComponent();
             da = new DataAccess();

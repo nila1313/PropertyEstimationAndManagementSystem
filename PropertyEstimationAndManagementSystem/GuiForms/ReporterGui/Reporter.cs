@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FeedBack = PropertyEstimationAndManagementSystem.GuiForms.Consultant.FeedBack;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -98,6 +99,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void btnAddDescription_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new PriceAccordingArea());
+        }
+
+        private void btnFeedback_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new FeedBack(user, this));
         }
     }
 }
