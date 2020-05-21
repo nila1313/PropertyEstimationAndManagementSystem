@@ -366,5 +366,23 @@
   <ItemGroup>
     <None Include="Pictures\key.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Property logo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\customerlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\search logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\s logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\search log f.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

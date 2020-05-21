@@ -88,6 +88,15 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
         {
             OpenFormPanel(new CheckFeedBack());
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+            login.Show();
+            this.Dispose();
+        }
+
+        
     }
  }
 
