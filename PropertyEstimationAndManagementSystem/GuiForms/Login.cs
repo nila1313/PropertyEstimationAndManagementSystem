@@ -90,5 +90,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             this.Dispose();
         }
+
+      
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

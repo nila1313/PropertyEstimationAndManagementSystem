@@ -34,7 +34,9 @@
             this.Login = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.formPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnImage = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.UserPanel.SuspendLayout();
             this.SuspendLayout();
@@ -42,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.Users);
             this.panel1.Controls.Add(this.UserPanel);
@@ -62,12 +65,13 @@
             this.Users.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Users.Size = new System.Drawing.Size(99, 31);
             this.Users.TabIndex = 1;
-            this.Users.Text = "Users";
+            this.Users.Text = "   Users";
             this.Users.UseVisualStyleBackColor = true;
             this.Users.Click += new System.EventHandler(this.Users_Click);
             // 
             // UserPanel
             // 
+            this.UserPanel.Controls.Add(this.panel4);
             this.UserPanel.Controls.Add(this.Login);
             this.UserPanel.Location = new System.Drawing.Point(3, 196);
             this.UserPanel.Name = "UserPanel";
@@ -108,6 +112,15 @@
             this.formPanel.Size = new System.Drawing.Size(823, 490);
             this.formPanel.TabIndex = 2;
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Untitled;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(3, 161);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(27, 28);
+            this.panel3.TabIndex = 12;
+            // 
             // btnImage
             // 
             this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -117,6 +130,15 @@
             this.btnImage.Size = new System.Drawing.Size(168, 139);
             this.btnImage.TabIndex = 2;
             this.btnImage.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.key;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(42, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(27, 22);
+            this.panel4.TabIndex = 1;
             // 
             // HomePage
             // 
@@ -143,5 +165,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel formPanel;
         private System.Windows.Forms.Button btnImage;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
