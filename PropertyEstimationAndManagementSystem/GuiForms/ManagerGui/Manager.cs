@@ -26,6 +26,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void CustomizeDesign()
         {
             EditEmployeePanel.Visible = false;
+            panelProperty.Visible = false;
         }
         private void HideSubMenu()
         {
@@ -105,6 +106,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         }
 
-       
+        private void btnPropertyInfo_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panelProperty);
+        }
     }
 }

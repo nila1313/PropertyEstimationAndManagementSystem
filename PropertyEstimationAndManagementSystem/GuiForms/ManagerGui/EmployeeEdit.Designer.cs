@@ -50,6 +50,7 @@
             // 
             // RemoveEmployee
             // 
+            this.RemoveEmployee.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RemoveEmployee.FlatAppearance.BorderSize = 0;
             this.RemoveEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -59,11 +60,12 @@
             this.RemoveEmployee.Size = new System.Drawing.Size(148, 32);
             this.RemoveEmployee.TabIndex = 8;
             this.RemoveEmployee.Text = "Remove Employee";
-            this.RemoveEmployee.UseVisualStyleBackColor = true;
+            this.RemoveEmployee.UseVisualStyleBackColor = false;
             this.RemoveEmployee.Click += new System.EventHandler(this.RemoveEmployee_Click);
             // 
             // UpdateEmployee
             // 
+            this.UpdateEmployee.BackColor = System.Drawing.Color.Black;
             this.UpdateEmployee.FlatAppearance.BorderSize = 0;
             this.UpdateEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,11 +75,12 @@
             this.UpdateEmployee.Size = new System.Drawing.Size(146, 32);
             this.UpdateEmployee.TabIndex = 7;
             this.UpdateEmployee.Text = "Update Employee";
-            this.UpdateEmployee.UseVisualStyleBackColor = true;
+            this.UpdateEmployee.UseVisualStyleBackColor = false;
             this.UpdateEmployee.Click += new System.EventHandler(this.UpdateEmployee_Click);
             // 
             // InsertEmployee
             // 
+            this.InsertEmployee.BackColor = System.Drawing.Color.Black;
             this.InsertEmployee.CausesValidation = false;
             this.InsertEmployee.FlatAppearance.BorderSize = 0;
             this.InsertEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -88,11 +91,12 @@
             this.InsertEmployee.Size = new System.Drawing.Size(133, 32);
             this.InsertEmployee.TabIndex = 6;
             this.InsertEmployee.Text = "Insert Employee";
-            this.InsertEmployee.UseVisualStyleBackColor = true;
+            this.InsertEmployee.UseVisualStyleBackColor = false;
             this.InsertEmployee.Click += new System.EventHandler(this.InsertEmployee_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +106,7 @@
             this.button1.Size = new System.Drawing.Size(126, 32);
             this.button1.TabIndex = 16;
             this.button1.Text = "View Employee List";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridEmployee
@@ -143,6 +147,7 @@
             // 
             // btnCreateAccount
             // 
+            this.btnCreateAccount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCreateAccount.FlatAppearance.BorderSize = 0;
             this.btnCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,7 +157,7 @@
             this.btnCreateAccount.Size = new System.Drawing.Size(174, 34);
             this.btnCreateAccount.TabIndex = 25;
             this.btnCreateAccount.Text = "Create New Account";
-            this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.UseVisualStyleBackColor = false;
             this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // EmployeeEdit

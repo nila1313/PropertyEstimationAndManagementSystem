@@ -43,81 +43,85 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(34, 36);
+            this.label1.Location = new System.Drawing.Point(19, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
+            this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(38, 113);
+            this.label2.Location = new System.Drawing.Point(19, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
             // userName
             // 
-            this.userName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userName.Location = new System.Drawing.Point(37, 68);
+            this.userName.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.userName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.userName.Location = new System.Drawing.Point(110, 90);
             this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(250, 20);
+            this.userName.Size = new System.Drawing.Size(186, 26);
             this.userName.TabIndex = 2;
             // 
             // password
             // 
-            this.password.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.password.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.password.Location = new System.Drawing.Point(41, 153);
+            this.password.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.password.Location = new System.Drawing.Point(110, 146);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(250, 20);
+            this.password.Size = new System.Drawing.Size(186, 26);
             this.password.TabIndex = 3;
             // 
             // Save
             // 
+            this.Save.BackColor = System.Drawing.Color.Black;
             this.Save.FlatAppearance.BorderSize = 0;
             this.Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Save.Location = new System.Drawing.Point(121, 294);
+            this.Save.Location = new System.Drawing.Point(121, 288);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(97, 28);
             this.Save.TabIndex = 6;
             this.Save.Text = "Save";
-            this.Save.UseVisualStyleBackColor = true;
+            this.Save.UseVisualStyleBackColor = false;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // Type
             // 
             this.Type.AutoSize = true;
-            this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Type.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Type.Location = new System.Drawing.Point(38, 199);
+            this.Type.Location = new System.Drawing.Point(26, 211);
             this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(40, 18);
+            this.Type.Size = new System.Drawing.Size(43, 20);
             this.Type.TabIndex = 8;
             this.Type.Text = "Type";
             // 
             // txttype
             // 
-            this.txttype.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txttype.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txttype.Location = new System.Drawing.Point(41, 237);
+            this.txttype.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txttype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txttype.Location = new System.Drawing.Point(110, 208);
             this.txttype.Name = "txttype";
             this.txttype.ReadOnly = true;
-            this.txttype.Size = new System.Drawing.Size(250, 20);
+            this.txttype.Size = new System.Drawing.Size(186, 26);
             this.txttype.TabIndex = 9;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Save);
@@ -149,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "EmployeeAccount";

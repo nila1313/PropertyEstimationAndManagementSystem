@@ -40,18 +40,22 @@
             this.Insert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EmployeePanel = new System.Windows.Forms.Panel();
+            this.panelProperty = new System.Windows.Forms.Panel();
+            this.btnPropertyInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.EditEmployeePanel.SuspendLayout();
+            this.panelProperty.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShowProperty
             // 
+            this.ShowProperty.Dock = System.Windows.Forms.DockStyle.Top;
             this.ShowProperty.FlatAppearance.BorderSize = 0;
             this.ShowProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShowProperty.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ShowProperty.Location = new System.Drawing.Point(25, 253);
+            this.ShowProperty.Location = new System.Drawing.Point(0, 0);
             this.ShowProperty.Name = "ShowProperty";
-            this.ShowProperty.Size = new System.Drawing.Size(127, 23);
+            this.ShowProperty.Size = new System.Drawing.Size(177, 23);
             this.ShowProperty.TabIndex = 4;
             this.ShowProperty.Text = "Show Property";
             this.ShowProperty.UseVisualStyleBackColor = true;
@@ -62,7 +66,7 @@
             this.CheckProfit.FlatAppearance.BorderSize = 0;
             this.CheckProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CheckProfit.Location = new System.Drawing.Point(33, 295);
+            this.CheckProfit.Location = new System.Drawing.Point(33, 328);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -74,10 +78,11 @@
             // 
             this.EditEmployee.FlatAppearance.BorderSize = 0;
             this.EditEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditEmployee.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.EditEmployee.Location = new System.Drawing.Point(3, 138);
             this.EditEmployee.Name = "EditEmployee";
-            this.EditEmployee.Size = new System.Drawing.Size(110, 23);
+            this.EditEmployee.Size = new System.Drawing.Size(174, 34);
             this.EditEmployee.TabIndex = 6;
             this.EditEmployee.Text = "Employees";
             this.EditEmployee.UseVisualStyleBackColor = true;
@@ -95,12 +100,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnPropertyInfo);
+            this.panel1.Controls.Add(this.panelProperty);
             this.panel1.Controls.Add(this.Logout);
             this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.EditEmployeePanel);
             this.panel1.Controls.Add(this.EditEmployee);
             this.panel1.Controls.Add(this.CheckProfit);
-            this.panel1.Controls.Add(this.ShowProperty);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -112,7 +118,7 @@
             this.Logout.FlatAppearance.BorderSize = 0;
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Logout.Location = new System.Drawing.Point(57, 336);
+            this.Logout.Location = new System.Drawing.Point(57, 357);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(75, 23);
             this.Logout.TabIndex = 9;
@@ -180,12 +186,34 @@
             // 
             // EmployeePanel
             // 
-            this.EmployeePanel.BackColor = System.Drawing.Color.DimGray;
+            this.EmployeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmployeePanel.Location = new System.Drawing.Point(180, 42);
             this.EmployeePanel.Name = "EmployeePanel";
             this.EmployeePanel.Size = new System.Drawing.Size(805, 548);
             this.EmployeePanel.TabIndex = 9;
+            // 
+            // panelProperty
+            // 
+            this.panelProperty.Controls.Add(this.ShowProperty);
+            this.panelProperty.Location = new System.Drawing.Point(3, 272);
+            this.panelProperty.Name = "panelProperty";
+            this.panelProperty.Size = new System.Drawing.Size(177, 50);
+            this.panelProperty.TabIndex = 10;
+            // 
+            // btnPropertyInfo
+            // 
+            this.btnPropertyInfo.FlatAppearance.BorderSize = 0;
+            this.btnPropertyInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPropertyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPropertyInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnPropertyInfo.Location = new System.Drawing.Point(15, 239);
+            this.btnPropertyInfo.Name = "btnPropertyInfo";
+            this.btnPropertyInfo.Size = new System.Drawing.Size(159, 27);
+            this.btnPropertyInfo.TabIndex = 11;
+            this.btnPropertyInfo.Text = "Property Information";
+            this.btnPropertyInfo.UseVisualStyleBackColor = true;
+            this.btnPropertyInfo.Click += new System.EventHandler(this.btnPropertyInfo_Click);
             // 
             // Manager
             // 
@@ -200,6 +228,7 @@
             this.Text = "Manager";
             this.panel1.ResumeLayout(false);
             this.EditEmployeePanel.ResumeLayout(false);
+            this.panelProperty.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -217,5 +246,7 @@
         private System.Windows.Forms.Panel EmployeePanel;
         private System.Windows.Forms.Button Logout;
         private System.Windows.Forms.Button btnImage;
+        private System.Windows.Forms.Button btnPropertyInfo;
+        private System.Windows.Forms.Panel panelProperty;
     }
 }
