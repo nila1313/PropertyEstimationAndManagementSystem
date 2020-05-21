@@ -75,5 +75,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
                 MessageBox.Show("NO DESCRIPTION AVAILABLE");
             }
         }
+
+       
     }
 }

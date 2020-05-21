@@ -40,9 +40,11 @@
             // btnCash
             // 
             this.btnCash.AutoSize = true;
+            this.btnCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCash.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCash.Location = new System.Drawing.Point(187, 95);
             this.btnCash.Name = "btnCash";
-            this.btnCash.Size = new System.Drawing.Size(49, 17);
+            this.btnCash.Size = new System.Drawing.Size(64, 24);
             this.btnCash.TabIndex = 6;
             this.btnCash.TabStop = true;
             this.btnCash.Text = "Cash";
@@ -52,9 +54,11 @@
             // btncheque
             // 
             this.btncheque.AutoSize = true;
+            this.btncheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncheque.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btncheque.Location = new System.Drawing.Point(362, 95);
             this.btncheque.Name = "btncheque";
-            this.btncheque.Size = new System.Drawing.Size(62, 17);
+            this.btncheque.Size = new System.Drawing.Size(83, 24);
             this.btncheque.TabIndex = 5;
             this.btncheque.TabStop = true;
             this.btncheque.Text = "Cheque";
@@ -63,43 +67,54 @@
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Black;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnConfirm.Location = new System.Drawing.Point(269, 293);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(99, 38);
             this.btnConfirm.TabIndex = 7;
             this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtChequeNumber
             // 
-            this.txtChequeNumber.Location = new System.Drawing.Point(253, 214);
+            this.txtChequeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChequeNumber.Location = new System.Drawing.Point(318, 215);
             this.txtChequeNumber.Name = "txtChequeNumber";
-            this.txtChequeNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtChequeNumber.Size = new System.Drawing.Size(100, 26);
             this.txtChequeNumber.TabIndex = 8;
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(253, 156);
+            this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.Location = new System.Drawing.Point(318, 159);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtAmount.Size = new System.Drawing.Size(100, 26);
             this.txtAmount.TabIndex = 9;
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(193, 159);
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblAmount.Location = new System.Drawing.Point(163, 159);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(43, 13);
+            this.lblAmount.Size = new System.Drawing.Size(65, 20);
             this.lblAmount.TabIndex = 10;
             this.lblAmount.Text = "Amount";
             // 
             // lblChequeNumber
             // 
             this.lblChequeNumber.AutoSize = true;
+            this.lblChequeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChequeNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblChequeNumber.Location = new System.Drawing.Point(163, 221);
             this.lblChequeNumber.Name = "lblChequeNumber";
-            this.lblChequeNumber.Size = new System.Drawing.Size(84, 13);
+            this.lblChequeNumber.Size = new System.Drawing.Size(125, 20);
             this.lblChequeNumber.TabIndex = 11;
             this.lblChequeNumber.Text = "Cheque Number";
             // 
@@ -107,7 +122,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 422);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.ClientSize = new System.Drawing.Size(769, 502);
             this.Controls.Add(this.lblChequeNumber);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.txtAmount);

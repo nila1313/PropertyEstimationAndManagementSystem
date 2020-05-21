@@ -94,5 +94,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         {
             OpenFormPanel(new UnsoldPropertyList(users,this));
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new FeedBack(users, this));
+        }
     }
 }
