@@ -31,10 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Users = new System.Windows.Forms.Button();
             this.UserPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.Login = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.formPanel = new System.Windows.Forms.Panel();
+            this.btnImage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.UserPanel.SuspendLayout();
             this.SuspendLayout();
@@ -42,6 +42,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.Users);
             this.panel1.Controls.Add(this.UserPanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -54,11 +55,12 @@
             // 
             this.Users.FlatAppearance.BorderSize = 0;
             this.Users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Users.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Users.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Users.Location = new System.Drawing.Point(0, 97);
+            this.Users.Location = new System.Drawing.Point(0, 159);
             this.Users.Name = "Users";
             this.Users.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Users.Size = new System.Drawing.Size(80, 23);
+            this.Users.Size = new System.Drawing.Size(99, 31);
             this.Users.TabIndex = 1;
             this.Users.Text = "Users";
             this.Users.UseVisualStyleBackColor = true;
@@ -66,37 +68,23 @@
             // 
             // UserPanel
             // 
-            this.UserPanel.Controls.Add(this.button3);
             this.UserPanel.Controls.Add(this.Login);
-            this.UserPanel.Location = new System.Drawing.Point(0, 130);
+            this.UserPanel.Location = new System.Drawing.Point(3, 196);
             this.UserPanel.Name = "UserPanel";
             this.UserPanel.Size = new System.Drawing.Size(171, 65);
             this.UserPanel.TabIndex = 0;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(0, 23);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(171, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.Login.Dock = System.Windows.Forms.DockStyle.Top;
             this.Login.FlatAppearance.BorderSize = 0;
             this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Login.Location = new System.Drawing.Point(0, 0);
             this.Login.Name = "Login";
             this.Login.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.Login.Size = new System.Drawing.Size(171, 23);
+            this.Login.Size = new System.Drawing.Size(171, 45);
             this.Login.TabIndex = 0;
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = true;
@@ -120,6 +108,16 @@
             this.formPanel.Size = new System.Drawing.Size(823, 490);
             this.formPanel.TabIndex = 2;
             // 
+            // btnImage
+            // 
+            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
+            this.btnImage.Location = new System.Drawing.Point(0, 3);
+            this.btnImage.Name = "btnImage";
+            this.btnImage.Size = new System.Drawing.Size(168, 139);
+            this.btnImage.TabIndex = 2;
+            this.btnImage.UseVisualStyleBackColor = true;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,9 +139,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Users;
         private System.Windows.Forms.Panel UserPanel;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel formPanel;
+        private System.Windows.Forms.Button btnImage;
     }
 }
