@@ -276,6 +276,9 @@
     <EmbeddedResource Include="GuiForms\ManagerGui\CreateEmployee.resx">
       <DependentUpon>CreateEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuiForms\ManagerGui\DeleteEmployee.resx">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuiForms\ManagerGui\EmployeeAccount.resx">
       <DependentUpon>EmployeeAccount.cs</DependentUpon>
     </EmbeddedResource>

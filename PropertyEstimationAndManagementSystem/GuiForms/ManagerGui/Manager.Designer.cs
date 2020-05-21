@@ -33,6 +33,8 @@
             this.EditEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Logout = new System.Windows.Forms.Button();
+            this.btnImage = new System.Windows.Forms.Button();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
             this.showUsers = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
@@ -44,7 +46,10 @@
             // 
             // ShowProperty
             // 
-            this.ShowProperty.Location = new System.Drawing.Point(33, 304);
+            this.ShowProperty.FlatAppearance.BorderSize = 0;
+            this.ShowProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShowProperty.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ShowProperty.Location = new System.Drawing.Point(25, 253);
             this.ShowProperty.Name = "ShowProperty";
             this.ShowProperty.Size = new System.Drawing.Size(127, 23);
             this.ShowProperty.TabIndex = 4;
@@ -54,7 +59,10 @@
             // 
             // CheckProfit
             // 
-            this.CheckProfit.Location = new System.Drawing.Point(33, 342);
+            this.CheckProfit.FlatAppearance.BorderSize = 0;
+            this.CheckProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CheckProfit.Location = new System.Drawing.Point(33, 295);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -87,6 +95,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.Logout);
+            this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.EditEmployeePanel);
             this.panel1.Controls.Add(this.EditEmployee);
             this.panel1.Controls.Add(this.CheckProfit);
@@ -94,8 +104,31 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 556);
+            this.panel1.Size = new System.Drawing.Size(180, 590);
             this.panel1.TabIndex = 7;
+            // 
+            // Logout
+            // 
+            this.Logout.FlatAppearance.BorderSize = 0;
+            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Logout.Location = new System.Drawing.Point(57, 336);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(75, 23);
+            this.Logout.TabIndex = 9;
+            this.Logout.Text = "Logout";
+            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
+            // btnImage
+            // 
+            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
+            this.btnImage.Location = new System.Drawing.Point(0, 0);
+            this.btnImage.Name = "btnImage";
+            this.btnImage.Size = new System.Drawing.Size(168, 132);
+            this.btnImage.TabIndex = 8;
+            this.btnImage.UseVisualStyleBackColor = true;
             // 
             // EditEmployeePanel
             // 
@@ -103,7 +136,7 @@
             this.EditEmployeePanel.Controls.Add(this.Insert);
             this.EditEmployeePanel.Location = new System.Drawing.Point(0, 167);
             this.EditEmployeePanel.Name = "EditEmployeePanel";
-            this.EditEmployeePanel.Size = new System.Drawing.Size(200, 131);
+            this.EditEmployeePanel.Size = new System.Drawing.Size(180, 66);
             this.EditEmployeePanel.TabIndex = 7;
             // 
             // showUsers
@@ -115,7 +148,7 @@
             this.showUsers.Location = new System.Drawing.Point(0, 23);
             this.showUsers.Name = "showUsers";
             this.showUsers.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.showUsers.Size = new System.Drawing.Size(200, 23);
+            this.showUsers.Size = new System.Drawing.Size(180, 23);
             this.showUsers.TabIndex = 3;
             this.showUsers.Text = "Show Users";
             this.showUsers.UseVisualStyleBackColor = true;
@@ -130,7 +163,7 @@
             this.Insert.Location = new System.Drawing.Point(0, 0);
             this.Insert.Name = "Insert";
             this.Insert.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Insert.Size = new System.Drawing.Size(200, 23);
+            this.Insert.Size = new System.Drawing.Size(180, 23);
             this.Insert.TabIndex = 0;
             this.Insert.Text = "Edit Employee";
             this.Insert.UseVisualStyleBackColor = true;
@@ -142,7 +175,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(180, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(814, 42);
+            this.panel2.Size = new System.Drawing.Size(805, 42);
             this.panel2.TabIndex = 8;
             // 
             // EmployeePanel
@@ -151,7 +184,7 @@
             this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmployeePanel.Location = new System.Drawing.Point(180, 42);
             this.EmployeePanel.Name = "EmployeePanel";
-            this.EmployeePanel.Size = new System.Drawing.Size(814, 514);
+            this.EmployeePanel.Size = new System.Drawing.Size(805, 548);
             this.EmployeePanel.TabIndex = 9;
             // 
             // Manager
@@ -159,7 +192,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(994, 556);
+            this.ClientSize = new System.Drawing.Size(985, 590);
             this.Controls.Add(this.EmployeePanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -182,5 +215,7 @@
         private System.Windows.Forms.Button Insert;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel EmployeePanel;
+        private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.Button btnImage;
     }
 }

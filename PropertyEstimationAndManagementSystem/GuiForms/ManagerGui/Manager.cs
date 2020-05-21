@@ -14,12 +14,13 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 {
     public partial class Manager : Form
     {
-        Login login { get; }
+        HomePage login { get; }
         Users user { get; }
-        public Manager(Login login, Users user)
+        public Manager(HomePage login, Users user)
         {
             InitializeComponent();
             CustomizeDesign();
+            this.login = login;
         }
 
         private void CustomizeDesign()
@@ -96,5 +97,14 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             OpenFormPanel(new ShowProperty());
         }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            login.Show();
+            this.Dispose();
+
+        }
+
+       
     }
 }

@@ -32,18 +32,18 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.TotalTransaction = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTotalProfit = new System.Windows.Forms.Label();
             this.TotalProfit = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.TotalSalary = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.NetProfit = new System.Windows.Forms.Label();
             this.Profit = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTotalProfit = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -60,12 +60,23 @@
             this.panel1.Size = new System.Drawing.Size(154, 78);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Total Transaction";
+            // 
             // TotalTransaction
             // 
             this.TotalTransaction.AutoSize = true;
-            this.TotalTransaction.Location = new System.Drawing.Point(44, 35);
+            this.TotalTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTransaction.Location = new System.Drawing.Point(23, 28);
             this.TotalTransaction.Name = "TotalTransaction";
-            this.TotalTransaction.Size = new System.Drawing.Size(90, 13);
+            this.TotalTransaction.Size = new System.Drawing.Size(131, 20);
             this.TotalTransaction.TabIndex = 0;
             this.TotalTransaction.Text = "Total Transaction";
             // 
@@ -78,12 +89,23 @@
             this.panel2.Size = new System.Drawing.Size(148, 78);
             this.panel2.TabIndex = 1;
             // 
+            // lblTotalProfit
+            // 
+            this.lblTotalProfit.AutoSize = true;
+            this.lblTotalProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProfit.Location = new System.Drawing.Point(3, 0);
+            this.lblTotalProfit.Name = "lblTotalProfit";
+            this.lblTotalProfit.Size = new System.Drawing.Size(85, 20);
+            this.lblTotalProfit.TabIndex = 1;
+            this.lblTotalProfit.Text = "Total Profit";
+            // 
             // TotalProfit
             // 
             this.TotalProfit.AutoSize = true;
+            this.TotalProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalProfit.Location = new System.Drawing.Point(49, 35);
             this.TotalProfit.Name = "TotalProfit";
-            this.TotalProfit.Size = new System.Drawing.Size(58, 13);
+            this.TotalProfit.Size = new System.Drawing.Size(85, 20);
             this.TotalProfit.TabIndex = 0;
             this.TotalProfit.Text = "Total Profit";
             // 
@@ -96,12 +118,23 @@
             this.panel3.Size = new System.Drawing.Size(158, 60);
             this.panel3.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Total Salary";
+            // 
             // TotalSalary
             // 
             this.TotalSalary.AutoSize = true;
+            this.TotalSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalSalary.Location = new System.Drawing.Point(43, 24);
             this.TotalSalary.Name = "TotalSalary";
-            this.TotalSalary.Size = new System.Drawing.Size(63, 13);
+            this.TotalSalary.Size = new System.Drawing.Size(92, 20);
             this.TotalSalary.TabIndex = 0;
             this.TotalSalary.Text = "Total Salary";
             // 
@@ -114,12 +147,23 @@
             this.panel4.Size = new System.Drawing.Size(148, 69);
             this.panel4.TabIndex = 3;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Net Profit";
+            // 
             // NetProfit
             // 
             this.NetProfit.AutoSize = true;
+            this.NetProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NetProfit.Location = new System.Drawing.Point(49, 24);
             this.NetProfit.Name = "NetProfit";
-            this.NetProfit.Size = new System.Drawing.Size(51, 13);
+            this.NetProfit.Size = new System.Drawing.Size(75, 20);
             this.NetProfit.TabIndex = 0;
             this.NetProfit.Text = "Net Profit";
             // 
@@ -129,7 +173,7 @@
             this.Profit.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.Profit.Legends.Add(legend1);
-            this.Profit.Location = new System.Drawing.Point(476, 54);
+            this.Profit.Location = new System.Drawing.Point(513, 39);
             this.Profit.Name = "Profit";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -138,42 +182,6 @@
             this.Profit.Series.Add(series1);
             this.Profit.Size = new System.Drawing.Size(300, 300);
             this.Profit.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Total Transaction";
-            // 
-            // lblTotalProfit
-            // 
-            this.lblTotalProfit.AutoSize = true;
-            this.lblTotalProfit.Location = new System.Drawing.Point(3, 0);
-            this.lblTotalProfit.Name = "lblTotalProfit";
-            this.lblTotalProfit.Size = new System.Drawing.Size(58, 13);
-            this.lblTotalProfit.TabIndex = 1;
-            this.lblTotalProfit.Text = "Total Profit";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Total Salary";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Net Profit";
             // 
             // CheckProfit
             // 
