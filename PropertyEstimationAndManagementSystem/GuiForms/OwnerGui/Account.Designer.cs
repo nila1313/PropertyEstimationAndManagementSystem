@@ -93,7 +93,7 @@
             this.txtSellProfitPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSellProfitPercent.Location = new System.Drawing.Point(431, 109);
             this.txtSellProfitPercent.Name = "txtSellProfitPercent";
-            this.txtSellProfitPercent.Size = new System.Drawing.Size(112, 26);
+            this.txtSellProfitPercent.Size = new System.Drawing.Size(141, 26);
             this.txtSellProfitPercent.TabIndex = 4;
             // 
             // btnSellProfitChange
@@ -142,7 +142,7 @@
             this.txtChangeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChangeName.Location = new System.Drawing.Point(60, 109);
             this.txtChangeName.Name = "txtChangeName";
-            this.txtChangeName.Size = new System.Drawing.Size(110, 26);
+            this.txtChangeName.Size = new System.Drawing.Size(165, 26);
             this.txtChangeName.TabIndex = 7;
             // 
             // lblCurrentCompanyName
@@ -176,7 +176,7 @@
             this.txtBuyProfitPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuyProfitPercent.Location = new System.Drawing.Point(60, 334);
             this.txtBuyProfitPercent.Name = "txtBuyProfitPercent";
-            this.txtBuyProfitPercent.Size = new System.Drawing.Size(112, 26);
+            this.txtBuyProfitPercent.Size = new System.Drawing.Size(165, 26);
             this.txtBuyProfitPercent.TabIndex = 12;
             // 
             // lblCurrentBuyProfitPercentValue
