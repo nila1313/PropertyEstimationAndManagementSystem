@@ -30,6 +30,10 @@
         {
             this.btnEditReporter = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFeedback = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.panelCustomer = new System.Windows.Forms.Panel();
             this.btnCustomerEdit = new System.Windows.Forms.Button();
@@ -37,11 +41,8 @@
             this.btnAreaPrice = new System.Windows.Forms.Button();
             this.btnEditProperty = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ReporterMainPanel = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.ReporterMainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelCustomer.SuspendLayout();
             this.panelProperty.SuspendLayout();
@@ -67,6 +68,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnFeedback);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -79,6 +81,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 2;
+            // 
+            // btnFeedback
+            // 
+            this.btnFeedback.FlatAppearance.BorderSize = 0;
+            this.btnFeedback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeedback.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFeedback.Location = new System.Drawing.Point(0, 484);
+            this.btnFeedback.Name = "btnFeedback";
+            this.btnFeedback.Size = new System.Drawing.Size(200, 62);
+            this.btnFeedback.TabIndex = 5;
+            this.btnFeedback.Text = "Feedback";
+            this.btnFeedback.UseVisualStyleBackColor = true;
+            this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.customerlogo;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(3, 342);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(43, 36);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Property_logo_2;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(3, 139);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(43, 36);
+            this.panel4.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f1;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 127);
+            this.panel3.TabIndex = 5;
             // 
             // btnCustomer
             // 
@@ -167,16 +209,6 @@
             this.panel2.Size = new System.Drawing.Size(785, 54);
             this.panel2.TabIndex = 3;
             // 
-            // ReporterMainPanel
-            // 
-            this.ReporterMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.ReporterMainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReporterMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReporterMainPanel.Location = new System.Drawing.Point(200, 54);
-            this.ReporterMainPanel.Name = "ReporterMainPanel";
-            this.ReporterMainPanel.Size = new System.Drawing.Size(785, 536);
-            this.ReporterMainPanel.TabIndex = 4;
-            // 
             // btnLogout
             // 
             this.btnLogout.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images;
@@ -189,37 +221,20 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // panel5
+            // ReporterMainPanel
             // 
-            this.panel5.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.customerlogo;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(3, 342);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(43, 36);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Property_logo_2;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(3, 139);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(43, 36);
-            this.panel4.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f1;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 127);
-            this.panel3.TabIndex = 5;
+            this.ReporterMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.ReporterMainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ReporterMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReporterMainPanel.Location = new System.Drawing.Point(200, 54);
+            this.ReporterMainPanel.Name = "ReporterMainPanel";
+            this.ReporterMainPanel.Size = new System.Drawing.Size(785, 536);
+            this.ReporterMainPanel.TabIndex = 4;
             // 
             // Reporter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.ClientSize = new System.Drawing.Size(985, 590);
             this.Controls.Add(this.ReporterMainPanel);
             this.Controls.Add(this.panel2);
@@ -251,5 +266,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnFeedback;
     }
 }
