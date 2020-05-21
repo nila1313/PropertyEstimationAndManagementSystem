@@ -28,6 +28,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
             estimatedSale = Convert.ToInt32(lblSaleEstimationTomorrowValue.Text);
             estimatedBuy = Convert.ToInt32(lblEstimatedBuyTomorrowValue.Text);
             setChart();
+            setDataGrid();
         }       
 
         public void setLabel()
@@ -76,6 +77,12 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
                 sevenDayForcast[i] = (int)Math.Ceiling(sevenDayForcast[i - 1] + alpha * (sevenDayTotal[i - 1] - sevenDayForcast[i - 1]));
             }
             return sevenDayForcast[7];
+        }
+        public void setDataGrid()
+        {
+            string prob = @"""Transaction""";
+            string whereClause= "select Count(*) as 'Total',Employee.Id from " + prob+" inner join Employee on "+prob+".EmployeeId=Employee.id where "+prob+ ".Trade='SOLD'  group by Employee.Id";
+            dataGridEmloyeeSale.DataSource = da.Execute(whereClause);
         }
 
     }

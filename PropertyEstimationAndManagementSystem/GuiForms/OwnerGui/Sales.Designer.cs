@@ -44,7 +44,9 @@
             this.lblTotalBuyWeek = new System.Windows.Forms.Label();
             this.lblTotalSaleWeekValue = new System.Windows.Forms.Label();
             this.lblTotalSaleWeek = new System.Windows.Forms.Label();
+            this.dataGridEmloyeeSale = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.chartBuySell)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmloyeeSale)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSaleEstimationTomorrow
@@ -173,11 +175,20 @@
             this.lblTotalSaleWeek.TabIndex = 9;
             this.lblTotalSaleWeek.Text = "Total Sale This Week";
             // 
+            // dataGridEmloyeeSale
+            // 
+            this.dataGridEmloyeeSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridEmloyeeSale.Location = new System.Drawing.Point(287, 239);
+            this.dataGridEmloyeeSale.Name = "dataGridEmloyeeSale";
+            this.dataGridEmloyeeSale.Size = new System.Drawing.Size(501, 201);
+            this.dataGridEmloyeeSale.TabIndex = 13;
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridEmloyeeSale);
             this.Controls.Add(this.lblTotalBuyWeekValue);
             this.Controls.Add(this.lblTotalBuyWeek);
             this.Controls.Add(this.lblTotalSaleWeekValue);
@@ -195,6 +206,7 @@
             this.Text = "Sales";
             this.Load += new System.EventHandler(this.Sales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartBuySell)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridEmloyeeSale)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,5 +227,6 @@
         private System.Windows.Forms.Label lblTotalBuyWeek;
         private System.Windows.Forms.Label lblTotalSaleWeekValue;
         private System.Windows.Forms.Label lblTotalSaleWeek;
+        private System.Windows.Forms.DataGridView dataGridEmloyeeSale;
     }
 }
