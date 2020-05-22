@@ -75,7 +75,6 @@
             this.bloodGroup.Name = "bloodGroup";
             this.bloodGroup.Size = new System.Drawing.Size(247, 26);
             this.bloodGroup.TabIndex = 38;
-           
             // 
             // salary
             // 
@@ -301,6 +300,7 @@
             this.btnBack.TabIndex = 45;
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel1
             // 

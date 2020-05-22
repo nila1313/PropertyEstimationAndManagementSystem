@@ -58,6 +58,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
             }
             TotalProfit.Text = Math.Abs(totalProfit).ToString();
 
+            //TOTAL SALE
+            lblSale.Text = totalSale.ToString();
+            //Total Buy
+            lblBuy.Text = totalBuy.ToString();
             //TOTAL NET PROFIT
             NetProfit.Text = (Convert.ToDouble(TotalProfit.Text) - Convert.ToDouble(TotalSalary.Text)).ToString();
         }

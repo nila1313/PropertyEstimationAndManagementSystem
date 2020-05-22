@@ -141,6 +141,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void button1_Click(object sender, EventArgs e)
         {
             showEmployeeList();
+            this.dataGridEmployee.DefaultCellStyle.ForeColor = Color.WhiteSmoke;
+            this.dataGridEmployee.DefaultCellStyle.BackColor = Color.FromArgb(36, 36, 36);
         }
 
         private void btnCreateAccount_Click(object sender, EventArgs e)

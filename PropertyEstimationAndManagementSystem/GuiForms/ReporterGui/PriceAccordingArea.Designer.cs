@@ -52,6 +52,7 @@
             this.dataGridArea.RowHeadersWidth = 51;
             this.dataGridArea.Size = new System.Drawing.Size(342, 254);
             this.dataGridArea.TabIndex = 0;
+           
             // 
             // btnBack
             // 

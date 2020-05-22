@@ -50,7 +50,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(152, 26);
             this.txtUserName.TabIndex = 9;
-            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtUserPassword
             // 
@@ -59,6 +58,7 @@
             this.txtUserPassword.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtUserPassword.Location = new System.Drawing.Point(114, 167);
             this.txtUserPassword.Name = "txtUserPassword";
+            this.txtUserPassword.PasswordChar = '*';
             this.txtUserPassword.Size = new System.Drawing.Size(152, 26);
             this.txtUserPassword.TabIndex = 4;
             // 

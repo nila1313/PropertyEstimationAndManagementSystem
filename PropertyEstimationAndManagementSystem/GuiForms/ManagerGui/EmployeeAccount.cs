@@ -58,7 +58,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            em.Show();
+            
             this.Dispose();
         }
 

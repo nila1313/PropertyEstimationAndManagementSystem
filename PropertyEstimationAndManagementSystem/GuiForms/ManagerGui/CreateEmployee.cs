@@ -227,20 +227,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
             }
         }
 
-        /*private void bloodGroup_Validating(object sender, CancelEventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            var txtBloodGroup = (sender as TextBox).Text;
-            if (string.IsNullOrWhiteSpace(txtBloodGroup))
-            {
-                e.Cancel = true;
-                bloodGroup.Focus();
-                errorProvider1.SetError(bloodGroup, "$Blood Group should not be empty!!!");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(bloodGroup, "");
-            }
-        }*/
+            this.Dispose();
+        }
     }
 }
