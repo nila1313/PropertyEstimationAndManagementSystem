@@ -35,6 +35,9 @@
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblChequeNumber = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnCash
@@ -118,12 +121,42 @@
             this.lblChequeNumber.TabIndex = 11;
             this.lblChequeNumber.Text = "Cheque Number";
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.cash;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(248, 91);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(42, 36);
+            this.panel3.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.cheque;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(441, 95);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(42, 36);
+            this.panel2.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.money1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(230, 295);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(42, 36);
+            this.panel1.TabIndex = 12;
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(769, 502);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblChequeNumber);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.txtAmount);
@@ -148,5 +181,8 @@
         private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lblChequeNumber;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

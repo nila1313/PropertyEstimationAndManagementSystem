@@ -52,6 +52,8 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -305,6 +307,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lastName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -333,6 +337,24 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.update;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(193, 391);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(42, 36);
+            this.panel3.TabIndex = 46;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.create1;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(56, 390);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(42, 36);
+            this.panel2.TabIndex = 45;
             // 
             // CreateEmployee
             // 
@@ -377,5 +399,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

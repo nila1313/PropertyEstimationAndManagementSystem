@@ -405,5 +405,23 @@
   <ItemGroup>
     <None Include="Pictures\feedback.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\cheque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\update.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

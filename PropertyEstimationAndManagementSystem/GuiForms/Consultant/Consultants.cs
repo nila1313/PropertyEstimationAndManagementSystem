@@ -33,6 +33,10 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         {
             if (panelProperty.Visible == true)
                 panelProperty.Visible = false;
+            if (panelShowCustomer.Visible == true)
+                panelShowCustomer.Visible = false;
+            if (panelPayment.Visible == true)
+                panelPayment.Visible = false;
 
         }
         private void ShowSubMenu(Panel subMenu)

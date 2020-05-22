@@ -32,6 +32,7 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // richtxtDescription
@@ -79,12 +80,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "*Please do not cross 150 words";
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.submit;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(65, 412);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(42, 36);
+            this.panel1.TabIndex = 11;
+            // 
             // FeedBack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(769, 502);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblDescription);
@@ -102,5 +113,6 @@
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

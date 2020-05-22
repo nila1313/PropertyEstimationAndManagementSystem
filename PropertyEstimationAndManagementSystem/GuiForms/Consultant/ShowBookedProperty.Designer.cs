@@ -34,6 +34,8 @@
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.btnPayment = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBookedProperty)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +112,24 @@
             this.btnPayment.UseVisualStyleBackColor = false;
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.money1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(192, 408);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(42, 36);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.select;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(37, 406);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(42, 36);
+            this.panel8.TabIndex = 9;
+            // 
             // ShowBookedProperty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,6 +137,8 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(767, 500);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.lblCustomerName);
@@ -140,5 +162,7 @@
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.Label lblPhoneNumber;
         private System.Windows.Forms.Button btnPayment;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel1;
     }
 }

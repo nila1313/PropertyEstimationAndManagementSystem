@@ -31,6 +31,7 @@
             this.dataGridPropertyList = new System.Windows.Forms.DataGridView();
             this.lblPropertyList = new System.Windows.Forms.Label();
             this.btnBuy = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPropertyList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.lblPropertyList.AutoSize = true;
             this.lblPropertyList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropertyList.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPropertyList.Location = new System.Drawing.Point(98, 49);
+            this.lblPropertyList.Location = new System.Drawing.Point(278, 52);
             this.lblPropertyList.Name = "lblPropertyList";
             this.lblPropertyList.Size = new System.Drawing.Size(147, 24);
             this.lblPropertyList.TabIndex = 1;
@@ -70,12 +71,22 @@
             this.btnBuy.UseVisualStyleBackColor = false;
             this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.sell;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(263, 410);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(42, 36);
+            this.panel8.TabIndex = 8;
+            // 
             // UnsoldPropertyList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(767, 500);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.lblPropertyList);
             this.Controls.Add(this.dataGridPropertyList);
@@ -93,5 +104,6 @@
         private System.Windows.Forms.DataGridView dataGridPropertyList;
         private System.Windows.Forms.Label lblPropertyList;
         private System.Windows.Forms.Button btnBuy;
+        private System.Windows.Forms.Panel panel8;
     }
 }

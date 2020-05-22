@@ -32,6 +32,8 @@
             this.lblCustomerList = new System.Windows.Forms.Label();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnCreateNew = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCustomer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,12 +89,32 @@
             this.btnCreateNew.UseVisualStyleBackColor = false;
             this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.create;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(388, 385);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(48, 39);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.select;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(142, 387);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(42, 36);
+            this.panel8.TabIndex = 8;
+            // 
             // ShowCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(767, 500);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnCreateNew);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.lblCustomerList);
@@ -112,5 +134,7 @@
         private System.Windows.Forms.Label lblCustomerList;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnCreateNew;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel1;
     }
 }

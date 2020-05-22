@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.TotalTransaction = new System.Windows.Forms.Label();
@@ -46,10 +46,10 @@
             this.Profit = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblSale = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lblBuy = new System.Windows.Forms.Label();
-            this.lblTotalBuy = new System.Windows.Forms.Label();
             this.lblTotalSale = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblTotalBuy = new System.Windows.Forms.Label();
+            this.lblBuy = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -185,18 +185,18 @@
             // 
             // Profit
             // 
-            chartArea3.Name = "ChartArea1";
-            this.Profit.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.Profit.ChartAreas.Add(chartArea1);
             this.Profit.IsSoftShadows = false;
-            legend3.Name = "Legend1";
-            this.Profit.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.Profit.Legends.Add(legend1);
             this.Profit.Location = new System.Drawing.Point(513, 39);
             this.Profit.Name = "Profit";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Legend = "Legend1";
-            series3.Name = "s1";
-            this.Profit.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "s1";
+            this.Profit.Series.Add(series1);
             this.Profit.Size = new System.Drawing.Size(300, 300);
             this.Profit.TabIndex = 4;
             // 
@@ -220,6 +220,17 @@
             this.panel5.Size = new System.Drawing.Size(158, 100);
             this.panel5.TabIndex = 6;
             // 
+            // lblTotalSale
+            // 
+            this.lblTotalSale.AutoSize = true;
+            this.lblTotalSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSale.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTotalSale.Location = new System.Drawing.Point(4, 0);
+            this.lblTotalSale.Name = "lblTotalSale";
+            this.lblTotalSale.Size = new System.Drawing.Size(80, 20);
+            this.lblTotalSale.TabIndex = 6;
+            this.lblTotalSale.Text = "Total Sale";
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.lblTotalBuy);
@@ -228,17 +239,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(154, 100);
             this.panel6.TabIndex = 7;
-            // 
-            // lblBuy
-            // 
-            this.lblBuy.AutoSize = true;
-            this.lblBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuy.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblBuy.Location = new System.Drawing.Point(52, 39);
-            this.lblBuy.Name = "lblBuy";
-            this.lblBuy.Size = new System.Drawing.Size(75, 20);
-            this.lblBuy.TabIndex = 0;
-            this.lblBuy.Text = "Total Buy";
             // 
             // lblTotalBuy
             // 
@@ -251,16 +251,16 @@
             this.lblTotalBuy.TabIndex = 1;
             this.lblTotalBuy.Text = "Total Buy";
             // 
-            // lblTotalSale
+            // lblBuy
             // 
-            this.lblTotalSale.AutoSize = true;
-            this.lblTotalSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalSale.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTotalSale.Location = new System.Drawing.Point(4, 0);
-            this.lblTotalSale.Name = "lblTotalSale";
-            this.lblTotalSale.Size = new System.Drawing.Size(80, 20);
-            this.lblTotalSale.TabIndex = 6;
-            this.lblTotalSale.Text = "Total Sale";
+            this.lblBuy.AutoSize = true;
+            this.lblBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuy.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblBuy.Location = new System.Drawing.Point(48, 32);
+            this.lblBuy.Name = "lblBuy";
+            this.lblBuy.Size = new System.Drawing.Size(75, 20);
+            this.lblBuy.TabIndex = 0;
+            this.lblBuy.Text = "Total Buy";
             // 
             // CheckProfit
             // 
