@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCurrentBalance = new System.Windows.Forms.Label();
             this.lblCurrentBalanceValue = new System.Windows.Forms.Label();
             this.lblSellCurrentProfitPercentValue = new System.Windows.Forms.Label();
@@ -42,6 +43,8 @@
             this.txtBuyProfitPercent = new System.Windows.Forms.TextBox();
             this.lblCurrentBuyProfitPercentValue = new System.Windows.Forms.Label();
             this.lblCurrentBuyProfitPercent = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCurrentBalance
@@ -95,6 +98,7 @@
             this.txtSellProfitPercent.Name = "txtSellProfitPercent";
             this.txtSellProfitPercent.Size = new System.Drawing.Size(141, 26);
             this.txtSellProfitPercent.TabIndex = 4;
+            this.txtSellProfitPercent.Validating += new System.ComponentModel.CancelEventHandler(this.txtSellProfitPercent_Validating);
             // 
             // btnSellProfitChange
             // 
@@ -144,6 +148,7 @@
             this.txtChangeName.Name = "txtChangeName";
             this.txtChangeName.Size = new System.Drawing.Size(165, 26);
             this.txtChangeName.TabIndex = 7;
+            this.txtChangeName.Validating += new System.ComponentModel.CancelEventHandler(this.txtChangeName_Validating);
             // 
             // lblCurrentCompanyName
             // 
@@ -178,6 +183,7 @@
             this.txtBuyProfitPercent.Name = "txtBuyProfitPercent";
             this.txtBuyProfitPercent.Size = new System.Drawing.Size(165, 26);
             this.txtBuyProfitPercent.TabIndex = 12;
+            this.txtBuyProfitPercent.Validating += new System.ComponentModel.CancelEventHandler(this.txtBuyProfitPercent_Validating);
             // 
             // lblCurrentBuyProfitPercentValue
             // 
@@ -200,6 +206,10 @@
             this.lblCurrentBuyProfitPercent.Size = new System.Drawing.Size(193, 20);
             this.lblCurrentBuyProfitPercent.TabIndex = 10;
             this.lblCurrentBuyProfitPercent.Text = "Current Buy Profit Percent";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Account
             // 
@@ -224,6 +234,7 @@
             this.Name = "Account";
             this.Text = "Account";
             this.Load += new System.EventHandler(this.Account_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +256,6 @@
         private System.Windows.Forms.TextBox txtBuyProfitPercent;
         private System.Windows.Forms.Label lblCurrentBuyProfitPercentValue;
         private System.Windows.Forms.Label lblCurrentBuyProfitPercent;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

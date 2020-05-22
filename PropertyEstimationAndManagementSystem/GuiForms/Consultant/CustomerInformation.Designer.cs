@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtPropertyId = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
@@ -47,17 +48,20 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPropertyId
             // 
             this.txtPropertyId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPropertyId.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtPropertyId.Location = new System.Drawing.Point(178, 341);
+            this.txtPropertyId.Location = new System.Drawing.Point(167, 341);
             this.txtPropertyId.Name = "txtPropertyId";
             this.txtPropertyId.Size = new System.Drawing.Size(109, 26);
             this.txtPropertyId.TabIndex = 0;
+            this.txtPropertyId.Validating += new System.ComponentModel.CancelEventHandler(this.txtPropertyId_Validating);
             // 
             // txtAddress
             // 
@@ -67,6 +71,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(109, 26);
             this.txtAddress.TabIndex = 1;
+            this.txtAddress.Validating += new System.ComponentModel.CancelEventHandler(this.txtAddress_Validating);
             // 
             // txtFirstName
             // 
@@ -76,6 +81,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(109, 26);
             this.txtFirstName.TabIndex = 2;
+            this.txtFirstName.Validating += new System.ComponentModel.CancelEventHandler(this.txtFirstName_Validating);
             // 
             // txtLastName
             // 
@@ -85,6 +91,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(109, 26);
             this.txtLastName.TabIndex = 3;
+            this.txtLastName.Validating += new System.ComponentModel.CancelEventHandler(this.txtLastName_Validating);
             // 
             // txtMobileNumber
             // 
@@ -94,6 +101,7 @@
             this.txtMobileNumber.Name = "txtMobileNumber";
             this.txtMobileNumber.Size = new System.Drawing.Size(109, 26);
             this.txtMobileNumber.TabIndex = 5;
+            this.txtMobileNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtMobileNumber_Validating);
             // 
             // txtNid
             // 
@@ -103,6 +111,7 @@
             this.txtNid.Name = "txtNid";
             this.txtNid.Size = new System.Drawing.Size(109, 26);
             this.txtNid.TabIndex = 7;
+            this.txtNid.Validating += new System.ComponentModel.CancelEventHandler(this.txtNid_Validating);
             // 
             // lblPropertyId
             // 
@@ -216,6 +225,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(109, 26);
             this.txtEmail.TabIndex = 19;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // lblEmail
             // 
@@ -266,6 +276,10 @@
             this.panel1.Size = new System.Drawing.Size(333, 454);
             this.panel1.TabIndex = 22;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // CustomerInformation
             // 
             this.AcceptButton = this.button3;
@@ -281,6 +295,7 @@
             this.Load += new System.EventHandler(this.CustomerInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +321,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

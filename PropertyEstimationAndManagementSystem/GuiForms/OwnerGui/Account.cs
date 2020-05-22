@@ -117,5 +117,53 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
 
             }
         }
+
+        private void txtChangeName_Validating(object sender, CancelEventArgs e)
+        {
+            var changeName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(changeName))
+            {
+                e.Cancel = true;
+                txtChangeName.Focus();
+                errorProvider1.SetError(txtChangeName, "$This field should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtChangeName, "");
+            }
+        }
+
+        private void txtSellProfitPercent_Validating(object sender, CancelEventArgs e)
+        {
+            var sellprofitPercent = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(sellprofitPercent))
+            {
+                e.Cancel = true;
+                txtSellProfitPercent.Focus();
+                errorProvider1.SetError(txtSellProfitPercent, "$Percentage of Sell Profit required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtSellProfitPercent, "");
+            }
+        }
+
+        private void txtBuyProfitPercent_Validating(object sender, CancelEventArgs e)
+        {
+            var buyProfitPercent = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(buyProfitPercent))
+            {
+                e.Cancel = true;
+                txtBuyProfitPercent.Focus();
+                errorProvider1.SetError(txtBuyProfitPercent, "$Percentage of Sell Profit required!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtBuyProfitPercent, "");
+            }
+        }
     }
 }

@@ -87,5 +87,85 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             MessageBox.Show("Insert Successful!");
             this.Dispose();
         }
+
+        private void txtPropertyName_Validating(object sender, CancelEventArgs e)
+        {
+            var propertyName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(propertyName))
+            {
+                e.Cancel = true;
+                txtPropertyName.Focus();
+                errorProvider1.SetError(txtPropertyName, "$Property Name should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtPropertyName, "");
+            }
+        }
+
+        private void txtArea_Validating(object sender, CancelEventArgs e)
+        {
+            var propertyArea = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(propertyArea))
+            {
+                e.Cancel = true;
+                txtArea.Focus();
+                errorProvider1.SetError(txtArea, "$Area should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtArea, "");
+            }
+        }
+
+        private void txtSize_Validating(object sender, CancelEventArgs e)
+        {
+            var Size = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(Size))
+            {
+                e.Cancel = true;
+                txtSize.Focus();
+                errorProvider1.SetError(txtSize, "$Property Size should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtSize, "");
+            }
+        }
+
+        private void txtPrice_Validating(object sender, CancelEventArgs e)
+        {
+            var propertyPrice = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(propertyPrice))
+            {
+                e.Cancel = true;
+                txtPrice.Focus();
+                errorProvider1.SetError(txtPrice, "$Property Price should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtPrice, "");
+            }
+        }
+
+        private void comboBoxStatus_Validating(object sender, CancelEventArgs e)
+        {
+            var propertyStatus = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(propertyStatus))
+            {
+                e.Cancel = true;
+                comboBoxStatus.Focus();
+                errorProvider1.SetError(comboBoxStatus, "$Property Id should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBoxStatus, "");
+            }
+        }
     }
 }

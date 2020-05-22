@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPropertyName = new System.Windows.Forms.Label();
             this.txtPropertyName = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.Label();
@@ -44,7 +45,9 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.comboBoxStatus = new System.Windows.Forms.ComboBox();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPropertyName
@@ -67,6 +70,7 @@
             this.txtPropertyName.Name = "txtPropertyName";
             this.txtPropertyName.Size = new System.Drawing.Size(174, 26);
             this.txtPropertyName.TabIndex = 1;
+            this.txtPropertyName.Validating += new System.ComponentModel.CancelEventHandler(this.txtPropertyName_Validating);
             // 
             // lblArea
             // 
@@ -88,6 +92,7 @@
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(174, 26);
             this.txtArea.TabIndex = 3;
+            this.txtArea.Validating += new System.ComponentModel.CancelEventHandler(this.txtArea_Validating);
             // 
             // lblPrice
             // 
@@ -121,6 +126,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(176, 26);
             this.txtPrice.TabIndex = 6;
+            this.txtPrice.Validating += new System.ComponentModel.CancelEventHandler(this.txtPrice_Validating);
             // 
             // txtSize
             // 
@@ -130,6 +136,7 @@
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(176, 26);
             this.txtSize.TabIndex = 7;
+            this.txtSize.Validating += new System.ComponentModel.CancelEventHandler(this.txtSize_Validating);
             // 
             // btnCreate
             // 
@@ -233,6 +240,7 @@
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(176, 28);
             this.comboBoxStatus.TabIndex = 13;
+            this.comboBoxStatus.Validating += new System.ComponentModel.CancelEventHandler(this.comboBoxStatus_Validating);
             // 
             // btnLogout
             // 
@@ -248,6 +256,10 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // EditProperty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,6 +274,7 @@
             this.Load += new System.EventHandler(this.EditProperty_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,5 +297,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.ComboBox comboBoxStatus;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

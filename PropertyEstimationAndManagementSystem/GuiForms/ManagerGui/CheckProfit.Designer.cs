@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.TotalTransaction = new System.Windows.Forms.Label();
@@ -185,18 +185,18 @@
             // 
             // Profit
             // 
-            chartArea2.Name = "ChartArea1";
-            this.Profit.ChartAreas.Add(chartArea2);
+            chartArea3.Name = "ChartArea1";
+            this.Profit.ChartAreas.Add(chartArea3);
             this.Profit.IsSoftShadows = false;
-            legend2.Name = "Legend1";
-            this.Profit.Legends.Add(legend2);
+            legend3.Name = "Legend1";
+            this.Profit.Legends.Add(legend3);
             this.Profit.Location = new System.Drawing.Point(513, 39);
             this.Profit.Name = "Profit";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "s1";
-            this.Profit.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "s1";
+            this.Profit.Series.Add(series3);
             this.Profit.Size = new System.Drawing.Size(300, 300);
             this.Profit.TabIndex = 4;
             // 
@@ -226,7 +226,7 @@
             this.panel6.Controls.Add(this.lblBuy);
             this.panel6.Location = new System.Drawing.Point(291, 280);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.Size = new System.Drawing.Size(154, 100);
             this.panel6.TabIndex = 7;
             // 
             // lblBuy
@@ -234,7 +234,7 @@
             this.lblBuy.AutoSize = true;
             this.lblBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuy.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblBuy.Location = new System.Drawing.Point(66, 39);
+            this.lblBuy.Location = new System.Drawing.Point(52, 39);
             this.lblBuy.Name = "lblBuy";
             this.lblBuy.Size = new System.Drawing.Size(75, 20);
             this.lblBuy.TabIndex = 0;

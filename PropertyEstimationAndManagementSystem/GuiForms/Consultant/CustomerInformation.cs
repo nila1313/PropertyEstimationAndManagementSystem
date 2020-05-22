@@ -80,5 +80,117 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             showCustomer.Show();
             this.Dispose();
         }
+
+        private void txtFirstName_Validating(object sender, CancelEventArgs e)
+        {
+            var FirstName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(FirstName))
+            {
+                e.Cancel = true;
+                txtFirstName.Focus();
+                errorProvider1.SetError(txtFirstName, "$First NAme should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtFirstName, "");
+            }
+        }
+
+        private void txtLastName_Validating(object sender, CancelEventArgs e)
+        {
+            var LastName = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(LastName))
+            {
+                e.Cancel = true;
+                txtLastName.Focus();
+                errorProvider1.SetError(txtLastName, "$Last Name should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtLastName, "");
+            }
+        }
+
+        private void txtAddress_Validating(object sender, CancelEventArgs e)
+        {
+            var Address = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(Address))
+            {
+                e.Cancel = true;
+                txtAddress.Focus();
+                errorProvider1.SetError(txtAddress, "$Address should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtAddress, "");
+            }
+        }
+
+        private void txtMobileNumber_Validating(object sender, CancelEventArgs e)
+        {
+            var MobileNumber = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(MobileNumber))
+            {
+                e.Cancel = true;
+                txtMobileNumber.Focus();
+                errorProvider1.SetError(txtMobileNumber, "$Mobile Number should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtMobileNumber, "");
+            }
+        }
+
+        private void txtNid_Validating(object sender, CancelEventArgs e)
+        {
+            var Nid = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(Nid))
+            {
+                e.Cancel = true;
+                txtNid.Focus();
+                errorProvider1.SetError(txtNid, "$Nid should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtNid, "");
+            }
+        }
+
+        private void txtEmail_Validating(object sender, CancelEventArgs e)
+        {
+            var Email = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(Email))
+            {
+                e.Cancel = true;
+                txtEmail.Focus();
+                errorProvider1.SetError(txtEmail, "$Email should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtEmail, "");
+            }
+        }
+
+        private void txtPropertyId_Validating(object sender, CancelEventArgs e)
+        {
+            var propertyId = (sender as TextBox).Text;
+            if (string.IsNullOrWhiteSpace(propertyId))
+            {
+                e.Cancel = true;
+                txtPropertyId.Focus();
+                errorProvider1.SetError(txtPropertyId, "$Property Id should not be empty!!!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtPropertyId, "");
+            }
+        }
     }
 }
