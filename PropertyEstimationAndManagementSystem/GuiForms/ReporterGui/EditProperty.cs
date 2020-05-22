@@ -61,31 +61,43 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(property.Status.ToUpper()=="BOOKED")
-            {
-                da.remove<BookedProperty>(string.Format("where PropertyId={0}", property.Id.ToString()));
+            try {
+                if (property.Status.ToUpper() == "BOOKED")
+                {
+                    da.remove<BookedProperty>(string.Format("where PropertyId={0}", property.Id.ToString()));
+                }
+                property.Id = Convert.ToInt32(txtPropertyId.Text);
+                property.Name = txtPropertyName.Text;
+                property.Area = txtArea.Text;
+                property.Size = Convert.ToDouble(txtSize.Text);
+                property.Price = Convert.ToDouble(txtPrice.Text);
+                property.Status = comboBoxStatus.Text;
+                da.Insert<Property>(property, true);
+                MessageBox.Show("Update Successful!");
+                this.Dispose();
             }
-            property.Id= Convert.ToInt32(txtPropertyId.Text);
-            property.Name = txtPropertyName.Text;
-            property.Area = txtArea.Text;
-            property.Size= Convert.ToDouble(txtSize.Text);
-            property.Price=Convert.ToDouble(txtPrice.Text);
-            property.Status = comboBoxStatus.Text;
-            da.Insert<Property>(property,true);
-            MessageBox.Show("Update Successful!");
-            this.Dispose();
+            catch (Exception exe)
+            {
+                MessageBox.Show("PRICE AND AREA MUST BE NUMBERS");
+            }
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            property.Name = txtPropertyName.Text;
-            property.Area = txtArea.Text;
-            property.Size = Convert.ToDouble(txtSize.Text);
-            property.Price = Convert.ToDouble(txtPrice.Text);
-            property.Status = comboBoxStatus.Text;
-            da.Insert<Property>(property, true);
-            MessageBox.Show("Insert Successful!");
-            this.Dispose();
+            try {
+                property.Name = txtPropertyName.Text;
+                property.Area = txtArea.Text;
+                property.Size = Convert.ToDouble(txtSize.Text);
+                property.Price = Convert.ToDouble(txtPrice.Text);
+                property.Status = comboBoxStatus.Text;
+                da.Insert<Property>(property, true);
+                MessageBox.Show("Insert Successful!");
+                this.Dispose();
+            }
+            catch(Exception exe)
+            {
+                MessageBox.Show("PRICE AND AREA MUST BE NUMBERS");
+            }
         }
 
         private void txtPropertyName_Validating(object sender, CancelEventArgs e)
@@ -152,20 +164,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             }
         }
 
-        private void comboBoxStatus_Validating(object sender, CancelEventArgs e)
-        {
-            var propertyStatus = (sender as TextBox).Text;
-            if (string.IsNullOrWhiteSpace(propertyStatus))
-            {
-                e.Cancel = true;
-                comboBoxStatus.Focus();
-                errorProvider1.SetError(comboBoxStatus, "$Property Id should not be empty!!!");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(comboBoxStatus, "");
-            }
+     
         }
     }
-}
+

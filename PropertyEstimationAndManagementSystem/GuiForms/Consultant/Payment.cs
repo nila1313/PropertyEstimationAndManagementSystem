@@ -71,38 +71,44 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            transaction.Amount = Convert.ToInt32(txtAmount.Text);
-            if(transaction.TransactionType=="Cheque")
-            {
-                transaction.ChequeNumber = txtChequeNumber.Text;
+            try {
+                transaction.Amount = Convert.ToInt32(txtAmount.Text);
+                if (transaction.TransactionType == "Cheque")
+                {
+                    transaction.ChequeNumber = txtChequeNumber.Text;
 
-            
+
+                }
+
+                if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (property.Status.ToUpper() == "BOOKED")
+                    {
+                        da.remove<BookedProperty>(string.Format("where PropertyId={0}", property.Id));
+                    }
+
+                    property.Price = Convert.ToDouble(txtAmount.Text);
+                    da.Insert<Transaction>(transaction, true);
+
+                    da.Insert<Property>(property, true);
+
+                    if (transaction.Trade.ToUpper() == "SOLD")
+                    {
+                        mainAcc.Balance = mainAcc.Balance + Convert.ToDouble(txtAmount.Text);
+                    }
+                    if (transaction.Trade.ToUpper() == "BOUGHT")
+                    {
+                        mainAcc.Balance = mainAcc.Balance - Convert.ToDouble(txtAmount.Text);
+                    }
+                    da.Insert<MainAccount>(mainAcc, false);
+                    MessageBox.Show("CONGRATULATIONS!!!!");
+
+                    this.Dispose();
+                }
             }
-
-            if (MessageBox.Show("Do you want to confirm?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            catch(Exception exe)
             {
-                if(property.Status.ToUpper()=="BOOKED")
-                {
-                    da.remove<BookedProperty>(string.Format("where PropertyId={0}",property.Id));
-                }
-
-                property.Price = Convert.ToDouble(txtAmount.Text);
-                da.Insert<Transaction>(transaction,true);
-                
-                da.Insert<Property>(property, true);
-                
-                if(transaction.Trade.ToUpper()=="SOLD")
-                {
-                    mainAcc.Balance = mainAcc.Balance + Convert.ToDouble(txtAmount.Text);
-                }
-                if (transaction.Trade.ToUpper() == "BOUGHT")
-                {
-                    mainAcc.Balance = mainAcc.Balance - Convert.ToDouble(txtAmount.Text);
-                }
-                da.Insert<MainAccount>(mainAcc,false);
-                MessageBox.Show("CONGRATULATIONS!!!!");
-
-                this.Dispose();
+                MessageBox.Show("AMOUNT MUST BE NUMBER");
             }
         }
         private void setMainAcc()

@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manager));
             this.ShowProperty = new System.Windows.Forms.Button();
             this.CheckProfit = new System.Windows.Forms.Button();
             this.EditEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelProfit = new System.Windows.Forms.Panel();
+            this.btnProfit = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnPropertyInfo = new System.Windows.Forms.Button();
             this.panelProperty = new System.Windows.Forms.Panel();
+            this.btnImage = new System.Windows.Forms.Button();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
             this.showUsers = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.EmployeePanel = new System.Windows.Forms.Panel();
-            this.btnProfit = new System.Windows.Forms.Button();
-            this.panelProfit = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
-            this.btnImage = new System.Windows.Forms.Button();
+            this.EmployeePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panelProfit.SuspendLayout();
             this.panelProperty.SuspendLayout();
             this.EditEmployeePanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelProfit.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShowProperty
@@ -121,6 +122,37 @@
             this.panel1.Size = new System.Drawing.Size(186, 590);
             this.panel1.TabIndex = 7;
             // 
+            // panelProfit
+            // 
+            this.panelProfit.Controls.Add(this.CheckProfit);
+            this.panelProfit.Location = new System.Drawing.Point(3, 359);
+            this.panelProfit.Name = "panelProfit";
+            this.panelProfit.Size = new System.Drawing.Size(183, 43);
+            this.panelProfit.TabIndex = 0;
+            // 
+            // btnProfit
+            // 
+            this.btnProfit.FlatAppearance.BorderSize = 0;
+            this.btnProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProfit.Location = new System.Drawing.Point(27, 319);
+            this.btnProfit.Name = "btnProfit";
+            this.btnProfit.Size = new System.Drawing.Size(75, 34);
+            this.btnProfit.TabIndex = 13;
+            this.btnProfit.Text = "Profit";
+            this.btnProfit.UseVisualStyleBackColor = true;
+            this.btnProfit.Click += new System.EventHandler(this.btnProfit_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(3, 239);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(29, 26);
+            this.panel4.TabIndex = 12;
+            // 
             // btnPropertyInfo
             // 
             this.btnPropertyInfo.FlatAppearance.BorderSize = 0;
@@ -142,6 +174,16 @@
             this.panelProperty.Name = "panelProperty";
             this.panelProperty.Size = new System.Drawing.Size(177, 50);
             this.panelProperty.TabIndex = 10;
+            // 
+            // btnImage
+            // 
+            this.btnImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImage.BackgroundImage")));
+            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImage.Location = new System.Drawing.Point(0, 0);
+            this.btnImage.Name = "btnImage";
+            this.btnImage.Size = new System.Drawing.Size(168, 132);
+            this.btnImage.TabIndex = 8;
+            this.btnImage.UseVisualStyleBackColor = true;
             // 
             // EditEmployeePanel
             // 
@@ -194,49 +236,9 @@
             this.panel2.Size = new System.Drawing.Size(799, 42);
             this.panel2.TabIndex = 8;
             // 
-            // EmployeePanel
-            // 
-            this.EmployeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmployeePanel.Location = new System.Drawing.Point(186, 42);
-            this.EmployeePanel.Name = "EmployeePanel";
-            this.EmployeePanel.Size = new System.Drawing.Size(799, 548);
-            this.EmployeePanel.TabIndex = 9;
-            // 
-            // btnProfit
-            // 
-            this.btnProfit.FlatAppearance.BorderSize = 0;
-            this.btnProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnProfit.Location = new System.Drawing.Point(27, 319);
-            this.btnProfit.Name = "btnProfit";
-            this.btnProfit.Size = new System.Drawing.Size(75, 34);
-            this.btnProfit.TabIndex = 13;
-            this.btnProfit.Text = "Profit";
-            this.btnProfit.UseVisualStyleBackColor = true;
-            this.btnProfit.Click += new System.EventHandler(this.btnProfit_Click);
-            // 
-            // panelProfit
-            // 
-            this.panelProfit.Controls.Add(this.CheckProfit);
-            this.panelProfit.Location = new System.Drawing.Point(3, 359);
-            this.panelProfit.Name = "panelProfit";
-            this.panelProfit.Size = new System.Drawing.Size(183, 43);
-            this.panelProfit.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Property_logo_2;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(3, 239);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 26);
-            this.panel4.TabIndex = 12;
-            // 
             // Logout
             // 
-            this.Logout.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images1;
+            this.Logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logout.BackgroundImage")));
             this.Logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Logout.FlatAppearance.BorderSize = 0;
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,15 +251,14 @@
             this.Logout.UseVisualStyleBackColor = true;
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
-            // btnImage
+            // EmployeePanel
             // 
-            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
-            this.btnImage.Location = new System.Drawing.Point(0, 0);
-            this.btnImage.Name = "btnImage";
-            this.btnImage.Size = new System.Drawing.Size(168, 132);
-            this.btnImage.TabIndex = 8;
-            this.btnImage.UseVisualStyleBackColor = true;
+            this.EmployeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.EmployeePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmployeePanel.Location = new System.Drawing.Point(186, 42);
+            this.EmployeePanel.Name = "EmployeePanel";
+            this.EmployeePanel.Size = new System.Drawing.Size(799, 548);
+            this.EmployeePanel.TabIndex = 9;
             // 
             // Manager
             // 
@@ -270,11 +271,12 @@
             this.Controls.Add(this.panel1);
             this.Name = "Manager";
             this.Text = "Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Manager_FormClosing);
             this.panel1.ResumeLayout(false);
+            this.panelProfit.ResumeLayout(false);
             this.panelProperty.ResumeLayout(false);
             this.EditEmployeePanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panelProfit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

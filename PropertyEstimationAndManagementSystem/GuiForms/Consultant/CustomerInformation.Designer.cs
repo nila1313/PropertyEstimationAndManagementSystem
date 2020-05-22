@@ -56,7 +56,7 @@
             // txtPropertyId
             // 
             this.txtPropertyId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPropertyId.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtPropertyId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPropertyId.Location = new System.Drawing.Point(167, 341);
             this.txtPropertyId.Name = "txtPropertyId";
             this.txtPropertyId.Size = new System.Drawing.Size(109, 26);
@@ -66,7 +66,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAddress.Location = new System.Drawing.Point(167, 145);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(109, 26);
@@ -76,7 +76,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtFirstName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtFirstName.Location = new System.Drawing.Point(167, 47);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(109, 26);
@@ -86,7 +86,7 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtLastName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLastName.Location = new System.Drawing.Point(167, 94);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(109, 26);
@@ -96,7 +96,7 @@
             // txtMobileNumber
             // 
             this.txtMobileNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobileNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtMobileNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtMobileNumber.Location = new System.Drawing.Point(167, 196);
             this.txtMobileNumber.Name = "txtMobileNumber";
             this.txtMobileNumber.Size = new System.Drawing.Size(109, 26);
@@ -106,7 +106,7 @@
             // txtNid
             // 
             this.txtNid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNid.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtNid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNid.Location = new System.Drawing.Point(167, 235);
             this.txtNid.Name = "txtNid";
             this.txtNid.Size = new System.Drawing.Size(109, 26);
@@ -220,7 +220,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEmail.Location = new System.Drawing.Point(167, 287);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(109, 26);

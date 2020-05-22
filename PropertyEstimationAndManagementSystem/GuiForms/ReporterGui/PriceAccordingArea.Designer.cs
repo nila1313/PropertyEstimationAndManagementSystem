@@ -117,7 +117,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.search_log_f;
+            //this.btnSearch.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.search_log_f;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

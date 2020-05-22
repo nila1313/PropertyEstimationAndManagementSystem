@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateEmployee));
             this.bloodGroup = new System.Windows.Forms.ComboBox();
             this.salary = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -51,9 +52,9 @@
             this.joiningDate = new System.Windows.Forms.DateTimePicker();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -334,13 +335,9 @@
             this.panel1.Size = new System.Drawing.Size(426, 436);
             this.panel1.TabIndex = 46;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // panel3
             // 
-            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.update;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(193, 391);
             this.panel3.Name = "panel3";
@@ -349,12 +346,16 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.create1;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(56, 390);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(42, 36);
             this.panel2.TabIndex = 45;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // CreateEmployee
             // 

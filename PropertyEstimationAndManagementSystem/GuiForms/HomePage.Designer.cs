@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnImage = new System.Windows.Forms.Button();
             this.Users = new System.Windows.Forms.Button();
             this.UserPanel = new System.Windows.Forms.Panel();
             this.Login = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.formPanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnImage = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.UserPanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,13 +55,32 @@
             this.panel1.Size = new System.Drawing.Size(171, 556);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(3, 159);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(42, 35);
+            this.panel3.TabIndex = 3;
+            // 
+            // btnImage
+            // 
+            this.btnImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImage.BackgroundImage")));
+            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImage.Location = new System.Drawing.Point(0, 3);
+            this.btnImage.Name = "btnImage";
+            this.btnImage.Size = new System.Drawing.Size(168, 126);
+            this.btnImage.TabIndex = 2;
+            this.btnImage.UseVisualStyleBackColor = true;
+            // 
             // Users
             // 
             this.Users.FlatAppearance.BorderSize = 0;
             this.Users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Users.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Users.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Users.Location = new System.Drawing.Point(0, 159);
+            this.Users.Location = new System.Drawing.Point(10, 159);
             this.Users.Name = "Users";
             this.Users.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Users.Size = new System.Drawing.Size(99, 31);
@@ -71,7 +91,7 @@
             // 
             // UserPanel
             // 
-            this.UserPanel.Controls.Add(this.panel4);
+            this.UserPanel.Controls.Add(this.panel5);
             this.UserPanel.Controls.Add(this.Login);
             this.UserPanel.Location = new System.Drawing.Point(3, 196);
             this.UserPanel.Name = "UserPanel";
@@ -112,33 +132,14 @@
             this.formPanel.Size = new System.Drawing.Size(823, 490);
             this.formPanel.TabIndex = 2;
             // 
-            // panel3
+            // panel5
             // 
-            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Untitled;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(3, 161);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(27, 28);
-            this.panel3.TabIndex = 12;
-            // 
-            // btnImage
-            // 
-            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
-            this.btnImage.Location = new System.Drawing.Point(0, 3);
-            this.btnImage.Name = "btnImage";
-            this.btnImage.Size = new System.Drawing.Size(168, 139);
-            this.btnImage.TabIndex = 2;
-            this.btnImage.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.key;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(42, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(27, 22);
-            this.panel4.TabIndex = 1;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(32, 6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(36, 33);
+            this.panel5.TabIndex = 4;
             // 
             // HomePage
             // 
@@ -166,6 +167,6 @@
         private System.Windows.Forms.Panel formPanel;
         private System.Windows.Forms.Button btnImage;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

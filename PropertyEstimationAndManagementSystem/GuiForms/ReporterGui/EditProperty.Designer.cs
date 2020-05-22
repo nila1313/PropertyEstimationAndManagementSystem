@@ -240,7 +240,7 @@
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(176, 28);
             this.comboBoxStatus.TabIndex = 13;
-            this.comboBoxStatus.Validating += new System.ComponentModel.CancelEventHandler(this.comboBoxStatus_Validating);
+          
             // 
             // btnLogout
             // 

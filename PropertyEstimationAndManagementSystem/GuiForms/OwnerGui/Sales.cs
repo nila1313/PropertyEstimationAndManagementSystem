@@ -83,6 +83,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
             string prob = @"""Transaction""";
             string whereClause= "select Count(*) as 'Total',Employee.Id from " + prob+" inner join Employee on "+prob+".EmployeeId=Employee.id where "+prob+ ".Trade='SOLD'  group by Employee.Id";
             dataGridEmloyeeSale.DataSource = da.Execute(whereClause);
+            whereClause = "select Count(*) as 'Total',Employee.Id from " + prob + " inner join Employee on " + prob + ".EmployeeId=Employee.id where " + prob + ".Trade='BOUGHT'  group by Employee.Id";
+            dataGridEmloyeeBuy.DataSource = da.Execute(whereClause);
+
         }
 
     }

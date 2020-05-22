@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnsoldPropertyList));
             this.dataGridPropertyList = new System.Windows.Forms.DataGridView();
             this.lblPropertyList = new System.Windows.Forms.Label();
             this.btnBuy = new System.Windows.Forms.Button();
@@ -73,7 +74,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.sell;
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.Location = new System.Drawing.Point(263, 410);
             this.panel8.Name = "panel8";

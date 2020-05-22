@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtSize = new System.Windows.Forms.TextBox();
             this.txtArea = new System.Windows.Forms.TextBox();
@@ -159,7 +160,7 @@
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.sell1;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -172,7 +173,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.booked1;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -185,7 +186,7 @@
             // 
             // btnPropertySearch
             // 
-            this.btnPropertySearch.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.search_log_f1;
+            this.btnPropertySearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPropertySearch.BackgroundImage")));
             this.btnPropertySearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPropertySearch.FlatAppearance.BorderSize = 0;
             this.btnPropertySearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

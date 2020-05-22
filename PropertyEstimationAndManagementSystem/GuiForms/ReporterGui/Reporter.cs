@@ -17,8 +17,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
     public partial class Reporter: Form
     {
         Users user;
-        Login login;
-        public Reporter(Login login,Users user)
+        HomePage login;
+        public Reporter(HomePage login,Users user)
         {
             InitializeComponent();
             CustomizeDesign();
@@ -30,13 +30,6 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             ShowSubMenu(panelProperty);
         }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            login.Show();
-            this.Dispose();
-        }
-    
 
         private void CustomizeDesign()
         {
@@ -104,6 +97,17 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void btnFeedback_Click(object sender, EventArgs e)
         {
             OpenFormPanel(new FeedBack(user, this));
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            login.Show();
+            this.Dispose();
+        }
+
+        private void Reporter_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

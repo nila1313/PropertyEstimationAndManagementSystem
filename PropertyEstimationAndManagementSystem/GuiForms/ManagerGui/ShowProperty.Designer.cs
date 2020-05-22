@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowProperty));
             this.dataGridProperty = new System.Windows.Forms.DataGridView();
             this.lblShowProperty = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -56,11 +57,11 @@
             // lblShowProperty
             // 
             this.lblShowProperty.AutoSize = true;
-            this.lblShowProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShowProperty.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblShowProperty.Location = new System.Drawing.Point(416, 28);
             this.lblShowProperty.Name = "lblShowProperty";
-            this.lblShowProperty.Size = new System.Drawing.Size(133, 20);
+            this.lblShowProperty.Size = new System.Drawing.Size(182, 25);
             this.lblShowProperty.TabIndex = 1;
             this.lblShowProperty.Text = "Show All Property";
             // 
@@ -93,6 +94,7 @@
             // 
             // btnShowAll
             // 
+            this.btnShowAll.BackColor = System.Drawing.Color.Black;
             this.btnShowAll.FlatAppearance.BorderSize = 0;
             this.btnShowAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +104,7 @@
             this.btnShowAll.Size = new System.Drawing.Size(75, 23);
             this.btnShowAll.TabIndex = 6;
             this.btnShowAll.Text = "Show All";
-            this.btnShowAll.UseVisualStyleBackColor = true;
+            this.btnShowAll.UseVisualStyleBackColor = false;
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
             // label1
@@ -148,13 +150,13 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.search_log_f1;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(186, 58);
+            this.btnSearch.Location = new System.Drawing.Point(171, 41);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(23, 22);
+            this.btnSearch.Size = new System.Drawing.Size(38, 34);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);

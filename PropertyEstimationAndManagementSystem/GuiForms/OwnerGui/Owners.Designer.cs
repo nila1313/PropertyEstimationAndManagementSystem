@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Owners));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnFeedBack = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnManager = new System.Windows.Forms.Button();
@@ -37,9 +39,8 @@
             this.btnSaleBuyEstimation = new System.Windows.Forms.Button();
             this.btnTransactionList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Logout = new System.Windows.Forms.Button();
             this.panelOwner = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -60,6 +61,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(194, 126);
+            this.panel2.TabIndex = 4;
             // 
             // btnFeedBack
             // 
@@ -150,12 +159,27 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
-            this.panel3.Controls.Add(this.btnLogout);
+            this.panel3.Controls.Add(this.Logout);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(785, 49);
             this.panel3.TabIndex = 1;
+            // 
+            // Logout
+            // 
+            this.Logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logout.BackgroundImage")));
+            this.Logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logout.FlatAppearance.BorderSize = 0;
+            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Logout.Location = new System.Drawing.Point(725, 8);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(39, 35);
+            this.Logout.TabIndex = 11;
+            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // panelOwner
             // 
@@ -165,26 +189,6 @@
             this.panelOwner.Name = "panelOwner";
             this.panelOwner.Size = new System.Drawing.Size(785, 541);
             this.panelOwner.TabIndex = 2;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images;
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Location = new System.Drawing.Point(731, 7);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(42, 36);
-            this.btnLogout.TabIndex = 2;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 126);
-            this.panel2.TabIndex = 4;
             // 
             // Owners
             // 
@@ -196,7 +200,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Owners";
             this.Text = "Owners";
-           
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Owners_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panelTransaction.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -217,6 +221,6 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnFeedBack;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button Logout;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payment));
             this.btnCash = new System.Windows.Forms.RadioButton();
             this.btncheque = new System.Windows.Forms.RadioButton();
             this.btnConfirm = new System.Windows.Forms.Button();
@@ -123,7 +124,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.cash;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(248, 91);
             this.panel3.Name = "panel3";
@@ -132,7 +133,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.cheque;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(441, 95);
             this.panel2.Name = "panel2";
@@ -141,7 +142,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.money1;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(230, 295);
             this.panel1.Name = "panel1";

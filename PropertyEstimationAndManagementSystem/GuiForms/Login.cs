@@ -46,19 +46,19 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
                 }
                 if (dt.Rows[0][2].ToString().ToUpper() == "REPORTER")
                 {
-                    Reporter rep = new Reporter(this, users);
+                    Reporter rep = new Reporter(home, users);
                     rep.Show();
                     home.Hide();
                 }
                 if (dt.Rows[0][2].ToString().ToUpper() == "CONSULTANT")
                 {
-                    Consultants con = new Consultants(this, users);
+                    Consultants con = new Consultants(home, users);
                     con.Show();
                     home.Hide();
                 }
                 if (dt.Rows[0][2].ToString().ToUpper() == "OWNER")
                 {
-                    Owners owns = new Owners(this, users);
+                    Owners owns = new Owners(home, users);
                     owns.Show();
                     home.Hide();
                 }
@@ -85,9 +85,48 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             this.Dispose();
         }
 
-      
-
-       
-        
+        private void txtUserPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                users.UserName = txtUserName.Text;
+                users.UserPassword = txtUserPassword.Text;
+                try
+                {
+                    string where = string.Format("where UserName='{0}' and UserPassword='{1}'", users.UserName, users.UserPassword);
+                    DataTable dt = da.GetData<Users>(where);
+                    users.Id = Convert.ToInt32(dt.Rows[0][3].ToString());
+                    if (dt.Rows[0][2].ToString().ToUpper() == "MANAGER")
+                    {
+                        Manager man = new Manager(home, users);
+                        man.Show();
+                        home.Hide();
+                    }
+                    if (dt.Rows[0][2].ToString().ToUpper() == "REPORTER")
+                    {
+                        Reporter rep = new Reporter(home, users);
+                        rep.Show();
+                        home.Hide();
+                    }
+                    if (dt.Rows[0][2].ToString().ToUpper() == "CONSULTANT")
+                    {
+                        Consultants con = new Consultants(home, users);
+                        con.Show();
+                        home.Hide();
+                    }
+                    if (dt.Rows[0][2].ToString().ToUpper() == "OWNER")
+                    {
+                        Owners owns = new Owners(home, users);
+                        owns.Show();
+                        home.Hide();
+                    }
+                    MessageBox.Show("Login Success");
+                }
+                catch (Exception en)
+                {
+                    MessageBox.Show("Login Failed");
+                }
+            }
+        }
     }
 }

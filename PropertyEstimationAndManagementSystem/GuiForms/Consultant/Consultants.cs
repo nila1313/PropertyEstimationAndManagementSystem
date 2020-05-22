@@ -13,9 +13,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
 {
     public partial class Consultants : Form
     {
-        Login login;
+        HomePage login;
         Users users;
-        public Consultants(Login login, Users users)
+        public Consultants(HomePage login, Users users)
         {
             this.login = login;
             this.users = users;
@@ -116,6 +116,15 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
             ShowSubMenu(panelPayment);
         }
 
-       
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            login.Show();
+            this.Dispose();
+        }
+
+        private void Consultants_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

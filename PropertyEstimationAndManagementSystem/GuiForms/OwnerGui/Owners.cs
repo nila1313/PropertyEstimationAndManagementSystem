@@ -14,9 +14,9 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
 {
     public partial class Owners : Form
     {
-        Login login;
+        HomePage login;
         Users user;
-        public Owners(Login login,Users user)
+        public Owners(HomePage login,Users user)
         {
             InitializeComponent();
             panelTransaction.Visible = false;
@@ -89,14 +89,16 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.OwnerGui
             OpenFormPanel(new CheckFeedBack());
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void Logout_Click(object sender, EventArgs e)
         {
-
             login.Show();
             this.Dispose();
         }
 
-        
+        private void Owners_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
  }
 

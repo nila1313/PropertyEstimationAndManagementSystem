@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtUserPassword = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -60,7 +61,8 @@
             this.txtUserPassword.Name = "txtUserPassword";
             this.txtUserPassword.PasswordChar = '*';
             this.txtUserPassword.Size = new System.Drawing.Size(152, 26);
-            this.txtUserPassword.TabIndex = 4;
+            this.txtUserPassword.TabIndex = 10;
+            this.txtUserPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUserPassword_KeyDown);
             // 
             // textBox1
             // 
@@ -126,7 +128,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.key;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(79, 234);
             this.panel4.Name = "panel4";
@@ -135,7 +137,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Untitled;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(135, 46);
             this.panel2.Name = "panel2";

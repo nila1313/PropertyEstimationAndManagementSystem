@@ -63,5 +63,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         {
             OpenFormPanel(new Login(this));
         }
+
+       
     }
 }

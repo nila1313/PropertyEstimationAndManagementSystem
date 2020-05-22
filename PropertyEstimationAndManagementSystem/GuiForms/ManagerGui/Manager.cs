@@ -87,12 +87,7 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
             OpenFormPanel(new InsertEmployee());
         }
 
-       
-
-        private void Delete_Click(object sender, EventArgs e)
-        {
-            OpenFormPanel(new DeleteEmployee());
-        }
+      
 
         private void CheckProfit_Click(object sender, EventArgs e)
         {
@@ -119,6 +114,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void btnProfit_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelProfit);
+        }
+
+        private void Manager_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeedBack));
             this.richtxtDescription = new System.Windows.Forms.RichTextBox();
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -82,9 +83,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.submit;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(65, 412);
+            this.panel1.Location = new System.Drawing.Point(61, 412);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(42, 36);
             this.panel1.TabIndex = 11;
