@@ -33,20 +33,23 @@
             this.EditEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Logout = new System.Windows.Forms.Button();
-            this.btnImage = new System.Windows.Forms.Button();
+            this.btnPropertyInfo = new System.Windows.Forms.Button();
+            this.panelProperty = new System.Windows.Forms.Panel();
             this.EditEmployeePanel = new System.Windows.Forms.Panel();
             this.showUsers = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EmployeePanel = new System.Windows.Forms.Panel();
-            this.panelProperty = new System.Windows.Forms.Panel();
-            this.btnPropertyInfo = new System.Windows.Forms.Button();
+            this.btnProfit = new System.Windows.Forms.Button();
+            this.panelProfit = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Logout = new System.Windows.Forms.Button();
+            this.btnImage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.EditEmployeePanel.SuspendLayout();
             this.panelProperty.SuspendLayout();
+            this.EditEmployeePanel.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelProfit.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShowProperty
@@ -70,7 +73,7 @@
             this.CheckProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CheckProfit.Location = new System.Drawing.Point(27, 341);
+            this.CheckProfit.Location = new System.Drawing.Point(61, 3);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -104,44 +107,41 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panelProfit);
+            this.panel1.Controls.Add(this.btnProfit);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnPropertyInfo);
             this.panel1.Controls.Add(this.panelProperty);
-            this.panel1.Controls.Add(this.Logout);
             this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.EditEmployeePanel);
             this.panel1.Controls.Add(this.EditEmployee);
-            this.panel1.Controls.Add(this.CheckProfit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 590);
             this.panel1.TabIndex = 7;
             // 
-            // Logout
+            // btnPropertyInfo
             // 
-            this.Logout.FlatAppearance.BorderSize = 0;
-            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Logout.Location = new System.Drawing.Point(56, 383);
-            this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(75, 35);
-            this.Logout.TabIndex = 9;
-            this.Logout.Text = "Logout";
-            this.Logout.UseVisualStyleBackColor = true;
-            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            this.btnPropertyInfo.FlatAppearance.BorderSize = 0;
+            this.btnPropertyInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPropertyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPropertyInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnPropertyInfo.Location = new System.Drawing.Point(27, 239);
+            this.btnPropertyInfo.Name = "btnPropertyInfo";
+            this.btnPropertyInfo.Size = new System.Drawing.Size(159, 27);
+            this.btnPropertyInfo.TabIndex = 11;
+            this.btnPropertyInfo.Text = "Property Information";
+            this.btnPropertyInfo.UseVisualStyleBackColor = true;
+            this.btnPropertyInfo.Click += new System.EventHandler(this.btnPropertyInfo_Click);
             // 
-            // btnImage
+            // panelProperty
             // 
-            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
-            this.btnImage.Location = new System.Drawing.Point(0, 0);
-            this.btnImage.Name = "btnImage";
-            this.btnImage.Size = new System.Drawing.Size(168, 132);
-            this.btnImage.TabIndex = 8;
-            this.btnImage.UseVisualStyleBackColor = true;
+            this.panelProperty.Controls.Add(this.ShowProperty);
+            this.panelProperty.Location = new System.Drawing.Point(3, 272);
+            this.panelProperty.Name = "panelProperty";
+            this.panelProperty.Size = new System.Drawing.Size(177, 50);
+            this.panelProperty.TabIndex = 10;
             // 
             // EditEmployeePanel
             // 
@@ -187,6 +187,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panel2.Controls.Add(this.Logout);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(186, 0);
             this.panel2.Name = "panel2";
@@ -202,27 +203,27 @@
             this.EmployeePanel.Size = new System.Drawing.Size(799, 548);
             this.EmployeePanel.TabIndex = 9;
             // 
-            // panelProperty
+            // btnProfit
             // 
-            this.panelProperty.Controls.Add(this.ShowProperty);
-            this.panelProperty.Location = new System.Drawing.Point(3, 272);
-            this.panelProperty.Name = "panelProperty";
-            this.panelProperty.Size = new System.Drawing.Size(177, 50);
-            this.panelProperty.TabIndex = 10;
+            this.btnProfit.FlatAppearance.BorderSize = 0;
+            this.btnProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProfit.Location = new System.Drawing.Point(27, 319);
+            this.btnProfit.Name = "btnProfit";
+            this.btnProfit.Size = new System.Drawing.Size(75, 34);
+            this.btnProfit.TabIndex = 13;
+            this.btnProfit.Text = "Profit";
+            this.btnProfit.UseVisualStyleBackColor = true;
+            this.btnProfit.Click += new System.EventHandler(this.btnProfit_Click);
             // 
-            // btnPropertyInfo
+            // panelProfit
             // 
-            this.btnPropertyInfo.FlatAppearance.BorderSize = 0;
-            this.btnPropertyInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPropertyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPropertyInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPropertyInfo.Location = new System.Drawing.Point(27, 239);
-            this.btnPropertyInfo.Name = "btnPropertyInfo";
-            this.btnPropertyInfo.Size = new System.Drawing.Size(159, 27);
-            this.btnPropertyInfo.TabIndex = 11;
-            this.btnPropertyInfo.Text = "Property Information";
-            this.btnPropertyInfo.UseVisualStyleBackColor = true;
-            this.btnPropertyInfo.Click += new System.EventHandler(this.btnPropertyInfo_Click);
+            this.panelProfit.Controls.Add(this.CheckProfit);
+            this.panelProfit.Location = new System.Drawing.Point(3, 359);
+            this.panelProfit.Name = "panelProfit";
+            this.panelProfit.Size = new System.Drawing.Size(183, 43);
+            this.panelProfit.TabIndex = 0;
             // 
             // panel4
             // 
@@ -233,16 +234,30 @@
             this.panel4.Size = new System.Drawing.Size(29, 26);
             this.panel4.TabIndex = 12;
             // 
-            // button1
+            // Logout
             // 
-            this.button1.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(27, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 28);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Logout.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.images1;
+            this.Logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logout.FlatAppearance.BorderSize = 0;
+            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Logout.Location = new System.Drawing.Point(725, 7);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(30, 29);
+            this.Logout.TabIndex = 9;
+            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
+            // btnImage
+            // 
+            this.btnImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImage.Image = global::PropertyEstimationAndManagementSystem.Properties.Resources.Mnp_LOGO_f;
+            this.btnImage.Location = new System.Drawing.Point(0, 0);
+            this.btnImage.Name = "btnImage";
+            this.btnImage.Size = new System.Drawing.Size(168, 132);
+            this.btnImage.TabIndex = 8;
+            this.btnImage.UseVisualStyleBackColor = true;
             // 
             // Manager
             // 
@@ -256,8 +271,10 @@
             this.Name = "Manager";
             this.Text = "Manager";
             this.panel1.ResumeLayout(false);
-            this.EditEmployeePanel.ResumeLayout(false);
             this.panelProperty.ResumeLayout(false);
+            this.EditEmployeePanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panelProfit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -278,6 +295,7 @@
         private System.Windows.Forms.Button btnPropertyInfo;
         private System.Windows.Forms.Panel panelProperty;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelProfit;
+        private System.Windows.Forms.Button btnProfit;
     }
 }
