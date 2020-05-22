@@ -26,6 +26,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         private void CustomizeDesign()
         {
             panelProperty.Visible = false;
+            panelShowCustomer.Visible = false;
+            panelPayment.Visible = false;
         }
         private void HideSubMenu()
         {
@@ -99,5 +101,17 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.Consultant
         {
             OpenFormPanel(new FeedBack(users, this));
         }
+
+        private void btnCustomerInformation_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panelShowCustomer);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panelPayment);
+        }
+
+       
     }
 }

@@ -29,24 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPayment = new System.Windows.Forms.Panel();
+            this.btnBookedProperty = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panelShowCustomer = new System.Windows.Forms.Panel();
+            this.btnShowCustomer = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnCustomerInformation = new System.Windows.Forms.Button();
+            this.panelProperty = new System.Windows.Forms.Panel();
+            this.btnAvailablePropety = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnBuy = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnProperty = new System.Windows.Forms.Button();
             this.btnFeedBack = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnBookedProperty = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnShowCustomer = new System.Windows.Forms.Button();
-            this.btnCustomerInformation = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.panelProperty = new System.Windows.Forms.Panel();
-            this.btnBuy = new System.Windows.Forms.Button();
-            this.btnAvailablePropety = new System.Windows.Forms.Button();
-            this.panelConsultant = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.panelConsultant = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelPayment.SuspendLayout();
+            this.panelShowCustomer.SuspendLayout();
             this.panelProperty.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -54,20 +62,191 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panelPayment);
+            this.panel1.Controls.Add(this.panelShowCustomer);
+            this.panel1.Controls.Add(this.btnCustomerInformation);
+            this.panel1.Controls.Add(this.panelProperty);
+            this.panel1.Controls.Add(this.panel13);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnProperty);
             this.panel1.Controls.Add(this.btnFeedBack);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnCustomerInformation);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.panelProperty);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 590);
             this.panel1.TabIndex = 0;
+            // 
+            // panelPayment
+            // 
+            this.panelPayment.Controls.Add(this.btnBookedProperty);
+            this.panelPayment.Controls.Add(this.panel12);
+            this.panelPayment.Location = new System.Drawing.Point(1, 421);
+            this.panelPayment.Name = "panelPayment";
+            this.panelPayment.Size = new System.Drawing.Size(200, 50);
+            this.panelPayment.TabIndex = 4;
+            // 
+            // btnBookedProperty
+            // 
+            this.btnBookedProperty.FlatAppearance.BorderSize = 0;
+            this.btnBookedProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookedProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookedProperty.Location = new System.Drawing.Point(65, 8);
+            this.btnBookedProperty.Name = "btnBookedProperty";
+            this.btnBookedProperty.Size = new System.Drawing.Size(137, 28);
+            this.btnBookedProperty.TabIndex = 3;
+            this.btnBookedProperty.Text = "Booked Property";
+            this.btnBookedProperty.UseVisualStyleBackColor = true;
+            this.btnBookedProperty.Click += new System.EventHandler(this.btnBookedProperty_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.booked;
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel12.Location = new System.Drawing.Point(24, 7);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(40, 28);
+            this.panel12.TabIndex = 8;
+            // 
+            // panelShowCustomer
+            // 
+            this.panelShowCustomer.Controls.Add(this.btnShowCustomer);
+            this.panelShowCustomer.Controls.Add(this.panel10);
+            this.panelShowCustomer.Location = new System.Drawing.Point(8, 321);
+            this.panelShowCustomer.Name = "panelShowCustomer";
+            this.panelShowCustomer.Size = new System.Drawing.Size(200, 46);
+            this.panelShowCustomer.TabIndex = 1;
+            // 
+            // btnShowCustomer
+            // 
+            this.btnShowCustomer.FlatAppearance.BorderSize = 0;
+            this.btnShowCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowCustomer.Location = new System.Drawing.Point(54, 8);
+            this.btnShowCustomer.Name = "btnShowCustomer";
+            this.btnShowCustomer.Size = new System.Drawing.Size(132, 28);
+            this.btnShowCustomer.TabIndex = 2;
+            this.btnShowCustomer.Text = "Show Customers";
+            this.btnShowCustomer.UseVisualStyleBackColor = true;
+            this.btnShowCustomer.Click += new System.EventHandler(this.btnShowCustomer_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.show_customer;
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Location = new System.Drawing.Point(19, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(37, 33);
+            this.panel10.TabIndex = 7;
+            // 
+            // btnCustomerInformation
+            // 
+            this.btnCustomerInformation.FlatAppearance.BorderSize = 0;
+            this.btnCustomerInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomerInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerInformation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCustomerInformation.Location = new System.Drawing.Point(35, 280);
+            this.btnCustomerInformation.Name = "btnCustomerInformation";
+            this.btnCustomerInformation.Size = new System.Drawing.Size(172, 41);
+            this.btnCustomerInformation.TabIndex = 1;
+            this.btnCustomerInformation.Text = "Customer Information";
+            this.btnCustomerInformation.UseVisualStyleBackColor = true;
+            this.btnCustomerInformation.Click += new System.EventHandler(this.btnCustomerInformation_Click);
+            // 
+            // panelProperty
+            // 
+            this.panelProperty.Controls.Add(this.btnAvailablePropety);
+            this.panelProperty.Controls.Add(this.panel8);
+            this.panelProperty.Controls.Add(this.btnBuy);
+            this.panelProperty.Controls.Add(this.panel7);
+            this.panelProperty.Location = new System.Drawing.Point(3, 189);
+            this.panelProperty.Name = "panelProperty";
+            this.panelProperty.Size = new System.Drawing.Size(202, 79);
+            this.panelProperty.TabIndex = 2;
+            // 
+            // btnAvailablePropety
+            // 
+            this.btnAvailablePropety.FlatAppearance.BorderSize = 0;
+            this.btnAvailablePropety.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAvailablePropety.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAvailablePropety.Location = new System.Drawing.Point(76, 15);
+            this.btnAvailablePropety.Name = "btnAvailablePropety";
+            this.btnAvailablePropety.Size = new System.Drawing.Size(49, 28);
+            this.btnAvailablePropety.TabIndex = 3;
+            this.btnAvailablePropety.Text = "Sell";
+            this.btnAvailablePropety.UseVisualStyleBackColor = true;
+            this.btnAvailablePropety.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.sell;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(39, 49);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(34, 27);
+            this.panel8.TabIndex = 7;
+            // 
+            // btnBuy
+            // 
+            this.btnBuy.FlatAppearance.BorderSize = 0;
+            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuy.Location = new System.Drawing.Point(0, 42);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(202, 37);
+            this.btnBuy.TabIndex = 5;
+            this.btnBuy.Text = "Buy ";
+            this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.buy_logo;
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Location = new System.Drawing.Point(36, 10);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(34, 33);
+            this.panel7.TabIndex = 7;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.feedback;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel13.Location = new System.Drawing.Point(1, 476);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(43, 40);
+            this.panel13.TabIndex = 7;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.money;
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel11.Location = new System.Drawing.Point(0, 375);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(44, 40);
+            this.panel11.TabIndex = 7;
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.customerlogo1;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Location = new System.Drawing.Point(0, 280);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(34, 35);
+            this.panel9.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::PropertyEstimationAndManagementSystem.Properties.Resources.Property_logo_2;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(0, 145);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(44, 38);
+            this.panel5.TabIndex = 7;
             // 
             // panel2
             // 
@@ -82,7 +261,7 @@
             this.btnProperty.FlatAppearance.BorderSize = 0;
             this.btnProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProperty.Location = new System.Drawing.Point(6, 148);
+            this.btnProperty.Location = new System.Drawing.Point(-8, 145);
             this.btnProperty.Name = "btnProperty";
             this.btnProperty.Size = new System.Drawing.Size(204, 35);
             this.btnProperty.TabIndex = 0;
@@ -95,7 +274,7 @@
             this.btnFeedBack.FlatAppearance.BorderSize = 0;
             this.btnFeedBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFeedBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeedBack.Location = new System.Drawing.Point(0, 420);
+            this.btnFeedBack.Location = new System.Drawing.Point(42, 476);
             this.btnFeedBack.Name = "btnFeedBack";
             this.btnFeedBack.Size = new System.Drawing.Size(109, 37);
             this.btnFeedBack.TabIndex = 5;
@@ -103,122 +282,28 @@
             this.btnFeedBack.UseVisualStyleBackColor = true;
             this.btnFeedBack.Click += new System.EventHandler(this.btnFeedBack_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btnBookedProperty);
-            this.panel6.Location = new System.Drawing.Point(1, 364);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 50);
-            this.panel6.TabIndex = 4;
-            // 
-            // btnBookedProperty
-            // 
-            this.btnBookedProperty.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBookedProperty.FlatAppearance.BorderSize = 0;
-            this.btnBookedProperty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookedProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookedProperty.Location = new System.Drawing.Point(0, 0);
-            this.btnBookedProperty.Name = "btnBookedProperty";
-            this.btnBookedProperty.Size = new System.Drawing.Size(200, 28);
-            this.btnBookedProperty.TabIndex = 3;
-            this.btnBookedProperty.Text = "Booked Property";
-            this.btnBookedProperty.UseVisualStyleBackColor = true;
-            this.btnBookedProperty.Click += new System.EventHandler(this.btnBookedProperty_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnShowCustomer);
-            this.panel3.Location = new System.Drawing.Point(1, 293);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 46);
-            this.panel3.TabIndex = 1;
-            // 
-            // btnShowCustomer
-            // 
-            this.btnShowCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnShowCustomer.FlatAppearance.BorderSize = 0;
-            this.btnShowCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowCustomer.Location = new System.Drawing.Point(0, 0);
-            this.btnShowCustomer.Name = "btnShowCustomer";
-            this.btnShowCustomer.Size = new System.Drawing.Size(200, 28);
-            this.btnShowCustomer.TabIndex = 2;
-            this.btnShowCustomer.Text = "Show Customers";
-            this.btnShowCustomer.UseVisualStyleBackColor = true;
-            this.btnShowCustomer.Click += new System.EventHandler(this.btnShowCustomer_Click);
-            // 
-            // btnCustomerInformation
-            // 
-            this.btnCustomerInformation.FlatAppearance.BorderSize = 0;
-            this.btnCustomerInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomerInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerInformation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerInformation.Location = new System.Drawing.Point(3, 246);
-            this.btnCustomerInformation.Name = "btnCustomerInformation";
-            this.btnCustomerInformation.Size = new System.Drawing.Size(193, 41);
-            this.btnCustomerInformation.TabIndex = 1;
-            this.btnCustomerInformation.Text = "Customer Information";
-            this.btnCustomerInformation.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 332);
+            this.button6.Location = new System.Drawing.Point(45, 375);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(112, 37);
             this.button6.TabIndex = 1;
             this.button6.Text = "Payment  ";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // panelProperty
+            // panel4
             // 
-            this.panelProperty.Controls.Add(this.btnBuy);
-            this.panelProperty.Controls.Add(this.btnAvailablePropety);
-            this.panelProperty.Location = new System.Drawing.Point(3, 189);
-            this.panelProperty.Name = "panelProperty";
-            this.panelProperty.Size = new System.Drawing.Size(202, 51);
-            this.panelProperty.TabIndex = 2;
-            // 
-            // btnBuy
-            // 
-            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBuy.FlatAppearance.BorderSize = 0;
-            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuy.Location = new System.Drawing.Point(0, 28);
-            this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(202, 30);
-            this.btnBuy.TabIndex = 5;
-            this.btnBuy.Text = "Buy ";
-            this.btnBuy.UseVisualStyleBackColor = true;
-            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
-            // 
-            // btnAvailablePropety
-            // 
-            this.btnAvailablePropety.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAvailablePropety.FlatAppearance.BorderSize = 0;
-            this.btnAvailablePropety.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAvailablePropety.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvailablePropety.Location = new System.Drawing.Point(0, 0);
-            this.btnAvailablePropety.Name = "btnAvailablePropety";
-            this.btnAvailablePropety.Size = new System.Drawing.Size(202, 28);
-            this.btnAvailablePropety.TabIndex = 3;
-            this.btnAvailablePropety.Text = "Sell";
-            this.btnAvailablePropety.UseVisualStyleBackColor = true;
-            this.btnAvailablePropety.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // panelConsultant
-            // 
-            this.panelConsultant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.panelConsultant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConsultant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelConsultant.ForeColor = System.Drawing.Color.Coral;
-            this.panelConsultant.Location = new System.Drawing.Point(202, 0);
-            this.panelConsultant.Name = "panelConsultant";
-            this.panelConsultant.Size = new System.Drawing.Size(783, 590);
-            this.panelConsultant.TabIndex = 2;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.panel4.Controls.Add(this.btnLogout);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(202, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(783, 51);
+            this.panel4.TabIndex = 4;
             // 
             // btnLogout
             // 
@@ -232,29 +317,28 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // panel4
+            // panelConsultant
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
-            this.panel4.Controls.Add(this.btnLogout);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(202, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(783, 54);
-            this.panel4.TabIndex = 4;
+            this.panelConsultant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.panelConsultant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelConsultant.Location = new System.Drawing.Point(202, 51);
+            this.panelConsultant.Name = "panelConsultant";
+            this.panelConsultant.Size = new System.Drawing.Size(783, 539);
+            this.panelConsultant.TabIndex = 2;
             // 
             // Consultants
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 590);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelConsultant);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Name = "Consultants";
             this.Text = "Cosultant";
             this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panelPayment.ResumeLayout(false);
+            this.panelShowCustomer.ResumeLayout(false);
             this.panelProperty.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -266,18 +350,26 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCustomerInformation;
         private System.Windows.Forms.Panel panelProperty;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelShowCustomer;
         private System.Windows.Forms.Button btnAvailablePropety;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panelPayment;
         private System.Windows.Forms.Button btnFeedBack;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnProperty;
         private System.Windows.Forms.Button btnShowCustomer;
-        private System.Windows.Forms.Panel panelConsultant;
         private System.Windows.Forms.Button btnBookedProperty;
         private System.Windows.Forms.Button btnBuy;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panelConsultant;
     }
 }

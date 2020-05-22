@@ -116,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(769, 502);
+            this.ClientSize = new System.Drawing.Size(767, 500);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.lblCustomerName);

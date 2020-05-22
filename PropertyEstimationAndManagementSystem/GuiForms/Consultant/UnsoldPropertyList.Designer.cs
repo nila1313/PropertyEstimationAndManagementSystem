@@ -54,7 +54,6 @@
             this.lblPropertyList.Size = new System.Drawing.Size(147, 24);
             this.lblPropertyList.TabIndex = 1;
             this.lblPropertyList.Text = "List of Properties";
-           
             // 
             // btnBuy
             // 
@@ -76,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(769, 502);
+            this.ClientSize = new System.Drawing.Size(767, 500);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.lblPropertyList);
             this.Controls.Add(this.dataGridPropertyList);

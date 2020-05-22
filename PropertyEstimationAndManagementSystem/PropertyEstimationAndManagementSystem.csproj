@@ -384,5 +384,26 @@
   <ItemGroup>
     <None Include="Pictures\search log f.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\buy logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\sell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\show customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\payment logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\booked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\feedback.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
