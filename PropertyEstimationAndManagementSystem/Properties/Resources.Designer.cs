@@ -153,6 +153,16 @@ namespace PropertyEstimationAndManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key {
             get {
                 object obj = ResourceManager.GetObject("key", resourceCulture);
@@ -226,6 +236,16 @@ namespace PropertyEstimationAndManagementSystem.Properties {
         internal static System.Drawing.Bitmap search_log_f {
             get {
                 object obj = ResourceManager.GetObject("search log f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_log_f1 {
+            get {
+                object obj = ResourceManager.GetObject("search log f1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

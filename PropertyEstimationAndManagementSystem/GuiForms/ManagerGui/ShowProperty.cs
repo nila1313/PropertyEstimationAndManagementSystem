@@ -28,6 +28,8 @@ namespace PropertyEstimationAndManagementSystem.GuiForms.ManagerGui
         private void ShowProperty_Load(object sender, EventArgs e)
         {
             refreshList();
+            this.dataGridProperty.DefaultCellStyle.ForeColor = Color.WhiteSmoke;
+            this.dataGridProperty.DefaultCellStyle.BackColor = Color.FromArgb(36, 36, 36);
         }
 
         private void refreshList()
