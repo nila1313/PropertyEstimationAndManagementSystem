@@ -46,6 +46,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
             this.EmployeePanel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnFeedback = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelProfit.SuspendLayout();
             this.panelProperty.SuspendLayout();
@@ -74,7 +78,7 @@
             this.CheckProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CheckProfit.Location = new System.Drawing.Point(61, 3);
+            this.CheckProfit.Location = new System.Drawing.Point(36, 3);
             this.CheckProfit.Name = "CheckProfit";
             this.CheckProfit.Size = new System.Drawing.Size(119, 23);
             this.CheckProfit.TabIndex = 5;
@@ -108,6 +112,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.btnFeedback);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panelProfit);
             this.panel1.Controls.Add(this.btnProfit);
             this.panel1.Controls.Add(this.panel4);
@@ -136,7 +144,7 @@
             this.btnProfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnProfit.Location = new System.Drawing.Point(27, 319);
+            this.btnProfit.Location = new System.Drawing.Point(36, 319);
             this.btnProfit.Name = "btnProfit";
             this.btnProfit.Size = new System.Drawing.Size(75, 34);
             this.btnProfit.TabIndex = 13;
@@ -148,9 +156,9 @@
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(3, 239);
+            this.panel4.Location = new System.Drawing.Point(-2, 228);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 26);
+            this.panel4.Size = new System.Drawing.Size(47, 46);
             this.panel4.TabIndex = 12;
             // 
             // btnPropertyInfo
@@ -159,7 +167,7 @@
             this.btnPropertyInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPropertyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPropertyInfo.Location = new System.Drawing.Point(27, 239);
+            this.btnPropertyInfo.Location = new System.Drawing.Point(35, 239);
             this.btnPropertyInfo.Name = "btnPropertyInfo";
             this.btnPropertyInfo.Size = new System.Drawing.Size(159, 27);
             this.btnPropertyInfo.TabIndex = 11;
@@ -260,6 +268,47 @@
             this.EmployeePanel.Size = new System.Drawing.Size(799, 548);
             this.EmployeePanel.TabIndex = 9;
             // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(0, 312);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(45, 40);
+            this.panel5.TabIndex = 8;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(0, 138);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(44, 38);
+            this.panel3.TabIndex = 8;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Location = new System.Drawing.Point(5, 462);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(44, 38);
+            this.panel6.TabIndex = 15;
+            // 
+            // btnFeedback
+            // 
+            this.btnFeedback.FlatAppearance.BorderSize = 0;
+            this.btnFeedback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeedback.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFeedback.Location = new System.Drawing.Point(48, 453);
+            this.btnFeedback.Name = "btnFeedback";
+            this.btnFeedback.Size = new System.Drawing.Size(138, 62);
+            this.btnFeedback.TabIndex = 14;
+            this.btnFeedback.Text = "Check Feedback";
+            this.btnFeedback.UseVisualStyleBackColor = true;
+            this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,5 +348,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelProfit;
         private System.Windows.Forms.Button btnProfit;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btnFeedback;
     }
 }

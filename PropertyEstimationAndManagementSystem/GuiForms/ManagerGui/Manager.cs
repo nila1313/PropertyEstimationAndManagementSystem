@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PropertyEstimationAndManagementSystem.GuiForms.ManagerGui;
+using PropertyEstimationAndManagementSystem.GuiForms.OwnerGui;
 
 namespace PropertyEstimationAndManagementSystem.GuiForms
 {
@@ -119,6 +120,11 @@ namespace PropertyEstimationAndManagementSystem.GuiForms
         private void Manager_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnFeedback_Click(object sender, EventArgs e)
+        {
+            OpenFormPanel(new CheckFeedBack());
         }
     }
 }

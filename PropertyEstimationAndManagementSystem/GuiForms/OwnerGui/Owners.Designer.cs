@@ -41,6 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
             this.panelOwner = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelTransaction.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,6 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnFeedBack);
             this.panel1.Controls.Add(this.btnAccount);
@@ -98,9 +100,9 @@
             // 
             this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManager.Location = new System.Drawing.Point(0, 339);
+            this.btnManager.Location = new System.Drawing.Point(3, 339);
             this.btnManager.Name = "btnManager";
-            this.btnManager.Size = new System.Drawing.Size(200, 34);
+            this.btnManager.Size = new System.Drawing.Size(197, 34);
             this.btnManager.TabIndex = 0;
             this.btnManager.Text = "Manager";
             this.btnManager.UseVisualStyleBackColor = true;
@@ -111,7 +113,7 @@
             this.btnTransaction.FlatAppearance.BorderSize = 0;
             this.btnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTransaction.Location = new System.Drawing.Point(0, 156);
+            this.btnTransaction.Location = new System.Drawing.Point(14, 156);
             this.btnTransaction.Name = "btnTransaction";
             this.btnTransaction.Size = new System.Drawing.Size(153, 37);
             this.btnTransaction.TabIndex = 1;
@@ -190,6 +192,15 @@
             this.panelOwner.Size = new System.Drawing.Size(785, 541);
             this.panelOwner.TabIndex = 2;
             // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(0, 156);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(44, 38);
+            this.panel5.TabIndex = 8;
+            // 
             // Owners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,5 +233,6 @@
         private System.Windows.Forms.Button btnFeedBack;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.Panel panel5;
     }
 }

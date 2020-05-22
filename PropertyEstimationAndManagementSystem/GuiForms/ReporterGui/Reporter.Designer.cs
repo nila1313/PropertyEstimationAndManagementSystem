@@ -44,6 +44,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
             this.ReporterMainPanel = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelCustomer.SuspendLayout();
             this.panelProperty.SuspendLayout();
@@ -69,6 +70,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnFeedback);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -236,6 +238,15 @@
             this.ReporterMainPanel.Size = new System.Drawing.Size(785, 536);
             this.ReporterMainPanel.TabIndex = 4;
             // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Location = new System.Drawing.Point(12, 497);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(44, 38);
+            this.panel6.TabIndex = 8;
+            // 
             // Reporter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,5 +284,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnFeedback;
         private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.Panel panel6;
     }
 }
